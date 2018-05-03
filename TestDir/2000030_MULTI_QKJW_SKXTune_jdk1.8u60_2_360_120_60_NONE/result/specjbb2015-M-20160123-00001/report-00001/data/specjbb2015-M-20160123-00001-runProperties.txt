@@ -1,0 +1,14 @@
+
+Property Name;Default;Controller; 
+specjbb.comm.connect.client.pool.size;256;192; 
+specjbb.comm.connect.selector.runner.count;0;4; 
+specjbb.comm.connect.timeouts.connect;60000;650000; 
+specjbb.comm.connect.timeouts.read;60000;650000; 
+specjbb.comm.connect.timeouts.write;60000;650000; 
+specjbb.comm.connect.worker.pool.max;256;320; 
+specjbb.comm.connect.worker.pool.min;1;32; 
+specjbb.customerDriver.threads;64;{=64, probe=96, saturate=144}; 
+specjbb.forkjoin.workers;112;{Tier1=360, Tier2=120, Tier3=60}; 
+specjbb.group.count;1;2; 
+specjbb.mapreducer.pool.size;112;27; 
+specjbb.time.server;false;false; 

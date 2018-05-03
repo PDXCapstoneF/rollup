@@ -1,0 +1,1994 @@
+Java HotSpot(TM) 64-Bit Server VM (25.60-b12) for linux-amd64 JRE (1.8.0_60-ea-b12), built on Apr 21 2015 19:53:00 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+Memory: 4k page, physical 395463368k(390176968k free), swap 16318460k(16318460k free)
+CommandLine flags: -XX:InitialHeapSize=2147483648 -XX:MaxHeapSize=2147483648 -XX:MaxNewSize=1610612736 -XX:NewSize=1610612736 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+1.912: [GC (Allocation Failure) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 1179648K->11465K(1376256K)] 1179648K->11481K(1900544K), 0.0270523 secs] [Times: user=0.76 sys=0.02, real=0.03 secs] 
+11.473: [GC (Allocation Failure) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 1191113K->121454K(1376256K)] 1191129K->121486K(1900544K), 0.1082591 secs] [Times: user=1.36 sys=3.52, real=0.11 secs] 
+11.612: [GC (System.gc()) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 261069K->121077K(1376256K)] 261101K->121117K(1900544K), 0.0915036 secs] [Times: user=1.27 sys=2.98, real=0.09 secs] 
+11.704: [Full GC (System.gc()) [PSYoungGen: 121077K->0K(1376256K)] [ParOldGen: 40K->119625K(524288K)] 121117K->119625K(1900544K), [Metaspace: 16651K->16651K(1064960K)], 0.5179681 secs] [Times: user=9.45 sys=0.03, real=0.52 secs] 
+20.189: [GC (Allocation Failure) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 1179648K->2372K(1376256K)] 1299273K->122005K(1900544K), 0.0148102 secs] [Times: user=0.50 sys=0.01, real=0.01 secs] 
+98.660: [GC (System.gc()) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 1037951K->12454K(1376256K)] 1157584K->132167K(1900544K), 0.0263738 secs] [Times: user=0.78 sys=0.00, real=0.03 secs] 
+98.686: [Full GC (System.gc()) [PSYoungGen: 12454K->0K(1376256K)] [ParOldGen: 119713K->128301K(524288K)] 132167K->128301K(1900544K), [Metaspace: 20201K->20201K(1067008K)], 0.3972251 secs] [Times: user=18.72 sys=0.00, real=0.39 secs] 
+205.123: [GC (Allocation Failure) 
+Desired survivor size 201326592 bytes, new threshold 7 (max 15)
+[PSYoungGen: 1179648K->7733K(1376256K)] 1307949K->136042K(1900544K), 0.0197150 secs] [Times: user=0.53 sys=0.00, real=0.02 secs] 
+226.539: [GC (Allocation Failure) 
+Desired survivor size 158334976 bytes, new threshold 6 (max 15)
+[PSYoungGen: 1187381K->10879K(1376256K)] 1315690K->139197K(1900544K), 0.0172439 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+238.380: [GC (Allocation Failure) 
+Desired survivor size 149946368 bytes, new threshold 5 (max 15)
+[PSYoungGen: 1190527K->12505K(1426432K)] 1318845K->140830K(1950720K), 0.0167028 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+247.081: [GC (Allocation Failure) 
+Desired survivor size 142606336 bytes, new threshold 4 (max 15)
+[PSYoungGen: 1284313K->14140K(1418240K)] 1412638K->142473K(1942528K), 0.0164220 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+253.601: [GC (Allocation Failure) 
+Desired survivor size 135790592 bytes, new threshold 3 (max 15)
+[PSYoungGen: 1285948K->12362K(1440256K)] 1414281K->144033K(1964544K), 0.0167996 secs] [Times: user=0.59 sys=0.03, real=0.02 secs] 
+259.151: [GC (Allocation Failure) 
+Desired survivor size 129499136 bytes, new threshold 2 (max 15)
+[PSYoungGen: 1313354K->10196K(1433600K)] 1445025K->144306K(1957888K), 0.0234566 secs] [Times: user=0.77 sys=0.13, real=0.02 secs] 
+264.615: [GC (Allocation Failure) 
+Desired survivor size 123207680 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1311188K->10825K(1452544K)] 1445298K->146044K(1976832K), 0.0161853 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+270.268: [GC (Allocation Failure) 
+Desired survivor size 116916224 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1336905K->10453K(1446400K)] 1472124K->147024K(1970688K), 0.0233050 secs] [Times: user=0.85 sys=0.03, real=0.02 secs] 
+275.840: [GC (Allocation Failure) 
+Desired survivor size 111149056 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1336533K->8769K(1464320K)] 1473104K->146728K(1988608K), 0.0229756 secs] [Times: user=0.85 sys=0.00, real=0.02 secs] 
+281.645: [GC (Allocation Failure) 
+Desired survivor size 105381888 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1358913K->9781K(1458688K)] 1496872K->147988K(1982976K), 0.0203332 secs] [Times: user=0.68 sys=0.08, real=0.02 secs] 
+293.171: [GC (Allocation Failure) 
+Desired survivor size 99614720 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1359925K->9953K(1475584K)] 1498132K->149604K(1999872K), 0.0230555 secs] [Times: user=0.75 sys=0.01, real=0.02 secs] 
+301.395: [GC (Allocation Failure) 
+Desired survivor size 94371840 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1382625K->9045K(1469952K)] 1522276K->148924K(1994240K), 0.0996977 secs] [Times: user=1.79 sys=0.00, real=0.10 secs] 
+314.862: [GC (Allocation Failure) 
+Desired survivor size 89128960 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1381717K->9333K(1485824K)] 1521596K->150184K(2010112K), 0.3200921 secs] [Times: user=1.32 sys=0.00, real=0.32 secs] 
+324.266: [GC (Allocation Failure) 
+Desired survivor size 83886080 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1402997K->10645K(1480704K)] 1543848K->152531K(2004992K), 0.0450475 secs] [Times: user=1.23 sys=0.00, real=0.04 secs] 
+339.279: [GC (Allocation Failure) 
+Desired survivor size 78643200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1404309K->10069K(1496064K)] 1546195K->152967K(2020352K), 0.0907434 secs] [Times: user=0.90 sys=0.00, real=0.09 secs] 
+370.431: [GC (System.gc()) 
+Desired survivor size 73924608 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1269916K->10441K(1490944K)] 1412814K->154791K(2015232K), 0.0087693 secs] [Times: user=0.27 sys=0.00, real=0.01 secs] 
+370.440: [Full GC (System.gc()) [PSYoungGen: 10441K->0K(1490944K)] [ParOldGen: 144350K->135772K(524288K)] 154791K->135772K(2015232K), [Metaspace: 20927K->20927K(1069056K)], 0.7299412 secs] [Times: user=11.41 sys=0.00, real=0.73 secs] 
+390.901: [GC (Allocation Failure) 
+Desired survivor size 69206016 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1414144K->12736K(1505280K)] 1549916K->148517K(2029568K), 0.0294190 secs] [Times: user=0.99 sys=0.02, real=0.03 secs] 
+397.059: [GC (Allocation Failure) 
+Desired survivor size 65011712 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1445824K->12057K(1500672K)] 1581605K->151892K(2024960K), 0.0219015 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+403.535: [GC (Allocation Failure) 
+Desired survivor size 61341696 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1445145K->10017K(1512960K)] 1584980K->151764K(2037248K), 0.0232430 secs] [Times: user=0.78 sys=0.01, real=0.03 secs] 
+411.386: [GC (Allocation Failure) 
+Desired survivor size 57671680 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1459489K->10261K(1509376K)] 1601236K->153016K(2033664K), 0.0282903 secs] [Times: user=0.88 sys=0.00, real=0.02 secs] 
+421.275: [GC (Allocation Failure) 
+Desired survivor size 54525952 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1459733K->9045K(1519616K)] 1602488K->152780K(2043904K), 0.2511232 secs] [Times: user=0.88 sys=0.00, real=0.25 secs] 
+438.602: [GC (Allocation Failure) 
+Desired survivor size 50855936 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1472341K->11785K(1516544K)] 1616076K->156532K(2040832K), 0.0441633 secs] [Times: user=1.27 sys=0.00, real=0.05 secs] 
+455.207: [GC (Allocation Failure) 
+Desired survivor size 48234496 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1475081K->10229K(1525760K)] 1619828K->157008K(2050048K), 0.0683996 secs] [Times: user=1.04 sys=0.00, real=0.07 secs] 
+473.336: [GC (Allocation Failure) 
+Desired survivor size 45088768 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1486325K->12437K(1523200K)] 1633104K->160356K(2047488K), 0.0343315 secs] [Times: user=1.02 sys=0.00, real=0.03 secs] 
+493.848: [GC (System.gc()) 
+Desired survivor size 42467328 bytes, new threshold 1 (max 15)
+[PSYoungGen: 657756K->9142K(1531392K)] 805675K->158048K(2055680K), 0.3836943 secs] [Times: user=1.07 sys=0.00, real=0.38 secs] 
+494.232: [Full GC (System.gc()) [PSYoungGen: 9142K->0K(1531392K)] [ParOldGen: 148906K->136967K(524288K)] 158048K->136967K(2055680K), [Metaspace: 21084K->21084K(1069056K)], 0.4572058 secs] [Times: user=15.37 sys=0.00, real=0.46 secs] 
+501.430: [GC (System.gc()) 
+Desired survivor size 41943040 bytes, new threshold 1 (max 15)
+[PSYoungGen: 9530K->288K(1528832K)] 146497K->137263K(2053120K), 0.0170278 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+501.447: [Full GC (System.gc()) [PSYoungGen: 288K->0K(1528832K)] [ParOldGen: 136975K->130571K(524288K)] 137263K->130571K(2053120K), [Metaspace: 21103K->21103K(1069056K)], 0.4002396 secs] [Times: user=19.89 sys=0.00, real=0.40 secs] 
+518.013: [GC (Allocation Failure) 
+Desired survivor size 39845888 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1487360K->14050K(1533952K)] 1617931K->144622K(2058240K), 0.0173526 secs] [Times: user=0.54 sys=0.15, real=0.02 secs] 
+528.645: [GC (Allocation Failure) 
+Desired survivor size 37748736 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1507042K->10450K(1531904K)] 1637614K->144628K(2056192K), 0.0203065 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+539.236: [GC (Allocation Failure) 
+Desired survivor size 35127296 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1503442K->10210K(1538560K)] 1637620K->144980K(2062848K), 0.0168910 secs] [Times: user=0.67 sys=0.00, real=0.01 secs] 
+549.985: [GC (Allocation Failure) 
+Desired survivor size 33554432 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1511906K->9986K(1536000K)] 1646676K->145052K(2060288K), 0.0170262 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+560.734: [GC (Allocation Failure) 
+Desired survivor size 31457280 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1511682K->10594K(1542144K)] 1646748K->145868K(2066432K), 0.0173882 secs] [Times: user=0.62 sys=0.04, real=0.02 secs] 
+571.494: [GC (Allocation Failure) 
+Desired survivor size 29884416 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1519970K->10562K(1540096K)] 1655244K->146004K(2064384K), 0.0173256 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+582.299: [GC (Allocation Failure) 
+Desired survivor size 28311552 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1519938K->10306K(1545216K)] 1655380K->145868K(2069504K), 0.0190223 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+593.183: [GC (Allocation Failure) 
+Desired survivor size 26738688 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1526338K->10050K(1543680K)] 1661900K->145756K(2067968K), 0.0150502 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+604.053: [GC (Allocation Failure) 
+Desired survivor size 25165824 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1526082K->10402K(1548288K)] 1661788K->146220K(2072576K), 0.0166669 secs] [Times: user=0.63 sys=0.01, real=0.02 secs] 
+614.963: [GC (Allocation Failure) 
+Desired survivor size 24117248 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1532578K->10178K(1546752K)] 1668396K->146156K(2071040K), 0.0136918 secs] [Times: user=0.52 sys=0.00, real=0.02 secs] 
+625.859: [GC (Allocation Failure) 
+Desired survivor size 23068672 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1532354K->10626K(1550336K)] 1668332K->146748K(2074624K), 0.0189973 secs] [Times: user=0.75 sys=0.02, real=0.02 secs] 
+636.733: [GC (Allocation Failure) 
+Desired survivor size 22020096 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1537410K->10338K(1549312K)] 1673532K->146597K(2073600K), 0.0162354 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+647.688: [GC (Allocation Failure) 
+Desired survivor size 20971520 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1537122K->10338K(1552384K)] 1673381K->146813K(2076672K), 0.0192886 secs] [Times: user=0.51 sys=0.01, real=0.02 secs] 
+658.659: [GC (Allocation Failure) 
+Desired survivor size 19922944 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1541218K->10370K(1551360K)] 1677693K->146973K(2075648K), 0.0152419 secs] [Times: user=0.51 sys=0.00, real=0.01 secs] 
+669.612: [GC (Allocation Failure) 
+Desired survivor size 19398656 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1541250K->10018K(1553920K)] 1677853K->146749K(2078208K), 0.0224017 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+680.610: [GC (Allocation Failure) 
+Desired survivor size 18874368 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1544482K->9986K(1553408K)] 1681213K->146885K(2077696K), 0.0177068 secs] [Times: user=0.51 sys=0.00, real=0.02 secs] 
+783.540: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1544450K->10313K(1555456K)] 1681349K->147380K(2079744K), 0.0202807 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+853.498: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1547337K->7925K(1554432K)] 1684404K->147920K(2078720K), 0.0144403 secs] [Times: user=0.51 sys=0.00, real=0.01 secs] 
+899.327: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1544949K->7989K(1555968K)] 1684944K->148516K(2080256K), 0.0146277 secs] [Times: user=0.57 sys=0.00, real=0.01 secs] 
+935.436: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1546549K->7809K(1555456K)] 1687076K->148884K(2079744K), 0.0147721 secs] [Times: user=0.58 sys=0.00, real=0.01 secs] 
+966.260: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1546369K->7861K(1556480K)] 1687444K->149280K(2080768K), 0.0146510 secs] [Times: user=0.59 sys=0.00, real=0.01 secs] 
+993.417: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1547445K->7425K(1555968K)] 1688864K->149312K(2080256K), 0.0132483 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+1019.610: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1547009K->8181K(1556992K)] 1688896K->150244K(2081280K), 0.0175125 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+1041.462: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1548789K->7681K(1556480K)] 1690852K->150548K(2080768K), 0.0126080 secs] [Times: user=0.50 sys=0.00, real=0.01 secs] 
+1063.281: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1548289K->7777K(1558016K)] 1691156K->150892K(2082304K), 0.0179443 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+1084.289: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1550433K->7797K(1557504K)] 1693548K->151008K(2081792K), 0.0175157 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+1102.609: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1550453K->7713K(1558528K)] 1693664K->151680K(2082816K), 0.0157288 secs] [Times: user=0.62 sys=0.00, real=0.01 secs] 
+1121.006: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551393K->7649K(1558016K)] 1695360K->151728K(2082304K), 0.0150315 secs] [Times: user=0.54 sys=0.00, real=0.01 secs] 
+1139.334: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551329K->7233K(1559040K)] 1695408K->151600K(2083328K), 0.0201039 secs] [Times: user=0.58 sys=0.00, real=0.02 secs] 
+1155.889: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552449K->7957K(1559040K)] 1696816K->152428K(2083328K), 0.0172455 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1171.600: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553173K->7585K(1560064K)] 1697644K->152820K(2084352K), 0.0200027 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1187.351: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554337K->7489K(1559552K)] 1699572K->152884K(2083840K), 0.0226387 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1203.144: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554241K->8161K(1560576K)] 1699636K->153908K(2084864K), 0.0153163 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+1217.814: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555937K->8533K(1560064K)] 1701684K->154592K(2084352K), 0.0199008 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+1231.606: [GC (Allocation Failure) 
+Desired survivor size 12058624 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556309K->7297K(1561088K)] 1702368K->154088K(2085376K), 0.0182978 secs] [Times: user=0.73 sys=0.00, real=0.01 secs] 
+1245.459: [GC (Allocation Failure) 
+Desired survivor size 12058624 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556097K->8129K(1560576K)] 1702888K->155056K(2084864K), 0.0182446 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+1259.292: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556929K->8001K(1561600K)] 1703856K->155248K(2085888K), 0.0153694 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1273.124: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557825K->7873K(1561088K)] 1705072K->155456K(2085376K), 0.0154544 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1285.714: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557697K->8629K(1562112K)] 1705280K->156332K(2086400K), 0.0196785 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+1298.035: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559477K->8129K(1561600K)] 1707180K->156852K(2085888K), 0.0175249 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+1310.356: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558977K->8353K(1562112K)] 1707700K->157276K(2086400K), 0.0170117 secs] [Times: user=0.54 sys=0.00, real=0.01 secs] 
+1322.683: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559713K->7937K(1562112K)] 1708636K->157260K(2086400K), 0.0228248 secs] [Times: user=0.71 sys=0.00, real=0.03 secs] 
+1334.988: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559297K->7361K(1562624K)] 1708620K->156820K(2086912K), 0.0170740 secs] [Times: user=0.68 sys=0.00, real=0.01 secs] 
+1346.813: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559745K->9045K(1562624K)] 1709204K->158856K(2086912K), 0.0162609 secs] [Times: user=0.63 sys=0.01, real=0.02 secs] 
+1357.923: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561429K->7745K(1562624K)] 1711240K->158488K(2086912K), 0.0154723 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1369.032: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560129K->7521K(1562624K)] 1710872K->158384K(2086912K), 0.0182849 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+1380.153: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559905K->7937K(1562624K)] 1710768K->159016K(2086912K), 0.0176143 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+1391.342: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560321K->7553K(1562624K)] 1711400K->158840K(2086912K), 0.0128431 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+1402.425: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559937K->7489K(1563136K)] 1711224K->158960K(2087424K), 0.0143249 secs] [Times: user=0.58 sys=0.00, real=0.02 secs] 
+1412.972: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560385K->8981K(1562624K)] 1711856K->160748K(2086912K), 0.0162998 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+1423.056: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561877K->7873K(1563136K)] 1713644K->160492K(2087424K), 0.0186922 secs] [Times: user=0.70 sys=0.00, real=0.01 secs] 
+1433.182: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560769K->7777K(1562624K)] 1713388K->160588K(2086912K), 0.0160479 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1443.313: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560673K->8257K(1563136K)] 1713484K->161276K(2087424K), 0.0184642 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1453.439: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561665K->8321K(1563136K)] 1714684K->161572K(2087424K), 0.0123149 secs] [Times: user=0.50 sys=0.00, real=0.01 secs] 
+1463.560: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561729K->8193K(1563136K)] 1714980K->161820K(2087424K), 0.0164203 secs] [Times: user=0.46 sys=0.00, real=0.02 secs] 
+1473.498: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->8693K(1563136K)] 1715228K->162552K(2087424K), 0.0169898 secs] [Times: user=0.74 sys=0.00, real=0.01 secs] 
+1482.782: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562101K->7873K(1563136K)] 1715960K->162776K(2087424K), 0.0158488 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+1492.054: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561281K->7507K(1563136K)] 1716184K->162666K(2087424K), 0.0143759 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1501.327: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560915K->7809K(1563136K)] 1716074K->163096K(2087424K), 0.0128007 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+1510.596: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561217K->7361K(1563136K)] 1716504K->162840K(2087424K), 0.0164916 secs] [Times: user=0.60 sys=0.00, real=0.01 secs] 
+1519.852: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560769K->8097K(1563648K)] 1716248K->163856K(2087936K), 0.0154921 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+1529.181: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->7681K(1563136K)] 1717776K->163704K(2087424K), 0.0153016 secs] [Times: user=0.52 sys=0.00, real=0.02 secs] 
+1538.213: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->9205K(1562624K)] 1717624K->165628K(2086912K), 0.0168880 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+1546.785: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562613K->7969K(1563136K)] 1719036K->165660K(2087424K), 0.0140469 secs] [Times: user=0.56 sys=0.00, real=0.02 secs] 
+1555.360: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561377K->7873K(1563136K)] 1719068K->165708K(2087424K), 0.0187802 secs] [Times: user=0.80 sys=0.00, real=0.02 secs] 
+1563.966: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561281K->7873K(1563136K)] 1719116K->165820K(2087424K), 0.0168497 secs] [Times: user=0.67 sys=0.00, real=0.01 secs] 
+1572.553: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561281K->8417K(1563136K)] 1719228K->166708K(2087424K), 0.0175541 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+1581.146: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561825K->7873K(1563136K)] 1720116K->166388K(2087424K), 0.0143355 secs] [Times: user=0.56 sys=0.00, real=0.01 secs] 
+1589.745: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561281K->7841K(1563648K)] 1719796K->166524K(2087936K), 0.0148718 secs] [Times: user=0.56 sys=0.00, real=0.01 secs] 
+1598.338: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->7617K(1563136K)] 1720444K->166492K(2087424K), 0.0163202 secs] [Times: user=0.62 sys=0.00, real=0.01 secs] 
+1606.616: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561537K->8693K(1562624K)] 1720412K->167768K(2086912K), 0.0176461 secs] [Times: user=0.69 sys=0.00, real=0.01 secs] 
+1614.583: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562101K->8193K(1563136K)] 1721176K->168464K(2087424K), 0.0196354 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1622.534: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->8321K(1563648K)] 1721872K->168848K(2087936K), 0.0149190 secs] [Times: user=0.60 sys=0.00, real=0.02 secs] 
+1630.480: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562753K->7969K(1563648K)] 1723280K->168744K(2087936K), 0.0137447 secs] [Times: user=0.55 sys=0.00, real=0.01 secs] 
+1638.468: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->7745K(1563648K)] 1723176K->168784K(2087936K), 0.0142687 secs] [Times: user=0.54 sys=0.00, real=0.01 secs] 
+1646.430: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->8225K(1563648K)] 1723216K->169544K(2087936K), 0.0206425 secs] [Times: user=0.85 sys=0.00, real=0.02 secs] 
+1654.382: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562657K->7809K(1563648K)] 1723976K->169368K(2087936K), 0.0144203 secs] [Times: user=0.41 sys=0.00, real=0.02 secs] 
+1662.328: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562241K->8257K(1563648K)] 1723800K->170024K(2087936K), 0.0141686 secs] [Times: user=0.54 sys=0.00, real=0.01 secs] 
+1670.138: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->9205K(1562624K)] 1724456K->171412K(2086912K), 0.0178298 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+1677.556: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562613K->8161K(1563136K)] 1724820K->171764K(2087424K), 0.0127548 secs] [Times: user=0.42 sys=0.00, real=0.01 secs] 
+1685.025: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561569K->7489K(1563136K)] 1725172K->171404K(2087424K), 0.0161275 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+1692.463: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560897K->8001K(1563136K)] 1724812K->172140K(2087424K), 0.0162931 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+1699.913: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561409K->8097K(1563648K)] 1725548K->172428K(2087936K), 0.0157718 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1707.352: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->7297K(1563136K)] 1726348K->171828K(2087424K), 0.0151449 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+1714.746: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561217K->8097K(1563648K)] 1725748K->172948K(2087936K), 0.0161601 secs] [Times: user=0.61 sys=0.00, real=0.01 secs] 
+1722.171: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->8033K(1563648K)] 1727380K->173060K(2087936K), 0.0179488 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1729.621: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562465K->7969K(1563648K)] 1727492K->173188K(2087936K), 0.0161528 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+1736.847: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->8565K(1563648K)] 1727620K->174008K(2087936K), 0.0191696 secs] [Times: user=0.80 sys=0.00, real=0.02 secs] 
+1743.839: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562997K->8065K(1563648K)] 1728440K->174728K(2087936K), 0.0137771 secs] [Times: user=0.51 sys=0.00, real=0.01 secs] 
+1750.813: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562497K->7969K(1563648K)] 1729160K->174888K(2087936K), 0.0193862 secs] [Times: user=0.84 sys=0.00, real=0.02 secs] 
+1757.775: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->8257K(1563648K)] 1729320K->175384K(2087936K), 0.0169727 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+1764.718: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->7809K(1563648K)] 1729816K->175144K(2087936K), 0.0146426 secs] [Times: user=0.58 sys=0.00, real=0.01 secs] 
+1771.739: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562241K->8097K(1563648K)] 1729576K->175608K(2087936K), 0.0184814 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1778.706: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->7329K(1563648K)] 1730040K->175016K(2087936K), 0.0173522 secs] [Times: user=0.72 sys=0.00, real=0.01 secs] 
+1785.691: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->8481K(1563648K)] 1729448K->176384K(2087936K), 0.0153738 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1792.667: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562913K->8097K(1563648K)] 1730816K->176312K(2087936K), 0.0154581 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+1799.690: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->8789K(1563648K)] 1730744K->177188K(2087936K), 0.0182574 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+1806.529: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563221K->8161K(1563648K)] 1731620K->177812K(2087936K), 0.0173220 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+1813.352: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562593K->8097K(1563648K)] 1732244K->177964K(2087936K), 0.0199778 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+1820.162: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->8001K(1563648K)] 1732396K->178044K(2087936K), 0.0166550 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1826.965: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562433K->8129K(1563648K)] 1732476K->178500K(2087936K), 0.0181099 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+1833.771: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562561K->8289K(1563648K)] 1732932K->178980K(2087936K), 0.0151853 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+1840.584: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562721K->7905K(1563648K)] 1733412K->178956K(2087936K), 0.0219485 secs] [Times: user=0.86 sys=0.00, real=0.03 secs] 
+1847.464: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562337K->7649K(1563648K)] 1733388K->178980K(2087936K), 0.0154106 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+1854.259: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->8129K(1563648K)] 1733412K->179788K(2087936K), 0.0161056 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+1861.047: [GC (Allocation Failure) 
+Desired survivor size 8912896 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562561K->7873K(1563648K)] 1734220K->179732K(2087936K), 0.0150297 secs] [Times: user=0.47 sys=0.00, real=0.01 secs] 
+1867.774: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562305K->8693K(1563136K)] 1734164K->180784K(2087424K), 0.0156745 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1874.571: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563125K->8225K(1563648K)] 1735216K->181576K(2087936K), 0.0207509 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+1881.351: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562657K->8065K(1563648K)] 1736008K->181792K(2087936K), 0.0102910 secs] [Times: user=0.38 sys=0.00, real=0.01 secs] 
+1888.167: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562497K->7201K(1563648K)] 1736224K->181064K(2087936K), 0.0134503 secs] [Times: user=0.52 sys=0.00, real=0.01 secs] 
+1894.974: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561633K->7393K(1563648K)] 1735496K->181408K(2087936K), 0.0195808 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+1901.734: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561825K->8033K(1563648K)] 1735840K->182248K(2087936K), 0.0150259 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+1908.493: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562465K->8097K(1563648K)] 1736680K->182528K(2087936K), 0.0132896 secs] [Times: user=0.45 sys=0.00, real=0.02 secs] 
+1915.233: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->7649K(1563648K)] 1736960K->182336K(2087936K), 0.0147231 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+1922.009: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->7969K(1563648K)] 1736768K->182912K(2087936K), 0.0168645 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1928.793: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->7489K(1563648K)] 1737344K->182696K(2087936K), 0.0144241 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+1935.521: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561921K->9205K(1562624K)] 1737128K->184748K(2086912K), 0.0183018 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+1942.283: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562613K->8065K(1563136K)] 1738156K->185132K(2087424K), 0.0172016 secs] [Times: user=0.62 sys=0.01, real=0.02 secs] 
+1949.041: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561473K->7649K(1563648K)] 1738540K->184876K(2087936K), 0.0161144 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+1955.796: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->7841K(1563648K)] 1739308K->185316K(2087936K), 0.0196083 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+1962.541: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562273K->7969K(1563648K)] 1739748K->185652K(2087936K), 0.0227297 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+1969.289: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->7713K(1563648K)] 1740084K->185652K(2087936K), 0.0156918 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+1976.043: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562145K->8289K(1563648K)] 1740084K->186404K(2087936K), 0.0168776 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+1982.801: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562721K->8513K(1563648K)] 1740836K->187028K(2087936K), 0.0165499 secs] [Times: user=0.67 sys=0.02, real=0.02 secs] 
+1989.574: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562945K->8513K(1563648K)] 1741460K->187348K(2087936K), 0.0143979 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+1996.282: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562945K->8789K(1563648K)] 1741780K->187768K(2087936K), 0.0148470 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+2003.038: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563221K->8033K(1563648K)] 1742200K->188192K(2087936K), 0.0185045 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+2009.782: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562465K->7873K(1563648K)] 1742624K->188352K(2087936K), 0.0112237 secs] [Times: user=0.41 sys=0.00, real=0.01 secs] 
+2016.515: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562305K->8449K(1563648K)] 1742784K->189208K(2087936K), 0.0200896 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+2023.275: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562881K->8417K(1563648K)] 1743640K->189432K(2087936K), 0.0145332 secs] [Times: user=0.58 sys=0.00, real=0.02 secs] 
+2030.011: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562849K->7905K(1563648K)] 1743864K->189248K(2087936K), 0.0161533 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+2036.769: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562337K->8161K(1563648K)] 1743680K->189824K(2087936K), 0.0112720 secs] [Times: user=0.41 sys=0.01, real=0.01 secs] 
+2043.531: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562593K->8257K(1563648K)] 1744256K->190192K(2087936K), 0.0173499 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+2050.281: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->7777K(1563648K)] 1744624K->189936K(2087936K), 0.0194581 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2057.060: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562209K->8257K(1563648K)] 1744368K->190672K(2087936K), 0.0181082 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+2063.773: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->9205K(1563648K)] 1745104K->192236K(2087936K), 0.0181370 secs] [Times: user=0.79 sys=0.00, real=0.02 secs] 
+2070.495: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563637K->8129K(1563648K)] 1746668K->192644K(2087936K), 0.0153422 secs] [Times: user=0.60 sys=0.00, real=0.02 secs] 
+2077.217: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562561K->8321K(1563648K)] 1747076K->193044K(2087936K), 0.0162248 secs] [Times: user=0.61 sys=0.00, real=0.01 secs] 
+2083.958: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562753K->8225K(1563648K)] 1747476K->193196K(2087936K), 0.0189091 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+2090.705: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562657K->8033K(1563648K)] 1747628K->193372K(2087936K), 0.0162028 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+2097.459: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562465K->8513K(1563648K)] 1747804K->194028K(2087936K), 0.0153152 secs] [Times: user=0.65 sys=0.00, real=0.01 secs] 
+2104.177: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562945K->8257K(1563648K)] 1748460K->193948K(2087936K), 0.0161878 secs] [Times: user=0.58 sys=0.00, real=0.01 secs] 
+2110.930: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->7905K(1563648K)] 1748380K->193836K(2087936K), 0.0175045 secs] [Times: user=0.60 sys=0.00, real=0.02 secs] 
+2117.670: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562337K->8481K(1563648K)] 1748268K->194668K(2087936K), 0.0206781 secs] [Times: user=0.81 sys=0.00, real=0.02 secs] 
+2124.412: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562913K->7457K(1563648K)] 1749100K->193788K(2087936K), 0.0173435 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+2131.102: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561889K->9013K(1563648K)] 1748220K->195496K(2087936K), 0.0151634 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+2137.838: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563445K->8321K(1563648K)] 1749928K->196112K(2087936K), 0.0150419 secs] [Times: user=0.52 sys=0.00, real=0.01 secs] 
+2144.514: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562753K->8129K(1563648K)] 1750544K->196184K(2087936K), 0.0202842 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+2151.239: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562561K->8097K(1563648K)] 1750616K->196352K(2087936K), 0.0138547 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+2157.981: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562529K->8161K(1563648K)] 1750784K->196536K(2087936K), 0.0174636 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2164.682: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562593K->8385K(1563648K)] 1750968K->196976K(2087936K), 0.0170339 secs] [Times: user=0.65 sys=0.00, real=0.02 secs] 
+2171.480: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562817K->8737K(1563648K)] 1751408K->197560K(2087936K), 0.0150004 secs] [Times: user=0.59 sys=0.00, real=0.01 secs] 
+2178.202: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563169K->7745K(1563648K)] 1751992K->196736K(2087936K), 0.0137429 secs] [Times: user=0.53 sys=0.00, real=0.02 secs] 
+2184.888: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->8705K(1563648K)] 1751168K->197936K(2087936K), 0.0162949 secs] [Times: user=0.66 sys=0.00, real=0.01 secs] 
+2191.610: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563137K->7905K(1563648K)] 1752368K->197432K(2087936K), 0.0164078 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2198.325: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562337K->9205K(1563648K)] 1751864K->199108K(2087936K), 0.0183061 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2205.020: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563637K->8737K(1562624K)] 1753540K->200140K(2086912K), 0.0166303 secs] [Times: user=0.53 sys=0.00, real=0.02 secs] 
+2211.710: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562145K->7809K(1563136K)] 1753548K->199476K(2087424K), 0.0142348 secs] [Times: user=0.53 sys=0.00, real=0.01 secs] 
+2218.415: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561217K->8545K(1563136K)] 1752884K->200420K(2087424K), 0.0162152 secs] [Times: user=0.71 sys=0.00, real=0.01 secs] 
+2225.158: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561953K->8609K(1563136K)] 1753828K->200836K(2087424K), 0.0166501 secs] [Times: user=0.68 sys=0.00, real=0.01 secs] 
+2231.907: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8513K(1563136K)] 1754244K->201284K(2087424K), 0.0262148 secs] [Times: user=0.56 sys=0.02, real=0.02 secs] 
+2238.593: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561921K->8769K(1563136K)] 1754692K->201709K(2087424K), 0.0157228 secs] [Times: user=0.65 sys=0.00, real=0.02 secs] 
+2245.330: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->8193K(1563136K)] 1755117K->201413K(2087424K), 0.0175859 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+2252.057: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->8097K(1563136K)] 1754821K->201525K(2087424K), 0.0134415 secs] [Times: user=0.52 sys=0.00, real=0.01 secs] 
+2258.767: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561505K->8481K(1563136K)] 1754933K->202237K(2087424K), 0.0124436 secs] [Times: user=0.41 sys=0.00, real=0.01 secs] 
+2265.473: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561889K->9141K(1563136K)] 1755645K->203128K(2087424K), 0.0141832 secs] [Times: user=0.53 sys=0.00, real=0.02 secs] 
+2272.209: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562549K->8193K(1563136K)] 1756536K->203440K(2087424K), 0.0158510 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+2278.950: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561596K->8193K(1563136K)] 1756843K->203680K(2087424K), 0.0161778 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2285.939: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->8641K(1563136K)] 1757088K->204392K(2087424K), 0.0171907 secs] [Times: user=0.58 sys=0.00, real=0.02 secs] 
+2292.668: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562049K->8481K(1563136K)] 1757800K->204488K(2087424K), 0.0163619 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+2299.365: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561889K->8225K(1563136K)] 1757896K->204440K(2087424K), 0.0150030 secs] [Times: user=0.54 sys=0.00, real=0.02 secs] 
+2306.113: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561633K->8385K(1563136K)] 1757848K->204808K(2087424K), 0.0173577 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2312.857: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->8449K(1563648K)] 1758216K->205096K(2087936K), 0.0160026 secs] [Times: user=0.63 sys=0.00, real=0.01 secs] 
+2319.608: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562881K->8257K(1563648K)] 1759528K->205280K(2087936K), 0.0191480 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+2326.352: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->8481K(1563648K)] 1759712K->205680K(2087936K), 0.0161263 secs] [Times: user=0.58 sys=0.00, real=0.02 secs] 
+2333.071: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562913K->8545K(1563648K)] 1760112K->205881K(2087936K), 0.0166236 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2339.791: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562977K->9205K(1562624K)] 1760313K->207068K(2086912K), 0.0201433 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+2346.451: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562613K->8033K(1563136K)] 1760476K->207212K(2087424K), 0.0192848 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+2353.096: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561441K->8833K(1563136K)] 1760620K->208276K(2087424K), 0.0212570 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+2359.780: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562241K->8705K(1563136K)] 1761684K->208381K(2087424K), 0.0169581 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2366.511: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562113K->8385K(1563136K)] 1761789K->208349K(2087424K), 0.0191445 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+2373.164: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->8353K(1563136K)] 1761757K->208653K(2087424K), 0.0155290 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2379.862: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->8257K(1563648K)] 1762061K->208845K(2087936K), 0.0172739 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+2386.561: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562689K->8553K(1563648K)] 1763277K->209364K(2087936K), 0.0170130 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2393.305: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562985K->8577K(1563648K)] 1763796K->209621K(2087936K), 0.0171084 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2399.961: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563009K->8417K(1563648K)] 1764053K->209805K(2087936K), 0.0153166 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+2406.631: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562849K->8385K(1563648K)] 1764237K->210029K(2087936K), 0.0176430 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+2413.347: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562817K->9205K(1563648K)] 1764461K->211305K(2087936K), 0.0130158 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+2420.146: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563637K->8577K(1562624K)] 1765737K->212065K(2086912K), 0.0164021 secs] [Times: user=0.68 sys=0.00, real=0.01 secs] 
+2426.819: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561985K->8737K(1563136K)] 1765473K->212465K(2087424K), 0.0172431 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+2433.546: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562145K->8097K(1563136K)] 1765873K->211977K(2087424K), 0.0176059 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+2440.373: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561505K->8321K(1563136K)] 1765385K->212425K(2087424K), 0.0137801 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+2447.203: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561729K->8737K(1563136K)] 1765833K->213049K(2087424K), 0.0154034 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+2453.857: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562145K->7681K(1563136K)] 1766457K->212185K(2087424K), 0.0226811 secs] [Times: user=0.91 sys=0.00, real=0.02 secs] 
+2460.587: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561089K->8385K(1563136K)] 1765593K->213145K(2087424K), 0.0156839 secs] [Times: user=0.63 sys=0.00, real=0.01 secs] 
+2467.321: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->8129K(1563136K)] 1766553K->213097K(2087424K), 0.0195950 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+2474.211: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561537K->8513K(1563648K)] 1766505K->213729K(2087936K), 0.0177635 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+2480.846: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562433K->8481K(1563136K)] 1767649K->213929K(2087424K), 0.0155648 secs] [Times: user=0.61 sys=0.00, real=0.01 secs] 
+2487.538: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562401K->9185K(1562624K)] 1767849K->215245K(2086912K), 0.0190837 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+2494.241: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562593K->8289K(1563136K)] 1768653K->215533K(2087424K), 0.0156021 secs] [Times: user=0.63 sys=0.00, real=0.02 secs] 
+2500.883: [GC (GCLocker Initiated GC) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->8065K(1563136K)] 1768941K->215477K(2087424K), 0.0159318 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2507.532: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561473K->8321K(1563136K)] 1768888K->215928K(2087424K), 0.0170928 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2514.181: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561729K->8865K(1563136K)] 1769336K->216864K(2087424K), 0.0170764 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+2521.112: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562273K->8449K(1563136K)] 1770272K->216664K(2087424K), 0.0193836 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+2527.803: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561857K->8673K(1563136K)] 1770072K->217176K(2087424K), 0.0192620 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+2534.526: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->8609K(1563136K)] 1770584K->217336K(2087424K), 0.0118340 secs] [Times: user=0.46 sys=0.00, real=0.01 secs] 
+2541.177: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8769K(1563136K)] 1770744K->217920K(2087424K), 0.0186524 secs] [Times: user=0.61 sys=0.02, real=0.02 secs] 
+2547.819: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->8577K(1563136K)] 1771328K->218153K(2087424K), 0.0180695 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+2554.438: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561985K->9589K(1563136K)] 1771561K->219500K(2087424K), 0.0111047 secs] [Times: user=0.36 sys=0.00, real=0.01 secs] 
+2561.114: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562997K->8545K(1563136K)] 1772908K->219772K(2087424K), 0.0181280 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2567.880: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561953K->8769K(1563136K)] 1773180K->220292K(2087424K), 0.0187714 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+2574.534: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->8097K(1563136K)] 1773700K->219988K(2087424K), 0.0172169 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2581.206: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561505K->8289K(1563136K)] 1773396K->220469K(2087424K), 0.0139144 secs] [Times: user=0.54 sys=0.00, real=0.01 secs] 
+2587.897: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->8257K(1563136K)] 1773877K->220701K(2087424K), 0.0188936 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2594.580: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561637K->8321K(1563136K)] 1774080K->221029K(2087424K), 0.0160265 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+2601.360: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561729K->8801K(1563136K)] 1774437K->221797K(2087424K), 0.0177239 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+2608.014: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562209K->8449K(1563136K)] 1775205K->221765K(2087424K), 0.0203607 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+2614.774: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561857K->8289K(1563136K)] 1775173K->221893K(2087424K), 0.0162360 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+2621.526: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->9397K(1563136K)] 1775301K->223312K(2087424K), 0.0185765 secs] [Times: user=0.78 sys=0.00, real=0.01 secs] 
+2628.822: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562805K->8705K(1563136K)] 1776720K->224024K(2087424K), 0.0233091 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+2635.253: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562113K->8609K(1563136K)] 1777432K->224144K(2087424K), 0.0200226 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+2641.864: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8225K(1563136K)] 1777552K->223960K(2087424K), 0.0205002 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+2648.555: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561633K->8129K(1563136K)] 1777368K->224016K(2087424K), 0.0182260 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+2655.487: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561537K->8353K(1563136K)] 1777424K->224512K(2087424K), 0.0155998 secs] [Times: user=0.60 sys=0.00, real=0.01 secs] 
+2662.287: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->8257K(1563136K)] 1777920K->224649K(2087424K), 0.0154510 secs] [Times: user=0.58 sys=0.00, real=0.01 secs] 
+2669.042: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561665K->8609K(1563136K)] 1778057K->225352K(2087424K), 0.0169336 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+2675.696: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561969K->8545K(1563648K)] 1778712K->225432K(2087936K), 0.0136034 secs] [Times: user=0.49 sys=0.00, real=0.01 secs] 
+2682.385: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562465K->8193K(1563136K)] 1779352K->225241K(2087424K), 0.0130950 secs] [Times: user=0.45 sys=0.00, real=0.01 secs] 
+2689.012: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562113K->9205K(1562624K)] 1779161K->226900K(2086912K), 0.0140840 secs] [Times: user=0.50 sys=0.01, real=0.02 secs] 
+2695.619: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562613K->8449K(1563136K)] 1780308K->227493K(2087424K), 0.0170093 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2702.499: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561857K->8673K(1563136K)] 1780901K->228173K(2087424K), 0.0203703 secs] [Times: user=0.79 sys=0.01, real=0.02 secs] 
+2709.254: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->8289K(1563136K)] 1781581K->228077K(2087424K), 0.0167101 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2715.982: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->8609K(1563136K)] 1781485K->228669K(2087424K), 0.0172736 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2722.600: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8545K(1563136K)] 1782077K->228893K(2087424K), 0.0173566 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+2729.438: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561953K->8673K(1563136K)] 1782301K->229269K(2087424K), 0.0159484 secs] [Times: user=0.66 sys=0.00, real=0.01 secs] 
+2736.070: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562081K->8417K(1563136K)] 1782677K->229293K(2087424K), 0.0189688 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+2742.699: [GC (Allocation Failure) 
+Desired survivor size 9437184 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561825K->8225K(1563648K)] 1782701K->229221K(2087936K), 0.0157890 secs] [Times: user=0.58 sys=0.00, real=0.01 secs] 
+2749.426: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562145K->8001K(1563136K)] 1783141K->229293K(2087424K), 0.0176496 secs] [Times: user=0.69 sys=0.00, real=0.01 secs] 
+2756.069: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561921K->8833K(1563136K)] 1783213K->230549K(2087424K), 0.0230408 secs] [Times: user=0.81 sys=0.00, real=0.02 secs] 
+2762.695: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562241K->8065K(1563136K)] 1783957K->230101K(2087424K), 0.0178095 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+2769.311: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561473K->9717K(1562112K)] 1783509K->232081K(2086400K), 0.0176535 secs] [Times: user=0.65 sys=0.00, real=0.02 secs] 
+2775.957: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562101K->8865K(1562624K)] 1784465K->232969K(2086912K), 0.0165708 secs] [Times: user=0.66 sys=0.01, real=0.01 secs] 
+2782.581: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561249K->8481K(1563136K)] 1785353K->232769K(2087424K), 0.0126279 secs] [Times: user=0.42 sys=0.00, real=0.01 secs] 
+2789.338: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561377K->8353K(1562624K)] 1785665K->232929K(2086912K), 0.0116921 secs] [Times: user=0.43 sys=0.00, real=0.01 secs] 
+2796.247: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561249K->8545K(1563136K)] 1785825K->233369K(2087424K), 0.0124061 secs] [Times: user=0.44 sys=0.00, real=0.01 secs] 
+2802.990: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561953K->8417K(1563136K)] 1786777K->233545K(2087424K), 0.0145588 secs] [Times: user=0.52 sys=0.00, real=0.01 secs] 
+2810.090: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561825K->8289K(1563136K)] 1786953K->233689K(2087424K), 0.0117257 secs] [Times: user=0.39 sys=0.00, real=0.01 secs] 
+2816.760: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->8609K(1563136K)] 1787097K->234401K(2087424K), 0.0181111 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+2823.392: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8097K(1563136K)] 1787809K->234145K(2087424K), 0.0170270 secs] [Times: user=0.56 sys=0.00, real=0.02 secs] 
+2830.075: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561505K->8289K(1563136K)] 1787553K->234481K(2087424K), 0.0168799 secs] [Times: user=0.65 sys=0.00, real=0.02 secs] 
+2836.776: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561697K->9717K(1563136K)] 1787889K->236101K(2087424K), 0.0156462 secs] [Times: user=0.60 sys=0.00, real=0.01 secs] 
+2843.503: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563125K->8353K(1563136K)] 1789509K->236165K(2087424K), 0.0196312 secs] [Times: user=0.73 sys=0.01, real=0.02 secs] 
+2850.164: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->8417K(1563136K)] 1789573K->236453K(2087424K), 0.0151396 secs] [Times: user=0.46 sys=0.00, real=0.02 secs] 
+2856.952: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->8481K(1563136K)] 1789828K->236645K(2087424K), 0.0186908 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+2863.694: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561889K->8609K(1563136K)] 1790053K->237077K(2087424K), 0.0224723 secs] [Times: user=0.85 sys=0.00, real=0.03 secs] 
+2870.313: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8481K(1563136K)] 1790485K->237157K(2087424K), 0.0199216 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+2877.331: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561889K->8865K(1563136K)] 1790565K->237765K(2087424K), 0.0137377 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+2884.097: [GC (GCLocker Initiated GC) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562273K->8193K(1563136K)] 1791219K->237403K(2087424K), 0.0208221 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+2890.674: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561601K->8801K(1563136K)] 1790817K->238993K(2087424K), 0.0190525 secs] [Times: user=0.77 sys=0.01, real=0.02 secs] 
+2897.546: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562209K->8769K(1563136K)] 1792401K->239329K(2087424K), 0.0186783 secs] [Times: user=0.68 sys=0.00, real=0.01 secs] 
+2904.169: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562177K->9685K(1563136K)] 1792737K->240445K(2087424K), 0.0207982 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+2910.867: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1563093K->8609K(1563136K)] 1793853K->240733K(2087424K), 0.0168006 secs] [Times: user=0.60 sys=0.00, real=0.01 secs] 
+2917.971: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562017K->8897K(1563136K)] 1794141K->241205K(2087424K), 0.0182726 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+2924.507: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562305K->8513K(1563136K)] 1794613K->241077K(2087424K), 0.0150719 secs] [Times: user=0.57 sys=0.00, real=0.01 secs] 
+2931.215: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561921K->8001K(1563136K)] 1794485K->241029K(2087424K), 0.0136609 secs] [Times: user=0.48 sys=0.00, real=0.01 secs] 
+2937.950: [GC (Allocation Failure) 
+Desired survivor size 9961472 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561409K->8033K(1563136K)] 1794437K->241245K(2087424K), 0.0204413 secs] [Times: user=0.88 sys=0.00, real=0.02 secs] 
+2944.788: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561441K->6913K(1562112K)] 1794653K->240141K(2086400K), 0.2659943 secs] [Times: user=1.40 sys=0.01, real=0.26 secs] 
+2951.844: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559297K->9601K(1562624K)] 1792525K->243133K(2086912K), 0.0128087 secs] [Times: user=0.44 sys=0.00, real=0.02 secs] 
+2958.485: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561985K->9377K(1562624K)] 1795517K->243421K(2086912K), 0.0122963 secs] [Times: user=0.44 sys=0.00, real=0.02 secs] 
+2965.100: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->9409K(1562112K)] 1795805K->243725K(2086400K), 0.0214134 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+2971.973: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->10325K(1561088K)] 1796109K->244929K(2085376K), 0.0259229 secs] [Times: user=0.87 sys=0.00, real=0.03 secs] 
+2978.685: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560661K->9217K(1561600K)] 1795265K->245225K(2085888K), 0.0172638 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+2985.394: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559553K->9121K(1562112K)] 1795561K->245361K(2086400K), 0.0238102 secs] [Times: user=0.87 sys=0.00, real=0.03 secs] 
+2992.126: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560481K->7489K(1562112K)] 1796721K->243745K(2086400K), 0.2279394 secs] [Times: user=0.77 sys=0.00, real=0.22 secs] 
+2998.831: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558849K->9569K(1561088K)] 1795105K->246017K(2085376K), 0.0163117 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+3005.627: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559905K->7937K(1561600K)] 1796353K->244537K(2085888K), 0.0213578 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+3012.254: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558273K->9537K(1561600K)] 1794873K->246425K(2085888K), 0.0198974 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3018.991: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559873K->8833K(1561600K)] 1796761K->245953K(2085888K), 0.0266593 secs] [Times: user=0.82 sys=0.00, real=0.03 secs] 
+3025.626: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559169K->9473K(1562112K)] 1796289K->246801K(2086400K), 0.0199532 secs] [Times: user=0.79 sys=0.00, real=0.02 secs] 
+3032.232: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560833K->8737K(1562112K)] 1798161K->246257K(2086400K), 0.0133458 secs] [Times: user=0.51 sys=0.00, real=0.02 secs] 
+3038.860: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560097K->9941K(1561088K)] 1797617K->247757K(2085376K), 0.0166156 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+3045.486: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560277K->9537K(1561600K)] 1798093K->248805K(2085888K), 0.0169457 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+3052.270: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559873K->8577K(1562112K)] 1799141K->248077K(2086400K), 0.0245669 secs] [Times: user=0.91 sys=0.00, real=0.02 secs] 
+3059.049: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559425K->9089K(1561600K)] 1798925K->248869K(2085888K), 0.0161579 secs] [Times: user=0.58 sys=0.02, real=0.02 secs] 
+3065.821: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559937K->7969K(1562112K)] 1799717K->247829K(2086400K), 0.0311667 secs] [Times: user=1.02 sys=0.00, real=0.03 secs] 
+3072.614: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559329K->9633K(1562112K)] 1799189K->249677K(2086400K), 0.0194033 secs] [Times: user=0.80 sys=0.00, real=0.02 secs] 
+3079.396: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560993K->9121K(1562112K)] 1801037K->249461K(2086400K), 0.0204283 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+3086.145: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560481K->8801K(1562112K)] 1800821K->249485K(2086400K), 0.0149204 secs] [Times: user=0.56 sys=0.00, real=0.02 secs] 
+3092.948: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560161K->9377K(1562112K)] 1800845K->250389K(2086400K), 0.0196269 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3099.845: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560737K->8673K(1562112K)] 1801749K->249997K(2086400K), 0.0177083 secs] [Times: user=0.60 sys=0.00, real=0.02 secs] 
+3106.541: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560033K->9653K(1562112K)] 1801357K->251193K(2086400K), 0.0180931 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+3113.332: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561013K->9217K(1562112K)] 1802553K->252049K(2086400K), 0.0205837 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3120.004: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560577K->9377K(1562112K)] 1803409K->252473K(2086400K), 0.0184575 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3126.586: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560737K->9633K(1562112K)] 1803833K->252993K(2086400K), 0.0235665 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+3133.538: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560993K->9089K(1562112K)] 1804353K->252673K(2086400K), 0.0188403 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+3140.235: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560449K->9473K(1562112K)] 1804033K->253361K(2086400K), 0.0172018 secs] [Times: user=0.69 sys=0.00, real=0.01 secs] 
+3146.918: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560833K->8929K(1562112K)] 1804721K->253209K(2086400K), 0.0174744 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+3153.519: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560289K->9281K(1562112K)] 1804569K->253713K(2086400K), 0.0168346 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+3160.546: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560641K->8705K(1562624K)] 1805073K->253425K(2086912K), 0.0186507 secs] [Times: user=0.73 sys=0.00, real=0.01 secs] 
+3167.287: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561089K->9409K(1562624K)] 1805809K->254337K(2086912K), 0.0209875 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+3174.020: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561793K->9569K(1562624K)] 1806721K->254809K(2086912K), 0.0189347 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3180.673: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561953K->10133K(1562624K)] 1807193K->255717K(2086912K), 0.0193819 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+3187.738: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1562517K->7553K(1561600K)] 1808101K->254213K(2085888K), 0.0308671 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+3194.464: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558913K->9089K(1562112K)] 1805573K->255997K(2086400K), 0.0203914 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+3201.340: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560449K->9313K(1562112K)] 1807357K->256501K(2086400K), 0.0182336 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3208.011: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560673K->9249K(1562112K)] 1807861K->256621K(2086400K), 0.0159640 secs] [Times: user=0.64 sys=0.00, real=0.02 secs] 
+3214.699: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560609K->9281K(1562112K)] 1807981K->256877K(2086400K), 0.0270686 secs] [Times: user=0.93 sys=0.00, real=0.03 secs] 
+3221.520: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560641K->8769K(1562112K)] 1808237K->256557K(2086400K), 0.0236500 secs] [Times: user=0.92 sys=0.00, real=0.02 secs] 
+3228.678: [GC (Allocation Failure) 
+Desired survivor size 10485760 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560129K->9377K(1562624K)] 1807917K->257477K(2086912K), 0.0201769 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+3235.882: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561761K->7617K(1560064K)] 1809861K->255837K(2084352K), 0.0657957 secs] [Times: user=0.92 sys=0.00, real=0.07 secs] 
+3243.296: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559974K->9153K(1562112K)] 1808193K->257621K(2086400K), 0.0200902 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+3250.153: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560513K->9601K(1562112K)] 1808981K->258341K(2086400K), 0.0210366 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+3257.115: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560961K->10133K(1562112K)] 1809701K->259249K(2086400K), 0.0189761 secs] [Times: user=0.74 sys=0.00, real=0.01 secs] 
+3264.638: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561493K->9633K(1562112K)] 1810609K->260137K(2086400K), 0.0199960 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3271.365: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560993K->9249K(1562112K)] 1811497K->260025K(2086400K), 0.0173014 secs] [Times: user=0.68 sys=0.00, real=0.01 secs] 
+3278.195: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560609K->9217K(1562112K)] 1811385K->260225K(2086400K), 0.0195137 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+3284.957: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560577K->9633K(1562112K)] 1811585K->260825K(2086400K), 0.0193372 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3292.029: [GC (Allocation Failure) 
+Desired survivor size 11010048 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560993K->7553K(1562112K)] 1812185K->258889K(2086400K), 0.3599811 secs] [Times: user=1.59 sys=0.00, real=0.36 secs] 
+3299.578: [GC (Allocation Failure) 
+Desired survivor size 11534336 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558913K->10722K(1561088K)] 1810249K->262585K(2085376K), 0.0207594 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+3306.263: [GC (Allocation Failure) 
+Desired survivor size 12058624 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1561058K->10530K(1561088K)] 1812921K->262825K(2085376K), 0.0215444 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+3313.184: [GC (Allocation Failure) 
+Desired survivor size 12058624 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560866K->9154K(1561088K)] 1813161K->261530K(2085376K), 0.3648298 secs] [Times: user=1.52 sys=0.00, real=0.37 secs] 
+3320.364: [GC (Allocation Failure) 
+Desired survivor size 12058624 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558466K->10914K(1561088K)] 1810842K->263610K(2085376K), 0.0180696 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+3328.718: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1560226K->11638K(1560064K)] 1812922K->264677K(2084352K), 0.0180726 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+3335.718: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559926K->10850K(1559552K)] 1812965K->265381K(2083840K), 0.0233512 secs] [Times: user=0.87 sys=0.00, real=0.02 secs] 
+3342.455: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559138K->10626K(1560064K)] 1813669K->265381K(2084352K), 0.0190961 secs] [Times: user=0.74 sys=0.00, real=0.01 secs] 
+3349.256: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557890K->10338K(1560064K)] 1812645K->265357K(2084352K), 0.0308505 secs] [Times: user=0.77 sys=0.00, real=0.03 secs] 
+3356.193: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557602K->9634K(1560576K)] 1812621K->264781K(2084864K), 0.0282470 secs] [Times: user=0.91 sys=0.00, real=0.03 secs] 
+3362.796: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557410K->10338K(1560064K)] 1812557K->265702K(2084352K), 0.0155120 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+3369.680: [GC (Allocation Failure) 
+Desired survivor size 12582912 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558114K->10946K(1560576K)] 1813478K->266558K(2084864K), 0.0199902 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3376.572: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559234K->11074K(1559552K)] 1814846K->266982K(2083840K), 0.0210635 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+3383.523: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559362K->10882K(1560064K)] 1815270K->267054K(2084352K), 0.0227001 secs] [Times: user=0.76 sys=0.01, real=0.03 secs] 
+3390.453: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558146K->9378K(1560064K)] 1814318K->265686K(2084352K), 0.0300889 secs] [Times: user=1.00 sys=0.00, real=0.03 secs] 
+3397.093: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556642K->11798K(1560064K)] 1812950K->268401K(2084352K), 0.0233213 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+3404.432: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559062K->10306K(1560064K)] 1815665K->268201K(2084352K), 0.0242724 secs] [Times: user=0.87 sys=0.00, real=0.03 secs] 
+3411.198: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557570K->10850K(1560064K)] 1815465K->268977K(2084352K), 0.0217996 secs] [Times: user=0.80 sys=0.00, real=0.02 secs] 
+3420.705: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558114K->11458K(1560064K)] 1816241K->269658K(2084352K), 0.0856335 secs] [Times: user=0.93 sys=0.00, real=0.09 secs] 
+3427.746: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558722K->10210K(1560064K)] 1816922K->268738K(2084352K), 0.2903480 secs] [Times: user=0.89 sys=0.00, real=0.29 secs] 
+3434.453: [GC (Allocation Failure) 
+Desired survivor size 13107200 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557474K->11426K(1560064K)] 1816002K->270114K(2084352K), 0.0245835 secs] [Times: user=0.88 sys=0.00, real=0.03 secs] 
+3441.064: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558690K->11906K(1559040K)] 1817378K->270882K(2083328K), 0.0232196 secs] [Times: user=0.78 sys=0.00, real=0.03 secs] 
+3448.051: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558146K->12226K(1559552K)] 1817122K->271514K(2083840K), 0.0217879 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+3454.804: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558466K->11650K(1558528K)] 1817754K->271114K(2082816K), 0.0229983 secs] [Times: user=0.83 sys=0.00, real=0.03 secs] 
+3461.709: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556866K->10306K(1559040K)] 1816330K->269818K(2083328K), 0.2459797 secs] [Times: user=0.87 sys=0.00, real=0.24 secs] 
+3468.695: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555522K->12950K(1558528K)] 1815034K->272710K(2082816K), 0.0249046 secs] [Times: user=0.91 sys=0.00, real=0.02 secs] 
+3475.438: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558163K->11810K(1559040K)] 1817923K->272990K(2083328K), 0.0184599 secs] [Times: user=0.69 sys=0.01, real=0.02 secs] 
+3482.090: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557026K->12386K(1558016K)] 1818206K->273758K(2082304K), 0.0204690 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+3488.997: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556578K->12226K(1558528K)] 1817950K->273894K(2082816K), 0.0181350 secs] [Times: user=0.73 sys=0.00, real=0.01 secs] 
+3495.883: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556418K->12034K(1558528K)] 1818086K->274142K(2082816K), 0.0193508 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+3503.486: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556226K->12034K(1558528K)] 1818334K->274470K(2082816K), 0.0240632 secs] [Times: user=0.74 sys=0.01, real=0.02 secs] 
+3511.397: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556226K->12258K(1558528K)] 1818662K->274998K(2082816K), 0.0184084 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+3518.206: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556450K->11426K(1558528K)] 1819190K->274398K(2082816K), 0.0194621 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3524.925: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555618K->12002K(1559040K)] 1818590K->275294K(2083328K), 0.0199156 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+3532.009: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557218K->10722K(1559040K)] 1820510K->274110K(2083328K), 0.0351034 secs] [Times: user=1.03 sys=0.00, real=0.03 secs] 
+3539.049: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555938K->12002K(1559040K)] 1819326K->275694K(2083328K), 0.0215328 secs] [Times: user=0.86 sys=0.00, real=0.02 secs] 
+3546.469: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557218K->11906K(1559040K)] 1820910K->275814K(2083328K), 0.0195747 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3553.642: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557122K->11382K(1559040K)] 1821030K->275370K(2083328K), 0.0277876 secs] [Times: user=0.86 sys=0.00, real=0.03 secs] 
+3561.119: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556598K->11138K(1559040K)] 1820586K->276402K(2083328K), 0.0304034 secs] [Times: user=0.86 sys=0.00, real=0.03 secs] 
+3568.176: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556354K->12226K(1558528K)] 1821618K->277642K(2082816K), 0.0261951 secs] [Times: user=0.80 sys=0.00, real=0.02 secs] 
+3575.804: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557442K->11650K(1559040K)] 1822858K->277274K(2083328K), 0.0257395 secs] [Times: user=0.74 sys=0.00, real=0.03 secs] 
+3583.073: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556863K->10661K(1559552K)] 1822486K->276365K(2083840K), 0.4019112 secs] [Times: user=1.08 sys=0.00, real=0.40 secs] 
+3590.797: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556901K->11938K(1559552K)] 1822605K->277994K(2083840K), 0.0235012 secs] [Times: user=0.85 sys=0.00, real=0.02 secs] 
+3598.381: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558178K->11490K(1559552K)] 1824234K->277746K(2083840K), 0.0308646 secs] [Times: user=0.98 sys=0.00, real=0.03 secs] 
+3605.324: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557730K->12002K(1559552K)] 1823986K->278434K(2083840K), 0.0200100 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+3613.160: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558242K->12130K(1559552K)] 1824674K->278738K(2083840K), 0.0205195 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+3620.071: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558370K->12162K(1559552K)] 1824978K->279330K(2083840K), 0.0195549 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+3627.786: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558402K->11938K(1559552K)] 1825570K->279378K(2083840K), 0.0266037 secs] [Times: user=0.97 sys=0.00, real=0.02 secs] 
+3634.403: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558178K->11714K(1559552K)] 1825618K->279330K(2083840K), 0.0212467 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+3641.544: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557954K->11938K(1559552K)] 1825570K->279714K(2083840K), 0.0160903 secs] [Times: user=0.52 sys=0.00, real=0.02 secs] 
+3648.690: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558178K->12822K(1559552K)] 1825954K->280686K(2083840K), 0.0276410 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+3655.524: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559062K->11970K(1559552K)] 1826926K->281358K(2083840K), 0.0172606 secs] [Times: user=0.61 sys=0.01, real=0.02 secs] 
+3662.676: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558210K->12418K(1559552K)] 1827598K->282238K(2083840K), 0.0254213 secs] [Times: user=0.87 sys=0.00, real=0.02 secs] 
+3671.815: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558658K->11970K(1559552K)] 1828478K->282070K(2083840K), 0.0180357 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3678.856: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558210K->10722K(1559552K)] 1828310K->281006K(2083840K), 0.0293967 secs] [Times: user=0.96 sys=0.00, real=0.03 secs] 
+3686.588: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556962K->11842K(1559552K)] 1827246K->282494K(2083840K), 0.0167396 secs] [Times: user=0.64 sys=0.00, real=0.01 secs] 
+3693.809: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558082K->12162K(1559552K)] 1828734K->283054K(2083840K), 0.0239277 secs] [Times: user=0.84 sys=0.00, real=0.02 secs] 
+3701.143: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558402K->11074K(1559552K)] 1829294K->282166K(2083840K), 0.0459039 secs] [Times: user=1.28 sys=0.00, real=0.05 secs] 
+3708.024: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557314K->11842K(1559552K)] 1828406K->283094K(2083840K), 0.0205747 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3714.882: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558082K->11554K(1559552K)] 1829334K->283014K(2083840K), 0.0188500 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+3723.149: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557794K->13174K(1559552K)] 1829254K->284850K(2083840K), 0.0205603 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+3730.849: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1559414K->12034K(1559552K)] 1831090K->285018K(2083840K), 0.0219518 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+3738.389: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558274K->11874K(1559552K)] 1831258K->285026K(2083840K), 0.0196631 secs] [Times: user=0.79 sys=0.00, real=0.02 secs] 
+3746.165: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558114K->11842K(1559552K)] 1831266K->285242K(2083840K), 0.0217333 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+3753.083: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558082K->12258K(1559552K)] 1831482K->285858K(2083840K), 0.0214525 secs] [Times: user=0.75 sys=0.00, real=0.02 secs] 
+3760.381: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558498K->12034K(1559552K)] 1832098K->285834K(2083840K), 0.0236313 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+3767.836: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558274K->10594K(1559552K)] 1832074K->284402K(2083840K), 0.4238179 secs] [Times: user=1.71 sys=0.00, real=0.42 secs] 
+3775.745: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556834K->12226K(1559552K)] 1830642K->286338K(2083840K), 0.0234965 secs] [Times: user=0.84 sys=0.00, real=0.02 secs] 
+3782.873: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558466K->10242K(1559552K)] 1832578K->284538K(2083840K), 0.2688703 secs] [Times: user=0.96 sys=0.00, real=0.27 secs] 
+3791.313: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556482K->11618K(1559552K)] 1830778K->286058K(2083840K), 0.0205195 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+3799.401: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557858K->10274K(1559552K)] 1832298K->284730K(2083840K), 0.3913031 secs] [Times: user=1.92 sys=0.00, real=0.39 secs] 
+3807.322: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556514K->11938K(1559552K)] 1830970K->286578K(2083840K), 0.0230187 secs] [Times: user=0.75 sys=0.00, real=0.03 secs] 
+3814.543: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558178K->12726K(1559040K)] 1832818K->287582K(2083328K), 0.0214608 secs] [Times: user=0.73 sys=0.00, real=0.02 secs] 
+3822.013: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558966K->11778K(1559552K)] 1833822K->288006K(2083840K), 0.0242889 secs] [Times: user=0.81 sys=0.00, real=0.03 secs] 
+3830.455: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557505K->11266K(1559040K)] 1833733K->287654K(2083328K), 0.0331063 secs] [Times: user=0.94 sys=0.00, real=0.04 secs] 
+3838.082: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556994K->10338K(1559552K)] 1833382K->287070K(2083840K), 0.3577239 secs] [Times: user=1.73 sys=0.00, real=0.36 secs] 
+3846.255: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556578K->12098K(1558528K)] 1833310K->288958K(2082816K), 0.0227886 secs] [Times: user=0.70 sys=0.00, real=0.03 secs] 
+3853.871: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558338K->12322K(1559040K)] 1835198K->289430K(2083328K), 0.0271631 secs] [Times: user=0.54 sys=0.00, real=0.03 secs] 
+3860.957: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557538K->12194K(1559040K)] 1834646K->289678K(2083328K), 0.0167062 secs] [Times: user=0.66 sys=0.00, real=0.01 secs] 
+3868.130: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557410K->12098K(1559040K)] 1834894K->289870K(2083328K), 0.0239918 secs] [Times: user=0.89 sys=0.00, real=0.02 secs] 
+3875.334: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557314K->12034K(1559040K)] 1835086K->290022K(2083328K), 0.0240146 secs] [Times: user=0.81 sys=0.00, real=0.03 secs] 
+3883.969: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557250K->12386K(1559040K)] 1835238K->290502K(2083328K), 0.0283121 secs] [Times: user=0.76 sys=0.00, real=0.03 secs] 
+3892.127: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557602K->12002K(1559040K)] 1835718K->290302K(2083328K), 0.0242970 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+3899.605: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557218K->12194K(1559552K)] 1835518K->290630K(2083840K), 0.0261126 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+3907.340: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557922K->11350K(1559040K)] 1836358K->289842K(2083328K), 0.3659502 secs] [Times: user=0.99 sys=0.00, real=0.37 secs] 
+3915.577: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557078K->11810K(1559552K)] 1835570K->291666K(2083840K), 0.0305163 secs] [Times: user=0.94 sys=0.00, real=0.03 secs] 
+3922.715: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558050K->10658K(1559552K)] 1837906K->290658K(2083840K), 0.0323269 secs] [Times: user=0.95 sys=0.00, real=0.04 secs] 
+3929.839: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556898K->12258K(1559552K)] 1836898K->292506K(2083840K), 0.0210489 secs] [Times: user=0.81 sys=0.00, real=0.02 secs] 
+3937.608: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558498K->10946K(1559552K)] 1838746K->291362K(2083840K), 0.0273881 secs] [Times: user=0.86 sys=0.00, real=0.03 secs] 
+3945.315: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557186K->12642K(1558528K)] 1837602K->293194K(2082816K), 0.0326285 secs] [Times: user=0.79 sys=0.00, real=0.04 secs] 
+3954.154: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557858K->12066K(1559040K)] 1838410K->293002K(2083328K), 0.0251467 secs] [Times: user=0.69 sys=0.01, real=0.03 secs] 
+3963.632: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557282K->11746K(1559552K)] 1838218K->292898K(2083840K), 0.0300273 secs] [Times: user=0.87 sys=0.00, real=0.03 secs] 
+3971.387: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557474K->10402K(1559040K)] 1838626K->291658K(2083328K), 0.2301436 secs] [Times: user=0.78 sys=0.00, real=0.23 secs] 
+3981.232: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556130K->11990K(1559552K)] 1837386K->293262K(2083840K), 0.1647297 secs] [Times: user=0.39 sys=0.00, real=0.17 secs] 
+3990.779: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557718K->10754K(1559040K)] 1838990K->293142K(2083328K), 0.0435779 secs] [Times: user=1.29 sys=0.00, real=0.04 secs] 
+3998.005: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556482K->11010K(1559552K)] 1838870K->293478K(2083840K), 0.0232036 secs] [Times: user=0.65 sys=0.00, real=0.03 secs] 
+4005.612: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557250K->11586K(1559552K)] 1839718K->294270K(2083840K), 0.0294655 secs] [Times: user=0.80 sys=0.00, real=0.03 secs] 
+4014.166: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557826K->12514K(1559552K)] 1840510K->295334K(2083840K), 0.0257151 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+4021.604: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558754K->10370K(1556992K)] 1841574K->293398K(2081280K), 0.0396255 secs] [Times: user=1.00 sys=0.00, real=0.04 secs] 
+4030.279: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556610K->10466K(1559040K)] 1839638K->293638K(2083328K), 0.2704801 secs] [Times: user=0.82 sys=0.00, real=0.27 secs] 
+4038.400: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555682K->12098K(1559040K)] 1838854K->295518K(2083328K), 0.0245064 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+4046.453: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557314K->11170K(1559552K)] 1840734K->294662K(2083840K), 0.0362533 secs] [Times: user=0.97 sys=0.00, real=0.04 secs] 
+4053.857: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556898K->11350K(1559040K)] 1840390K->294874K(2083328K), 0.3420975 secs] [Times: user=0.79 sys=0.00, real=0.34 secs] 
+4063.363: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557078K->11522K(1559552K)] 1840602K->296306K(2083840K), 0.0284289 secs] [Times: user=0.85 sys=0.00, real=0.03 secs] 
+4071.673: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557762K->11810K(1559552K)] 1842546K->296682K(2083840K), 0.0316596 secs] [Times: user=0.83 sys=0.00, real=0.03 secs] 
+4079.504: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558050K->11874K(1559552K)] 1842922K->297066K(2083840K), 0.0162560 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+4088.525: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558114K->11426K(1559552K)] 1843306K->296722K(2083840K), 0.0502593 secs] [Times: user=1.76 sys=0.00, real=0.05 secs] 
+4097.027: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557666K->12002K(1559552K)] 1842962K->297530K(2083840K), 0.0209663 secs] [Times: user=0.81 sys=0.00, real=0.02 secs] 
+4105.143: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558242K->12034K(1559552K)] 1843770K->297666K(2083840K), 0.0180240 secs] [Times: user=0.62 sys=0.00, real=0.02 secs] 
+4113.825: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558274K->10466K(1559552K)] 1843906K->296122K(2083840K), 0.2913026 secs] [Times: user=1.06 sys=0.00, real=0.29 secs] 
+4121.600: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556706K->11638K(1559552K)] 1842362K->297438K(2083840K), 0.2400496 secs] [Times: user=0.79 sys=0.00, real=0.24 secs] 
+4132.675: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557878K->10786K(1559552K)] 1843678K->297678K(2083840K), 0.2344087 secs] [Times: user=0.53 sys=0.00, real=0.24 secs] 
+4141.131: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557026K->12610K(1559552K)] 1843918K->299886K(2083840K), 0.0221102 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+4149.136: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558850K->11426K(1559552K)] 1846126K->298822K(2083840K), 0.0515634 secs] [Times: user=1.03 sys=0.00, real=0.05 secs] 
+4156.938: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557666K->12194K(1559552K)] 1845062K->299766K(2083840K), 0.0242652 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+4165.588: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558434K->11778K(1559552K)] 1846006K->299438K(2083840K), 0.0550709 secs] [Times: user=1.43 sys=0.00, real=0.05 secs] 
+4174.524: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558018K->11362K(1559552K)] 1845678K->299262K(2083840K), 0.0336529 secs] [Times: user=1.07 sys=0.00, real=0.04 secs] 
+4182.716: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557602K->10818K(1559552K)] 1845502K->298734K(2083840K), 0.2978365 secs] [Times: user=0.98 sys=0.00, real=0.29 secs] 
+4191.071: [GC (Allocation Failure) 
+Desired survivor size 13631488 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557058K->12514K(1559552K)] 1844974K->300734K(2083840K), 0.0243145 secs] [Times: user=0.92 sys=0.00, real=0.03 secs] 
+4198.365: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558754K->13302K(1558528K)] 1846974K->301818K(2082816K), 0.0288936 secs] [Times: user=0.95 sys=0.00, real=0.03 secs] 
+4206.124: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558518K->10498K(1559040K)] 1847034K->300234K(2083328K), 0.2348200 secs] [Times: user=0.99 sys=0.00, real=0.24 secs] 
+4216.515: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555714K->11266K(1559040K)] 1845450K->301082K(2083328K), 0.0348401 secs] [Times: user=0.84 sys=0.00, real=0.03 secs] 
+4225.096: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556482K->11458K(1559040K)] 1846298K->301466K(2083328K), 0.0380639 secs] [Times: user=0.83 sys=0.00, real=0.03 secs] 
+4233.367: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556674K->12450K(1559040K)] 1846682K->302602K(2083328K), 0.0198200 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+4241.638: [GC (GCLocker Initiated GC) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557666K->10658K(1559040K)] 1847916K->301052K(2083328K), 0.2148872 secs] [Times: user=1.13 sys=0.00, real=0.21 secs] 
+4250.587: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555874K->10722K(1559040K)] 1846271K->301256K(2083328K), 0.3024451 secs] [Times: user=1.13 sys=0.00, real=0.30 secs] 
+4259.017: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555938K->12578K(1559040K)] 1846472K->303240K(2083328K), 0.0271145 secs] [Times: user=0.84 sys=0.00, real=0.02 secs] 
+4267.460: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557794K->12322K(1559040K)] 1848456K->303168K(2083328K), 0.0321392 secs] [Times: user=0.86 sys=0.00, real=0.03 secs] 
+4277.795: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557538K->12278K(1559040K)] 1848384K->303163K(2083328K), 0.0306179 secs] [Times: user=0.82 sys=0.00, real=0.04 secs] 
+4287.251: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557494K->10754K(1559040K)] 1848379K->302771K(2083328K), 0.3570423 secs] [Times: user=0.68 sys=0.00, real=0.36 secs] 
+4296.197: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555970K->11970K(1559040K)] 1847987K->304227K(2083328K), 0.0295135 secs] [Times: user=0.91 sys=0.00, real=0.03 secs] 
+4304.856: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557186K->10658K(1559040K)] 1849443K->302931K(2083328K), 0.3609005 secs] [Times: user=1.21 sys=0.00, real=0.36 secs] 
+4315.441: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555874K->11938K(1559040K)] 1848147K->304387K(2083328K), 0.0222349 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+4324.822: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557154K->12706K(1559040K)] 1849603K->305372K(2083328K), 0.0198644 secs] [Times: user=0.67 sys=0.00, real=0.02 secs] 
+4332.898: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557922K->10626K(1559040K)] 1850588K->303500K(2083328K), 0.2080242 secs] [Times: user=2.19 sys=0.00, real=0.21 secs] 
+4343.669: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555842K->12930K(1558016K)] 1848716K->305948K(2082304K), 0.0287292 secs] [Times: user=0.68 sys=0.00, real=0.03 secs] 
+4353.384: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557122K->12950K(1558528K)] 1850140K->306007K(2082816K), 0.0325564 secs] [Times: user=0.90 sys=0.00, real=0.04 secs] 
+4362.915: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557142K->12418K(1558528K)] 1850199K->306863K(2082816K), 0.0295959 secs] [Times: user=0.90 sys=0.00, real=0.03 secs] 
+4372.270: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556610K->12098K(1558528K)] 1851055K->306856K(2082816K), 0.0228041 secs] [Times: user=0.74 sys=0.00, real=0.02 secs] 
+4380.822: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556290K->11394K(1558528K)] 1851048K->306296K(2082816K), 0.0289176 secs] [Times: user=0.91 sys=0.00, real=0.03 secs] 
+4390.829: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555586K->12482K(1558528K)] 1850488K->307688K(2082816K), 0.0200221 secs] [Times: user=0.73 sys=0.01, real=0.02 secs] 
+4399.913: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556674K->12418K(1558528K)] 1851880K->307856K(2082816K), 0.0214561 secs] [Times: user=0.66 sys=0.00, real=0.02 secs] 
+4409.006: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556610K->10658K(1558528K)] 1852048K->306104K(2082816K), 0.3219725 secs] [Times: user=0.96 sys=0.00, real=0.32 secs] 
+4416.790: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554850K->11842K(1559040K)] 1850296K->307384K(2083328K), 0.0270483 secs] [Times: user=0.83 sys=0.00, real=0.03 secs] 
+4425.769: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556546K->13334K(1558528K)] 1852088K->309067K(2082816K), 0.0249007 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+4435.118: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558038K->11970K(1558528K)] 1853771K->309051K(2082816K), 0.0217718 secs] [Times: user=0.59 sys=0.00, real=0.02 secs] 
+4443.270: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556162K->11554K(1558528K)] 1853243K->308867K(2082816K), 0.0253191 secs] [Times: user=0.80 sys=0.00, real=0.03 secs] 
+4452.878: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555746K->12002K(1559040K)] 1853059K->309571K(2083328K), 0.0231113 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+4463.727: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557218K->11682K(1559040K)] 1854787K->309348K(2083328K), 0.0272113 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+4472.556: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556898K->12578K(1559040K)] 1854564K->310540K(2083328K), 0.0222693 secs] [Times: user=0.79 sys=0.00, real=0.02 secs] 
+4483.613: [GC (Allocation Failure) 
+Desired survivor size 14155776 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557794K->11234K(1559040K)] 1855756K->309332K(2083328K), 0.2086000 secs] [Times: user=0.62 sys=0.00, real=0.21 secs] 
+4496.019: [GC (Allocation Failure) 
+Desired survivor size 14680064 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556450K->13155K(1558016K)] 1854548K->311396K(2082304K), 0.2716610 secs] [Times: user=0.41 sys=0.00, real=0.27 secs] 
+4508.022: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557347K->14326K(1558528K)] 1855588K->313408K(2082816K), 0.0383794 secs] [Times: user=0.86 sys=0.00, real=0.04 secs] 
+4518.235: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558518K->14306K(1554432K)] 1857600K->315280K(2078720K), 0.0295043 secs] [Times: user=0.46 sys=0.00, real=0.03 secs] 
+4526.860: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554402K->12995K(1556480K)] 1855376K->314112K(2080768K), 0.2318531 secs] [Times: user=0.84 sys=0.00, real=0.23 secs] 
+4537.086: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553042K->12995K(1556992K)] 1854160K->314256K(2081280K), 0.3202682 secs] [Times: user=0.52 sys=0.00, real=0.32 secs] 
+4546.339: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554115K->13635K(1556992K)] 1855376K->314992K(2081280K), 0.0412849 secs] [Times: user=1.28 sys=0.00, real=0.04 secs] 
+4557.055: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554755K->13187K(1556992K)] 1856112K->314624K(2081280K), 0.0659134 secs] [Times: user=0.71 sys=0.00, real=0.07 secs] 
+4565.436: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554307K->12995K(1556992K)] 1855744K->314664K(2081280K), 0.0402931 secs] [Times: user=1.00 sys=0.00, real=0.04 secs] 
+4574.492: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554115K->14082K(1556480K)] 1855784K->315888K(2080768K), 0.0275408 secs] [Times: user=0.80 sys=0.00, real=0.03 secs] 
+4584.386: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555202K->14774K(1556992K)] 1857008K->316724K(2081280K), 0.0378187 secs] [Times: user=1.16 sys=0.00, real=0.03 secs] 
+4594.446: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555894K->14306K(1555968K)] 1857844K->317580K(2080256K), 0.0376289 secs] [Times: user=1.02 sys=0.00, real=0.03 secs] 
+4603.498: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554401K->13539K(1556480K)] 1857675K->316852K(2080768K), 0.0437832 secs] [Times: user=0.95 sys=0.00, real=0.04 secs] 
+4611.887: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553635K->14146K(1556992K)] 1856948K->317676K(2081280K), 0.0233313 secs] [Times: user=0.61 sys=0.00, real=0.02 secs] 
+4621.569: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555266K->13954K(1556992K)] 1858796K->317604K(2081280K), 0.0318701 secs] [Times: user=0.88 sys=0.00, real=0.03 secs] 
+4631.733: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555074K->12930K(1556992K)] 1858724K->316708K(2081280K), 0.0658081 secs] [Times: user=1.56 sys=0.00, real=0.07 secs] 
+4641.143: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554050K->12675K(1556992K)] 1857828K->316476K(2081280K), 0.1588544 secs] [Times: user=0.49 sys=0.00, real=0.16 secs] 
+4650.614: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553795K->13718K(1556992K)] 1857596K->317600K(2081280K), 0.2296433 secs] [Times: user=0.47 sys=0.00, real=0.23 secs] 
+4660.669: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554838K->12963K(1556992K)] 1858720K->317944K(2081280K), 0.1708534 secs] [Times: user=0.30 sys=0.00, real=0.17 secs] 
+4669.984: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554083K->14659K(1556480K)] 1859064K->320008K(2080768K), 0.0208564 secs] [Times: user=0.70 sys=0.00, real=0.03 secs] 
+4680.872: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555779K->12963K(1556992K)] 1861128K->318456K(2081280K), 0.2790049 secs] [Times: user=1.45 sys=0.00, real=0.28 secs] 
+4690.183: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554083K->12643K(1556992K)] 1859576K->318288K(2081280K), 0.2158382 secs] [Times: user=0.31 sys=0.00, real=0.22 secs] 
+4703.072: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553763K->13378K(1556992K)] 1859408K->319256K(2081280K), 0.0936561 secs] [Times: user=0.91 sys=0.00, real=0.10 secs] 
+4714.059: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554498K->13091K(1557504K)] 1860376K->318984K(2081792K), 0.1930754 secs] [Times: user=0.65 sys=0.00, real=0.19 secs] 
+4725.659: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555235K->13782K(1557504K)] 1861128K->320020K(2081792K), 0.3551573 secs] [Times: user=0.18 sys=0.01, real=0.35 secs] 
+4737.826: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555926K->13347K(1557504K)] 1862164K->320812K(2081792K), 0.0337149 secs] [Times: user=1.03 sys=0.00, real=0.03 secs] 
+4748.540: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555491K->14723K(1557504K)] 1862956K->322364K(2081792K), 0.0271818 secs] [Times: user=0.83 sys=0.00, real=0.03 secs] 
+4761.965: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556867K->14403K(1556480K)] 1864508K->322252K(2080768K), 0.0244953 secs] [Times: user=0.78 sys=0.00, real=0.02 secs] 
+4772.571: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555523K->12995K(1556992K)] 1863372K->320940K(2081280K), 0.2843299 secs] [Times: user=1.29 sys=0.00, real=0.28 secs] 
+4782.586: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554115K->14082K(1557504K)] 1862060K->322244K(2081792K), 0.0421770 secs] [Times: user=1.03 sys=0.00, real=0.04 secs] 
+4791.633: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556226K->14498K(1556992K)] 1864388K->322828K(2081280K), 0.0258274 secs] [Times: user=0.81 sys=0.00, real=0.03 secs] 
+4801.062: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556642K->14742K(1556992K)] 1864972K->323200K(2081280K), 0.0249776 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+4811.583: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555862K->13090K(1556992K)] 1864320K->322736K(2081280K), 0.0510305 secs] [Times: user=1.57 sys=0.00, real=0.05 secs] 
+4821.018: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554210K->13859K(1556992K)] 1863856K->323520K(2081280K), 0.0359203 secs] [Times: user=0.92 sys=0.00, real=0.03 secs] 
+4832.515: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554979K->14403K(1556992K)] 1864640K->324312K(2081280K), 0.0371518 secs] [Times: user=1.13 sys=0.00, real=0.04 secs] 
+4842.578: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555523K->12739K(1556992K)] 1865432K->322856K(2081280K), 0.2736831 secs] [Times: user=0.89 sys=0.00, real=0.27 secs] 
+4857.164: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553859K->14819K(1556992K)] 1863976K->325152K(2081280K), 0.0317204 secs] [Times: user=0.88 sys=0.00, real=0.04 secs] 
+4869.603: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555939K->13878K(1556992K)] 1866272K->324364K(2081280K), 0.2691432 secs] [Times: user=1.17 sys=0.00, real=0.27 secs] 
+4880.821: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554998K->14019K(1556992K)] 1865484K->325796K(2081280K), 0.0396641 secs] [Times: user=0.98 sys=0.00, real=0.04 secs] 
+4895.352: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555139K->12963K(1556992K)] 1866916K->324892K(2081280K), 0.0963509 secs] [Times: user=1.33 sys=0.00, real=0.10 secs] 
+4906.784: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554083K->14370K(1556992K)] 1866012K->326620K(2081280K), 0.0322308 secs] [Times: user=0.99 sys=0.00, real=0.04 secs] 
+4918.324: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555490K->14563K(1556992K)] 1867740K->326900K(2081280K), 0.0210719 secs] [Times: user=0.55 sys=0.00, real=0.03 secs] 
+4929.341: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555683K->12706K(1556992K)] 1868020K->325124K(2081280K), 0.3913258 secs] [Times: user=0.89 sys=0.00, real=0.39 secs] 
+4941.155: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553826K->12835K(1556992K)] 1866244K->325340K(2081280K), 0.2534990 secs] [Times: user=0.48 sys=0.00, real=0.25 secs] 
+4953.331: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553955K->15222K(1556480K)] 1866460K->328011K(2080768K), 0.0247931 secs] [Times: user=0.81 sys=0.00, real=0.03 secs] 
+4966.656: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556342K->13602K(1556992K)] 1869131K->327763K(2081280K), 0.0278408 secs] [Times: user=0.71 sys=0.00, real=0.02 secs] 
+4976.991: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554210K->14371K(1556480K)] 1868371K->328651K(2080768K), 0.0300490 secs] [Times: user=0.60 sys=0.00, real=0.03 secs] 
+4988.928: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554979K->14435K(1556992K)] 1869259K->328891K(2081280K), 0.0383237 secs] [Times: user=0.82 sys=0.00, real=0.04 secs] 
+4999.575: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555555K->12803K(1556992K)] 1870011K->327339K(2081280K), 0.3105024 secs] [Times: user=0.87 sys=0.00, real=0.32 secs] 
+5011.537: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553923K->14147K(1556992K)] 1868459K->328835K(2081280K), 0.0331074 secs] [Times: user=0.88 sys=0.00, real=0.03 secs] 
+5022.071: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555267K->13954K(1556992K)] 1869955K->328883K(2081280K), 0.0226444 secs] [Times: user=0.43 sys=0.00, real=0.02 secs] 
+5033.947: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555074K->13750K(1556992K)] 1870003K->328703K(2081280K), 0.2988282 secs] [Times: user=1.44 sys=0.00, real=0.30 secs] 
+5047.311: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554870K->15107K(1556992K)] 1869823K->331303K(2081280K), 0.0393205 secs] [Times: user=0.83 sys=0.00, real=0.04 secs] 
+5059.418: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556227K->14467K(1556992K)] 1872423K->330903K(2081280K), 0.0279159 secs] [Times: user=0.79 sys=0.00, real=0.03 secs] 
+5072.527: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555587K->13827K(1556992K)] 1872023K->330543K(2081280K), 0.0239871 secs] [Times: user=0.82 sys=0.00, real=0.02 secs] 
+5086.794: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554947K->12578K(1556992K)] 1871663K->329383K(2081280K), 0.0921315 secs] [Times: user=1.73 sys=0.00, real=0.10 secs] 
+5097.783: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553698K->13282K(1556992K)] 1870503K->330231K(2081280K), 0.0554423 secs] [Times: user=1.06 sys=0.00, real=0.06 secs] 
+5114.384: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554402K->14326K(1556992K)] 1871351K->331371K(2081280K), 0.0616615 secs] [Times: user=1.26 sys=0.00, real=0.07 secs] 
+5127.835: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555446K->13283K(1556992K)] 1872491K->331547K(2081280K), 0.2648789 secs] [Times: user=0.53 sys=0.00, real=0.27 secs] 
+5138.951: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554403K->13155K(1556992K)] 1872667K->331515K(2081280K), 0.1046259 secs] [Times: user=0.40 sys=0.00, real=0.11 secs] 
+5150.509: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554275K->14979K(1556992K)] 1872635K->333595K(2081280K), 0.0407619 secs] [Times: user=0.94 sys=0.00, real=0.04 secs] 
+5163.377: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556099K->12803K(1556992K)] 1874715K->331507K(2081280K), 0.0763102 secs] [Times: user=1.61 sys=0.00, real=0.07 secs] 
+5173.992: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553923K->13731K(1556992K)] 1872627K->332563K(2081280K), 0.0422192 secs] [Times: user=1.45 sys=0.00, real=0.04 secs] 
+5184.362: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554851K->14198K(1556992K)] 1873683K->333247K(2081280K), 0.1049571 secs] [Times: user=1.54 sys=0.00, real=0.11 secs] 
+5199.091: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555222K->13248K(1556992K)] 1874270K->333460K(2081280K), 0.2386542 secs] [Times: user=0.60 sys=0.00, real=0.24 secs] 
+5211.380: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554368K->12707K(1556992K)] 1874580K->332999K(2081280K), 0.4798377 secs] [Times: user=1.35 sys=0.00, real=0.48 secs] 
+5224.475: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553827K->12771K(1556992K)] 1874119K->333199K(2081280K), 0.1780709 secs] [Times: user=0.30 sys=0.00, real=0.18 secs] 
+5236.485: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553891K->13155K(1557504K)] 1874319K->333775K(2081792K), 0.0446049 secs] [Times: user=1.11 sys=0.00, real=0.05 secs] 
+5247.787: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554787K->14594K(1556992K)] 1875407K->335495K(2081280K), 0.0239464 secs] [Times: user=0.70 sys=0.00, real=0.02 secs] 
+5260.690: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556226K->13443K(1556992K)] 1877127K->334447K(2081280K), 0.0451872 secs] [Times: user=1.01 sys=0.00, real=0.04 secs] 
+5272.516: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554563K->14422K(1556992K)] 1875567K->335515K(2081280K), 0.2571684 secs] [Times: user=0.81 sys=0.00, real=0.25 secs] 
+5284.493: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555542K->14307K(1556992K)] 1876635K->336787K(2081280K), 0.0252658 secs] [Times: user=0.70 sys=0.00, real=0.03 secs] 
+5296.551: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555427K->13026K(1556992K)] 1877907K->335595K(2081280K), 0.0678010 secs] [Times: user=1.81 sys=0.00, real=0.07 secs] 
+5310.769: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554146K->13795K(1557504K)] 1876715K->336379K(2081792K), 0.0502521 secs] [Times: user=0.87 sys=0.00, real=0.05 secs] 
+5324.024: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555427K->12899K(1556992K)] 1878011K->335707K(2081280K), 0.0806036 secs] [Times: user=1.36 sys=0.00, real=0.08 secs] 
+5337.970: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554531K->14019K(1557504K)] 1877339K->336955K(2081792K), 0.0561703 secs] [Times: user=1.31 sys=0.00, real=0.06 secs] 
+5351.601: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556163K->13910K(1557504K)] 1879099K->337055K(2081792K), 0.3411582 secs] [Times: user=1.10 sys=0.00, real=0.34 secs] 
+5364.238: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556054K->12867K(1557504K)] 1879199K->337135K(2081792K), 0.0429961 secs] [Times: user=1.16 sys=0.00, real=0.04 secs] 
+5378.666: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555011K->13379K(1557504K)] 1879279K->337823K(2081792K), 0.0751863 secs] [Times: user=1.21 sys=0.00, real=0.07 secs] 
+5391.574: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555523K->14563K(1557504K)] 1879967K->339311K(2081792K), 0.0308894 secs] [Times: user=0.82 sys=0.00, real=0.03 secs] 
+5404.527: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556707K->13283K(1557504K)] 1881455K->338279K(2081792K), 0.0660521 secs] [Times: user=1.22 sys=0.00, real=0.06 secs] 
+5415.674: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555427K->12931K(1557504K)] 1880423K->338071K(2081792K), 0.2326515 secs] [Times: user=0.71 sys=0.00, real=0.24 secs] 
+5427.664: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555075K->14454K(1557504K)] 1880215K->339667K(2081792K), 0.0531121 secs] [Times: user=1.28 sys=0.00, real=0.06 secs] 
+5440.198: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556598K->13091K(1557504K)] 1881811K->339563K(2081792K), 0.0558148 secs] [Times: user=1.35 sys=0.00, real=0.05 secs] 
+5452.258: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555235K->12770K(1557504K)] 1881707K->339315K(2081792K), 0.2257630 secs] [Times: user=0.66 sys=0.00, real=0.22 secs] 
+5464.549: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554914K->12995K(1557504K)] 1881459K->339563K(2081792K), 0.3344921 secs] [Times: user=0.22 sys=0.00, real=0.33 secs] 
+5478.781: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555139K->13762K(1557504K)] 1881707K->340475K(2081792K), 0.0551519 secs] [Times: user=1.52 sys=0.00, real=0.06 secs] 
+5490.641: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555906K->12962K(1557504K)] 1882619K->339691K(2081792K), 0.2604013 secs] [Times: user=0.78 sys=0.00, real=0.26 secs] 
+5502.544: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555106K->13974K(1557504K)] 1881835K->340799K(2081792K), 0.0296179 secs] [Times: user=0.72 sys=0.00, real=0.03 secs] 
+5515.156: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556118K->14147K(1557504K)] 1882943K->341447K(2081792K), 0.0431622 secs] [Times: user=0.96 sys=0.00, real=0.04 secs] 
+5528.055: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556291K->12931K(1557504K)] 1883591K->341351K(2081792K), 0.3499849 secs] [Times: user=1.15 sys=0.00, real=0.35 secs] 
+5542.444: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555075K->14979K(1556480K)] 1883495K->343519K(2080768K), 0.0281435 secs] [Times: user=0.95 sys=0.00, real=0.03 secs] 
+5555.298: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556099K->12931K(1556992K)] 1884639K->341559K(2081280K), 0.3912376 secs] [Times: user=1.23 sys=0.01, real=0.39 secs] 
+5568.905: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554051K->12835K(1556992K)] 1882679K->341535K(2081280K), 0.1493230 secs] [Times: user=0.11 sys=0.00, real=0.14 secs] 
+5581.460: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553954K->13846K(1556992K)] 1882654K->342699K(2081280K), 0.5992693 secs] [Times: user=0.91 sys=0.00, real=0.60 secs] 
+5593.892: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554966K->12995K(1557504K)] 1883819K->342971K(2081792K), 0.0704452 secs] [Times: user=0.79 sys=0.00, real=0.07 secs] 
+5605.083: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555139K->13379K(1557504K)] 1885115K->343507K(2081792K), 0.0500375 secs] [Times: user=0.95 sys=0.00, real=0.05 secs] 
+5617.539: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555523K->12899K(1557504K)] 1885651K->343171K(2081792K), 0.1379398 secs] [Times: user=0.50 sys=0.00, real=0.14 secs] 
+5630.060: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555043K->13187K(1557504K)] 1885315K->343619K(2081792K), 0.0893657 secs] [Times: user=1.23 sys=0.00, real=0.09 secs] 
+5643.722: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555331K->13667K(1558016K)] 1885763K->344283K(2082304K), 0.0770735 secs] [Times: user=0.60 sys=0.00, real=0.08 secs] 
+5656.075: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556323K->13750K(1557504K)] 1886939K->344447K(2081792K), 0.3933072 secs] [Times: user=0.31 sys=0.00, real=0.40 secs] 
+5668.410: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556406K->12931K(1558016K)] 1887103K->344799K(2082304K), 0.1552623 secs] [Times: user=0.31 sys=0.00, real=0.16 secs] 
+5681.385: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556099K->13091K(1558016K)] 1887967K->345047K(2082304K), 0.0642337 secs] [Times: user=0.85 sys=0.00, real=0.07 secs] 
+5696.063: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556259K->12835K(1558016K)] 1888215K->344951K(2082304K), 0.0719860 secs] [Times: user=1.36 sys=0.00, real=0.08 secs] 
+5707.771: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556003K->13283K(1558016K)] 1888119K->345479K(2082304K), 0.2721935 secs] [Times: user=0.81 sys=0.00, real=0.27 secs] 
+5719.740: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556451K->14371K(1558016K)] 1888647K->347071K(2082304K), 0.0302673 secs] [Times: user=0.96 sys=0.00, real=0.03 secs] 
+5732.143: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557539K->14070K(1557504K)] 1890239K->346979K(2081792K), 0.2505132 secs] [Times: user=0.78 sys=0.00, real=0.25 secs] 
+5746.812: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557238K->13059K(1558016K)] 1890147K->347211K(2082304K), 0.0622504 secs] [Times: user=0.96 sys=0.00, real=0.06 secs] 
+5759.073: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555715K->13250K(1557504K)] 1889867K->347579K(2081792K), 0.0486188 secs] [Times: user=1.29 sys=0.00, real=0.05 secs] 
+5771.700: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555906K->12931K(1558016K)] 1890235K->347323K(2082304K), 0.0531888 secs] [Times: user=1.32 sys=0.00, real=0.05 secs] 
+5784.155: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556099K->14371K(1558016K)] 1890491K->349003K(2082304K), 0.0325917 secs] [Times: user=0.90 sys=0.00, real=0.04 secs] 
+5798.033: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1557539K->13910K(1556992K)] 1892171K->348623K(2081280K), 0.2877061 secs] [Times: user=0.89 sys=0.00, real=0.29 secs] 
+5814.816: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556054K->12899K(1557504K)] 1890767K->348823K(2081792K), 0.0878250 secs] [Times: user=1.15 sys=0.00, real=0.08 secs] 
+5826.850: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555043K->12835K(1557504K)] 1890967K->348863K(2081792K), 0.0556759 secs] [Times: user=1.15 sys=0.00, real=0.06 secs] 
+5839.621: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554979K->13731K(1557504K)] 1891007K->350007K(2081792K), 0.0475557 secs] [Times: user=1.28 sys=0.00, real=0.05 secs] 
+5854.881: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555875K->12867K(1558016K)] 1892151K->349391K(2082304K), 0.0879006 secs] [Times: user=1.70 sys=0.00, real=0.09 secs] 
+5866.886: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556035K->12835K(1558016K)] 1892559K->349511K(2082304K), 0.1016982 secs] [Times: user=1.72 sys=0.00, real=0.10 secs] 
+5879.493: [GC (Allocation Failure) 
+Desired survivor size 15204352 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556003K->13763K(1558016K)] 1892679K->350775K(2082304K), 0.0452700 secs] [Times: user=1.19 sys=0.00, real=0.05 secs] 
+5891.340: [GC (Allocation Failure) 
+Desired survivor size 15728640 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1556931K->14838K(1558016K)] 1893943K->352251K(2082304K), 0.0209422 secs] [Times: user=0.57 sys=0.00, real=0.02 secs] 
+5908.829: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1558006K->14819K(1554944K)] 1895419K->353691K(2079232K), 0.0262211 secs] [Times: user=0.82 sys=0.01, real=0.03 secs] 
+5923.006: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554915K->14102K(1556480K)] 1893787K->353247K(2080768K), 0.2131215 secs] [Times: user=0.81 sys=0.00, real=0.21 secs] 
+5940.180: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554198K->12611K(1556480K)] 1893343K->352935K(2080768K), 0.2827811 secs] [Times: user=0.66 sys=0.00, real=0.28 secs] 
+5954.235: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552707K->12546K(1556480K)] 1893031K->352951K(2080768K), 0.0849429 secs] [Times: user=0.69 sys=0.00, real=0.09 secs] 
+5967.771: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552642K->13155K(1556992K)] 1893047K->353607K(2081280K), 0.1252714 secs] [Times: user=0.61 sys=0.00, real=0.13 secs] 
+5983.866: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553763K->14326K(1556480K)] 1894215K->354923K(2080768K), 0.2140921 secs] [Times: user=0.47 sys=0.00, real=0.21 secs] 
+6018.067: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554934K->15126K(1556480K)] 1895531K->356815K(2080768K), 0.0569669 secs] [Times: user=1.19 sys=0.00, real=0.05 secs] 
+6034.424: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555222K->13667K(1556480K)] 1896911K->356663K(2080768K), 0.0806246 secs] [Times: user=1.88 sys=0.00, real=0.08 secs] 
+6047.744: [GC (Allocation Failure) 
+Desired survivor size 16777216 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553763K->12867K(1556480K)] 1896759K->356143K(2080768K), 0.0906147 secs] [Times: user=1.24 sys=0.00, real=0.09 secs] 
+6061.523: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552963K->14147K(1556480K)] 1896239K->357719K(2080768K), 0.0355658 secs] [Times: user=0.56 sys=0.00, real=0.04 secs] 
+6073.683: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554243K->12643K(1556992K)] 1897815K->356487K(2081280K), 0.2265527 secs] [Times: user=0.49 sys=0.00, real=0.23 secs] 
+6087.507: [GC (Allocation Failure) 
+Desired survivor size 16252928 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553763K->12706K(1556992K)] 1897607K->356631K(2081280K), 0.2120488 secs] [Times: user=0.24 sys=0.00, real=0.21 secs] 
+6134.932: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553826K->15862K(1554944K)] 1897751K->360019K(2079232K), 0.0497332 secs] [Times: user=0.86 sys=0.00, real=0.05 secs] 
+6188.198: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1554934K->14998K(1555968K)] 1899091K->360263K(2080256K), 0.2522646 secs] [Times: user=0.92 sys=0.00, real=0.25 secs] 
+6224.396: [GC (System.gc()) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1064247K->14186K(1555968K)] 1409511K->361007K(2080256K), 0.0200553 secs] [Times: user=0.84 sys=0.01, real=0.02 secs] 
+6224.416: [Full GC (System.gc()) [PSYoungGen: 14186K->0K(1555968K)] [ParOldGen: 346820K->184355K(524288K)] 361007K->184355K(2080256K), [Metaspace: 21188K->20882K(1069056K)], 0.4899573 secs] [Times: user=19.28 sys=0.00, real=0.49 secs] 
+6262.261: [GC (Allocation Failure) 
+Desired survivor size 18874368 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1539072K->16878K(1555968K)] 1723427K->203114K(2080256K), 0.0191472 secs] [Times: user=0.69 sys=0.00, real=0.02 secs] 
+6269.948: [GC (Allocation Failure) 
+Desired survivor size 18350080 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1555950K->14611K(1553920K)] 1742186K->205257K(2078208K), 0.0148600 secs] [Times: user=0.62 sys=0.00, real=0.01 secs] 
+6277.352: [GC (Allocation Failure) 
+Desired survivor size 18350080 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551635K->14870K(1554944K)] 1742281K->206478K(2079232K), 0.0134352 secs] [Times: user=0.49 sys=0.00, real=0.02 secs] 
+6284.004: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551894K->14083K(1555456K)] 1743502K->207046K(2079744K), 0.0168304 secs] [Times: user=0.68 sys=0.00, real=0.02 secs] 
+6290.638: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551619K->14774K(1554944K)] 1744582K->208218K(2079232K), 0.0168549 secs] [Times: user=0.61 sys=0.00, real=0.01 secs] 
+6297.258: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552310K->14499K(1555456K)] 1745754K->209282K(2079744K), 0.0185452 secs] [Times: user=0.76 sys=0.00, real=0.02 secs] 
+6304.047: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552547K->14115K(1555456K)] 1747330K->209170K(2079744K), 0.0196635 secs] [Times: user=0.55 sys=0.00, real=0.02 secs] 
+6310.757: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552163K->15606K(1554944K)] 1747218K->210942K(2079232K), 0.0216484 secs] [Times: user=0.72 sys=0.00, real=0.02 secs] 
+6317.560: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553654K->14051K(1555456K)] 1748990K->210982K(2079744K), 0.0210716 secs] [Times: user=0.65 sys=0.01, real=0.02 secs] 
+6326.173: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552099K->15606K(1554944K)] 1749030K->212770K(2079232K), 0.0292238 secs] [Times: user=0.95 sys=0.00, real=0.03 secs] 
+6333.171: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553654K->12611K(1555456K)] 1750818K->210874K(2079744K), 0.0912989 secs] [Times: user=1.48 sys=0.00, real=0.09 secs] 
+6341.472: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1550659K->15798K(1555456K)] 1748922K->214382K(2079744K), 0.0205600 secs] [Times: user=0.83 sys=0.00, real=0.02 secs] 
+6351.288: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1553846K->14626K(1555456K)] 1752430K->214486K(2079744K), 0.0246819 secs] [Times: user=0.77 sys=0.00, real=0.02 secs] 
+6359.686: [GC (Allocation Failure) 
+Desired survivor size 17825792 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552674K->13846K(1555456K)] 1752534K->213745K(2079744K), 0.2769324 secs] [Times: user=0.63 sys=0.00, real=0.27 secs] 
+6375.114: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1551894K->13974K(1555456K)] 1751793K->214797K(2079744K), 0.0581332 secs] [Times: user=1.40 sys=0.00, real=0.06 secs] 
+6386.999: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552022K->13219K(1555968K)] 1752845K->215197K(2080256K), 0.0613374 secs] [Times: user=1.74 sys=0.00, real=0.06 secs] 
+6397.596: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552291K->13506K(1555968K)] 1754269K->215637K(2080256K), 0.0636640 secs] [Times: user=1.87 sys=0.00, real=0.06 secs] 
+6411.593: [GC (Allocation Failure) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552578K->14262K(1555968K)] 1754709K->216449K(2080256K), 0.0504243 secs] [Times: user=1.20 sys=0.00, real=0.05 secs] 
+6431.841: [GC (System.gc()) 
+Desired survivor size 17301504 bytes, new threshold 1 (max 15)
+[PSYoungGen: 868195K->12906K(1555968K)] 1070382K->216617K(2080256K), 0.0237950 secs] [Times: user=0.86 sys=0.00, real=0.02 secs] 
+6431.865: [Full GC (System.gc()) [PSYoungGen: 12906K->0K(1555968K)] [ParOldGen: 203710K->140858K(524288K)] 216617K->140858K(2080256K), [Metaspace: 21061K->21061K(1069056K)], 0.4738215 secs] [Times: user=23.40 sys=0.00, real=0.48 secs] 
+6439.650: [GC (System.gc()) 
+Desired survivor size 19398656 bytes, new threshold 1 (max 15)
+[PSYoungGen: 2517K->352K(1551872K)] 143375K->141210K(2076160K), 0.0157850 secs] [Times: user=0.00 sys=0.00, real=0.02 secs] 
+6439.666: [Full GC (System.gc()) [PSYoungGen: 352K->0K(1551872K)] [ParOldGen: 140858K->133605K(524288K)] 141210K->133605K(2076160K), [Metaspace: 21065K->21065K(1069056K)], 0.2851223 secs] [Times: user=14.60 sys=0.00, real=0.28 secs] 
+6460.249: [GC (Allocation Failure) 
+Desired survivor size 20447232 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1534976K->17206K(1552384K)] 1668581K->150812K(2076672K), 0.0131047 secs] [Times: user=0.50 sys=0.00, real=0.01 secs] 
+6473.277: [GC (Allocation Failure) 
+Desired survivor size 20447232 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1552182K->14755K(1552896K)] 1685788K->152122K(2077184K), 0.0200410 secs] [Times: user=0.80 sys=0.01, real=0.02 secs] 
+6484.668: [GC (System.gc()) 
+Desired survivor size 19922944 bytes, new threshold 1 (max 15)
+[PSYoungGen: 1003021K->13680K(1552896K)] 1140389K->151872K(2077184K), 0.0158359 secs] [Times: user=0.63 sys=0.00, real=0.01 secs] 
+6484.684: [Full GC (System.gc()) [PSYoungGen: 13680K->0K(1552896K)] [ParOldGen: 138192K->134397K(524288K)] 151872K->134397K(2077184K), [Metaspace: 21090K->21090K(1069056K)], 0.4080494 secs] [Times: user=20.88 sys=0.00, real=0.41 secs] 
+6485.728: [GC (System.gc()) 
+Desired survivor size 21495808 bytes, new threshold 1 (max 15)
+[PSYoungGen: 109K->96K(1550336K)] 134506K->134493K(2074624K), 0.0303481 secs] [Times: user=1.14 sys=0.00, real=0.03 secs] 
+6485.759: [Full GC (System.gc()) [PSYoungGen: 96K->0K(1550336K)] [ParOldGen: 134397K->134338K(524288K)] 134493K->134338K(2074624K), [Metaspace: 21094K->21094K(1069056K)], 0.2450805 secs] [Times: user=10.69 sys=0.00, real=0.24 secs] 
+6486.218: [GC (System.gc()) 
+Desired survivor size 22544384 bytes, new threshold 1 (max 15)
+[PSYoungGen: 13458K->224K(1531392K)] 147796K->134562K(2055680K), 0.0153645 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+6486.233: [Full GC (System.gc()) [PSYoungGen: 224K->0K(1531392K)] [ParOldGen: 134338K->134251K(524288K)] 134562K->134251K(2055680K), [Metaspace: 21102K->21102K(1069056K)], 0.4819304 secs] [Times: user=17.71 sys=0.00, real=0.49 secs] 
+Heap
+ PSYoungGen      total 1531392K, used 202423K [0x00000000a0000000, 0x0000000100000000, 0x0000000100000000)
+  eden space 1530880K, 13% used [0x00000000a0000000,0x00000000ac5adf98,0x00000000fd700000)
+  from space 512K, 0% used [0x00000000fd700000,0x00000000fd700000,0x00000000fd780000)
+  to   space 22016K, 0% used [0x00000000fea80000,0x00000000fea80000,0x0000000100000000)
+ ParOldGen       total 524288K, used 134251K [0x0000000080000000, 0x00000000a0000000, 0x00000000a0000000)
+  object space 524288K, 25% used [0x0000000080000000,0x000000008831afb8,0x00000000a0000000)
+ Metaspace       used 21115K, capacity 21592K, committed 22016K, reserved 1069056K
+  class space    used 2541K, capacity 2692K, committed 2816K, reserved 1048576K

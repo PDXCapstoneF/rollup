@@ -1,0 +1,29 @@
+
+SPECjbb2015 Java Business Benchmark
+ (c) Standard Performance Evaluation Corporation, 2015
+
+Preparing to launch Standalone SPECjbb2015 Transaction Injector.
+
+Reading property file: /home/workloads/SPECjbb2015/Rev10/19901019_MULTI_HSW_EP_T3_10_JVMFix_54_2_NONE/./config/specjbb2015.props
+
+     0s: Enumerating plugins...
+     0s:    Connectivity:
+     0s:             HTTP_Grizzly: Grizzly HTTP server, JDK HTTP client
+     0s:              NIO_Grizzly: Grizzly NIO server, Grizzly NIO client
+     0s:               HTTP_Jetty: Jetty HTTP server, JDK HTTP client
+     0s:    Snapshot:
+     0s:                 InMemory: Stores snapshots in heap memory
+     0s:    Data Writers:
+     0s:                     Demo: Send all frame to listener
+     0s:                   InFile: Writing Data into file
+     0s:                   Silent: Drop all frames
+     0s: 
+     0s: Validating kit integrity...
+     0s: Kit validation had passed.
+     0s: 
+     0s: Tests are skipped.
+     0s: 
+     0s: Initializing...
+     0s: 
+     1s: Initialization completed
+     1s: 

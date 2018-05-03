@@ -1,0 +1,7 @@
+
+Property Name;Default;Controller; 
+specjbb.controller.rtcurve.maxRetriesOverall;5;5; 
+specjbb.controller.rtcurve.start;0.0;0.0; 
+specjbb.forkjoin.workers;72;{Tier3=10}; 
+specjbb.group.count;1;2; 
+specjbb.time.server;false;false; 

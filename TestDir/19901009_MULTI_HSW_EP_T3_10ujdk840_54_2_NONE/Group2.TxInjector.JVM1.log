@@ -1,0 +1,988 @@
+
+SPECjbb2015 Java Business Benchmark
+ (c) Standard Performance Evaluation Corporation, 2015
+
+Preparing to launch Standalone SPECjbb2015 Transaction Injector.
+
+Reading property file: /home/workloads/SPECjbb2015/Rev10/19901009_MULTI_HSW_EP_T3_10ujdk840_54_2_NONE/./config/specjbb2015.props
+
+     0s: Enumerating plugins...
+     0s:    Connectivity:
+     0s:             HTTP_Grizzly: Grizzly HTTP server, JDK HTTP client
+     0s:              NIO_Grizzly: Grizzly NIO server, Grizzly NIO client
+     0s:               HTTP_Jetty: Jetty HTTP server, JDK HTTP client
+     0s:    Snapshot:
+     0s:                 InMemory: Stores snapshots in heap memory
+     0s:    Data Writers:
+     0s:                     Demo: Send all frame to listener
+     0s:                   InFile: Writing Data into file
+     0s:                   Silent: Drop all frames
+     0s: 
+     0s: Validating kit integrity...
+     0s: Kit validation had passed.
+     0s: 
+     0s: Tests are skipped.
+     0s: 
+     0s: Initializing...
+     0s: <Wed May 20 15:56:36 PDT 2015> org.spec.jbb.ic: Init IC
+<Wed May 20 15:56:36 PDT 2015> org.spec.jbb.ic: Resolving the hostname from IC-Master...
+2015-05-20 15:56:36.841:INFO::main: Logging initialized @1029ms
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: IC-Master is alive
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Hostname is resolved back as 127.0.0.1
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed IC-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed IC-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed IC-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed IC-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Registered IC
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: IC init finished
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Opening
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Binding to Controller...
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Resolved Controller-Tier0 @ localhost:48100
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Binding is OK
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-TransferLog-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-TransferLog-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-TransferLog-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-TransferLog-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1-TransferLog
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-validation-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-validation-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-validation-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1-validation-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:37 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1-validation
+
+     1s: Initialization completed
+     1s: <Wed May 20 15:56:48 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: PreInit, NEW STATE: Initialization
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Resolved Leader.heartbeat-Tier0 @ localhost:48100
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:48 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.infra.validation.task.ValidationPropertiesTask.Group2.TxInjector.JVM1-validation: Checking properties compliance...
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.infra.validation.task.ValidationPropertiesTask.Group2.TxInjector.JVM1-validation: Properties validation completed
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 15:56:49 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:56:51 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=10.0)
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.driver: IR = 10 (probe) + 0 (saturate) + 7 (service) = 17 reqs/sec
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.ic: Resolved Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:53651
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.ic: Resolved Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:53651
+<Wed May 20 15:56:55 PDT 2015> org.spec.jbb.ic: Resolved Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:53651
+<Wed May 20 15:56:58 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=10.0), NEW STATE: Running (IR=20.0)
+<Wed May 20 15:56:58 PDT 2015> org.spec.jbb.driver: IR = 20 (probe) + 0 (saturate) + 7 (service) = 27 reqs/sec
+<Wed May 20 15:56:58 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:57:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20.0), NEW STATE: Running (IR=30.0)
+<Wed May 20 15:57:02 PDT 2015> org.spec.jbb.driver: IR = 30 (probe) + 0 (saturate) + 7 (service) = 37 reqs/sec
+<Wed May 20 15:57:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:57:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=30.0), NEW STATE: Running (IR=40.0)
+<Wed May 20 15:57:06 PDT 2015> org.spec.jbb.driver: IR = 40 (probe) + 0 (saturate) + 7 (service) = 47 reqs/sec
+<Wed May 20 15:57:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:57:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=40.0), NEW STATE: Running (IR=50.0)
+<Wed May 20 15:57:10 PDT 2015> org.spec.jbb.driver: IR = 50 (probe) + 0 (saturate) + 7 (service) = 57 reqs/sec
+<Wed May 20 15:57:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 18, saturates = 18
+<Wed May 20 15:57:14 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=50.0), NEW STATE: Running (IR=60.0)
+<Wed May 20 15:57:14 PDT 2015> org.spec.jbb.driver: IR = 60 (probe) + 0 (saturate) + 7 (service) = 67 reqs/sec
+<Wed May 20 15:57:14 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 20
+<Wed May 20 15:57:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=60.0), NEW STATE: Running (IR=70.0)
+<Wed May 20 15:57:18 PDT 2015> org.spec.jbb.driver: IR = 70 (probe) + 0 (saturate) + 7 (service) = 77 reqs/sec
+<Wed May 20 15:57:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 20
+<Wed May 20 15:57:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=70.0), NEW STATE: Running (IR=80.0)
+<Wed May 20 15:57:22 PDT 2015> org.spec.jbb.driver: IR = 80 (probe) + 0 (saturate) + 7 (service) = 87 reqs/sec
+<Wed May 20 15:57:22 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 18
+<Wed May 20 15:57:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=80.0), NEW STATE: Running (IR=90.0)
+<Wed May 20 15:57:26 PDT 2015> org.spec.jbb.driver: IR = 90 (probe) + 0 (saturate) + 7 (service) = 97 reqs/sec
+<Wed May 20 15:57:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 22, saturates = 20
+<Wed May 20 15:57:30 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=90.0), NEW STATE: Running (IR=100.0)
+<Wed May 20 15:57:30 PDT 2015> org.spec.jbb.driver: IR = 100 (probe) + 0 (saturate) + 7 (service) = 107 reqs/sec
+<Wed May 20 15:57:30 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 22, saturates = 20
+<Wed May 20 15:57:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=100.0)
+<Wed May 20 15:57:34 PDT 2015> org.spec.jbb.driver: IR = 100 (probe) + 0 (saturate) + 7 (service) = 107 reqs/sec
+<Wed May 20 15:57:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 22, saturates = 20
+<Wed May 20 15:58:09 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 15:58:09 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 15:58:09 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 15:58:14 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Stopped
+<Wed May 20 15:58:14 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:58:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Stopped, NEW STATE: Terminated
+<Wed May 20 15:58:16 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 15:58:16 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 15:58:17 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 15:58:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 15:58:18 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 15:58:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 15:58:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 15:58:21 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 15:58:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 15:58:24 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=10.0)
+<Wed May 20 15:58:24 PDT 2015> org.spec.jbb.driver: IR = 10 (probe) + 0 (saturate) + 7 (service) = 17 reqs/sec
+<Wed May 20 15:58:24 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:58:27 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=10.0), NEW STATE: Running (IR=20.0)
+<Wed May 20 15:58:27 PDT 2015> org.spec.jbb.driver: IR = 20 (probe) + 0 (saturate) + 7 (service) = 27 reqs/sec
+<Wed May 20 15:58:27 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:58:31 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20.0), NEW STATE: Running (IR=30.0)
+<Wed May 20 15:58:31 PDT 2015> org.spec.jbb.driver: IR = 30 (probe) + 0 (saturate) + 7 (service) = 37 reqs/sec
+<Wed May 20 15:58:31 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:58:35 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=30.0), NEW STATE: Running (IR=40.0)
+<Wed May 20 15:58:35 PDT 2015> org.spec.jbb.driver: IR = 40 (probe) + 0 (saturate) + 7 (service) = 47 reqs/sec
+<Wed May 20 15:58:35 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 16, saturates = 16
+<Wed May 20 15:58:39 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=40.0), NEW STATE: Running (IR=50.0)
+<Wed May 20 15:58:39 PDT 2015> org.spec.jbb.driver: IR = 50 (probe) + 0 (saturate) + 7 (service) = 57 reqs/sec
+<Wed May 20 15:58:39 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 18, saturates = 18
+<Wed May 20 15:58:43 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=50.0), NEW STATE: Running (IR=60.0)
+<Wed May 20 15:58:43 PDT 2015> org.spec.jbb.driver: IR = 60 (probe) + 0 (saturate) + 7 (service) = 67 reqs/sec
+<Wed May 20 15:58:43 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 20
+<Wed May 20 15:58:47 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=60.0), NEW STATE: Running (IR=70.0)
+<Wed May 20 15:58:47 PDT 2015> org.spec.jbb.driver: IR = 70 (probe) + 0 (saturate) + 7 (service) = 77 reqs/sec
+<Wed May 20 15:58:47 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 20
+<Wed May 20 15:58:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=70.0), NEW STATE: Running (IR=80.0)
+<Wed May 20 15:58:52 PDT 2015> org.spec.jbb.driver: IR = 80 (probe) + 0 (saturate) + 7 (service) = 87 reqs/sec
+<Wed May 20 15:58:52 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 20, saturates = 18
+<Wed May 20 15:58:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=80.0), NEW STATE: Running (IR=90.0)
+<Wed May 20 15:58:56 PDT 2015> org.spec.jbb.driver: IR = 90 (probe) + 0 (saturate) + 7 (service) = 97 reqs/sec
+<Wed May 20 15:58:56 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 22, saturates = 20
+<Wed May 20 15:59:00 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=90.0), NEW STATE: Running (IR=100.0)
+<Wed May 20 15:59:00 PDT 2015> org.spec.jbb.driver: IR = 100 (probe) + 0 (saturate) + 7 (service) = 107 reqs/sec
+<Wed May 20 15:59:00 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 22, saturates = 20
+<Wed May 20 15:59:04 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=200.0)
+<Wed May 20 15:59:04 PDT 2015> org.spec.jbb.driver: IR = 200 (probe) + 0 (saturate) + 7 (service) = 207 reqs/sec
+<Wed May 20 15:59:04 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 30, saturates = 18
+<Wed May 20 15:59:09 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=200.0), NEW STATE: Running (IR=220.0)
+<Wed May 20 15:59:09 PDT 2015> org.spec.jbb.driver: IR = 220 (probe) + 0 (saturate) + 7 (service) = 227 reqs/sec
+<Wed May 20 15:59:09 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 34, saturates = 22
+<Wed May 20 15:59:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=220.0), NEW STATE: Running (IR=244.0)
+<Wed May 20 15:59:13 PDT 2015> org.spec.jbb.driver: IR = 244 (probe) + 0 (saturate) + 7 (service) = 251 reqs/sec
+<Wed May 20 15:59:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 38, saturates = 22
+<Wed May 20 15:59:17 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=244.0), NEW STATE: Running (IR=273.0)
+<Wed May 20 15:59:17 PDT 2015> org.spec.jbb.driver: IR = 273 (probe) + 0 (saturate) + 7 (service) = 280 reqs/sec
+<Wed May 20 15:59:17 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 38, saturates = 22
+<Wed May 20 15:59:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=273.0), NEW STATE: Running (IR=307.5)
+<Wed May 20 15:59:22 PDT 2015> org.spec.jbb.driver: IR = 308 (probe) + 0 (saturate) + 7 (service) = 314 reqs/sec
+<Wed May 20 15:59:22 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 42, saturates = 22
+<Wed May 20 15:59:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=307.5), NEW STATE: Running (IR=349.0)
+<Wed May 20 15:59:26 PDT 2015> org.spec.jbb.driver: IR = 349 (probe) + 0 (saturate) + 7 (service) = 356 reqs/sec
+<Wed May 20 15:59:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 46, saturates = 22
+<Wed May 20 15:59:30 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=349.0), NEW STATE: Running (IR=398.5)
+<Wed May 20 15:59:30 PDT 2015> org.spec.jbb.driver: IR = 398 (probe) + 0 (saturate) + 7 (service) = 405 reqs/sec
+<Wed May 20 15:59:30 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 48, saturates = 22
+<Wed May 20 15:59:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=398.5), NEW STATE: Running (IR=458.5)
+<Wed May 20 15:59:34 PDT 2015> org.spec.jbb.driver: IR = 458 (probe) + 0 (saturate) + 7 (service) = 465 reqs/sec
+<Wed May 20 15:59:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 58, saturates = 22
+<Wed May 20 15:59:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=458.5), NEW STATE: Running (IR=530.0)
+<Wed May 20 15:59:38 PDT 2015> org.spec.jbb.driver: IR = 530 (probe) + 0 (saturate) + 7 (service) = 537 reqs/sec
+<Wed May 20 15:59:38 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 64, saturates = 22
+<Wed May 20 15:59:42 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=530.0), NEW STATE: Running (IR=616.0)
+<Wed May 20 15:59:42 PDT 2015> org.spec.jbb.driver: IR = 616 (probe) + 0 (saturate) + 7 (service) = 623 reqs/sec
+<Wed May 20 15:59:42 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 72, saturates = 22
+<Wed May 20 15:59:46 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=616.0), NEW STATE: Running (IR=719.0)
+<Wed May 20 15:59:46 PDT 2015> org.spec.jbb.driver: IR = 719 (probe) + 0 (saturate) + 7 (service) = 726 reqs/sec
+<Wed May 20 15:59:46 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 80, saturates = 22
+<Wed May 20 15:59:50 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=719.0), NEW STATE: Running (IR=843.0)
+<Wed May 20 15:59:50 PDT 2015> org.spec.jbb.driver: IR = 843 (probe) + 0 (saturate) + 7 (service) = 850 reqs/sec
+<Wed May 20 15:59:50 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 96, saturates = 24
+<Wed May 20 15:59:54 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=843.0), NEW STATE: Running (IR=991.5)
+<Wed May 20 15:59:54 PDT 2015> org.spec.jbb.driver: IR = 991 (probe) + 0 (saturate) + 7 (service) = 998 reqs/sec
+<Wed May 20 15:59:54 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 108, saturates = 24
+<Wed May 20 15:59:58 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=991.5), NEW STATE: Running (IR=1170.0)
+<Wed May 20 15:59:58 PDT 2015> org.spec.jbb.driver: IR = 1170 (probe) + 0 (saturate) + 7 (service) = 1177 reqs/sec
+<Wed May 20 15:59:58 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 126, saturates = 24
+<Wed May 20 16:00:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1170.0), NEW STATE: Running (IR=1384.0)
+<Wed May 20 16:00:02 PDT 2015> org.spec.jbb.driver: IR = 1384 (probe) + 0 (saturate) + 7 (service) = 1391 reqs/sec
+<Wed May 20 16:00:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 146, saturates = 24
+<Wed May 20 16:00:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1384.0), NEW STATE: Running (IR=1640.5)
+<Wed May 20 16:00:06 PDT 2015> org.spec.jbb.driver: IR = 1640 (probe) + 0 (saturate) + 7 (service) = 1647 reqs/sec
+<Wed May 20 16:00:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 174, saturates = 24
+<Wed May 20 16:00:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1640.5), NEW STATE: Running (IR=1949.0)
+<Wed May 20 16:00:10 PDT 2015> org.spec.jbb.driver: IR = 1949 (probe) + 0 (saturate) + 7 (service) = 1956 reqs/sec
+<Wed May 20 16:00:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 202, saturates = 24
+<Wed May 20 16:00:14 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1949.0), NEW STATE: Running (IR=2318.5)
+<Wed May 20 16:00:14 PDT 2015> org.spec.jbb.driver: IR = 2318 (probe) + 0 (saturate) + 7 (service) = 2325 reqs/sec
+<Wed May 20 16:00:14 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 242, saturates = 28
+<Wed May 20 16:00:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=2318.5), NEW STATE: Running (IR=2762.5)
+<Wed May 20 16:00:18 PDT 2015> org.spec.jbb.driver: IR = 2762 (probe) + 0 (saturate) + 7 (service) = 2769 reqs/sec
+<Wed May 20 16:00:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 286, saturates = 28
+<Wed May 20 16:00:23 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=2762.5), NEW STATE: Running (IR=3295.0)
+<Wed May 20 16:00:23 PDT 2015> org.spec.jbb.driver: IR = 3295 (probe) + 0 (saturate) + 7 (service) = 3302 reqs/sec
+<Wed May 20 16:00:23 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 338, saturates = 30
+<Wed May 20 16:00:28 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=3295.0), NEW STATE: Running (IR=3934.0)
+<Wed May 20 16:00:28 PDT 2015> org.spec.jbb.driver: IR = 3934 (probe) + 0 (saturate) + 7 (service) = 3941 reqs/sec
+<Wed May 20 16:00:28 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 400, saturates = 30
+<Wed May 20 16:00:32 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=3934.0), NEW STATE: Running (IR=4700.5)
+<Wed May 20 16:00:32 PDT 2015> org.spec.jbb.driver: IR = 4700 (probe) + 0 (saturate) + 7 (service) = 4707 reqs/sec
+<Wed May 20 16:00:32 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 480, saturates = 33
+<Wed May 20 16:00:36 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4700.5), NEW STATE: Running (IR=5620.5)
+<Wed May 20 16:00:36 PDT 2015> org.spec.jbb.driver: IR = 5620 (probe) + 0 (saturate) + 7 (service) = 5627 reqs/sec
+<Wed May 20 16:00:36 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 570, saturates = 34
+<Wed May 20 16:00:40 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=5620.5), NEW STATE: Running (IR=6724.5)
+<Wed May 20 16:00:40 PDT 2015> org.spec.jbb.driver: IR = 6444 (probe) + 280 (saturate) + 7 (service) = 6731 reqs/sec
+<Wed May 20 16:00:40 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 652, saturates = 40
+<Wed May 20 16:00:44 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=6724.5), NEW STATE: Running (IR=8049.5)
+<Wed May 20 16:00:44 PDT 2015> org.spec.jbb.driver: IR = 6429 (probe) + 1620 (saturate) + 7 (service) = 8056 reqs/sec
+<Wed May 20 16:00:44 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 49
+<Wed May 20 16:00:48 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8049.5), NEW STATE: Running (IR=9639.5)
+<Wed May 20 16:00:48 PDT 2015> org.spec.jbb.driver: IR = 6479 (probe) + 3160 (saturate) + 7 (service) = 9646 reqs/sec
+<Wed May 20 16:00:48 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 48
+<Wed May 20 16:00:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=9639.5), NEW STATE: Running (IR=11547.5)
+<Wed May 20 16:00:52 PDT 2015> org.spec.jbb.driver: IR = 6468 (probe) + 5080 (saturate) + 7 (service) = 11554 reqs/sec
+<Wed May 20 16:00:52 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 55
+<Wed May 20 16:00:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=11547.5), NEW STATE: Running (IR=13837.0)
+<Wed May 20 16:00:56 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 7360 (saturate) + 7 (service) = 13844 reqs/sec
+<Wed May 20 16:00:56 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 16:01:00 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=13837.0), NEW STATE: Running (IR=16584.5)
+<Wed May 20 16:01:00 PDT 2015> org.spec.jbb.driver: IR = 6464 (probe) + 10120 (saturate) + 7 (service) = 16591 reqs/sec
+<Wed May 20 16:01:00 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 64
+<Wed May 20 16:01:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16584.5), NEW STATE: Running (IR=19881.5)
+<Wed May 20 16:01:05 PDT 2015> org.spec.jbb.driver: IR = 6481 (probe) + 13400 (saturate) + 7 (service) = 19888 reqs/sec
+<Wed May 20 16:01:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 68
+<Wed May 20 16:01:09 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=19881.5), NEW STATE: Running (IR=23837.5)
+<Wed May 20 16:01:09 PDT 2015> org.spec.jbb.driver: IR = 6497 (probe) + 17340 (saturate) + 7 (service) = 23844 reqs/sec
+<Wed May 20 16:01:09 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 79
+<Wed May 20 16:01:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=23837.5), NEW STATE: Running (IR=28585.0)
+<Wed May 20 16:01:13 PDT 2015> org.spec.jbb.driver: IR = 6485 (probe) + 22100 (saturate) + 7 (service) = 28592 reqs/sec
+<Wed May 20 16:01:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 89
+<Wed May 20 16:01:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28585.0), NEW STATE: Running (IR=34282.0)
+<Wed May 20 16:01:21 PDT 2015> org.spec.jbb.driver: IR = 6462 (probe) + 27820 (saturate) + 7 (service) = 34289 reqs/sec
+<Wed May 20 16:01:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 99
+<Wed May 20 16:01:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=34282.0), NEW STATE: Running (IR=41118.5)
+<Wed May 20 16:01:26 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 34640 (saturate) + 7 (service) = 41125 reqs/sec
+<Wed May 20 16:01:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 117
+<Wed May 20 16:01:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41118.5), NEW STATE: Running (IR=49322.5)
+<Wed May 20 16:01:33 PDT 2015> org.spec.jbb.driver: IR = 6462 (probe) + 42860 (saturate) + 7 (service) = 49329 reqs/sec
+<Wed May 20 16:01:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 132
+<Wed May 20 16:02:03 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=49322.5), NEW STATE: Terminated
+<Wed May 20 16:02:03 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 16:02:03 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:02:06 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:02:07 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 16:02:07 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:02:07 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:02:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 16:02:10 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:02:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:02:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4112.0)
+<Wed May 20 16:02:13 PDT 2015> org.spec.jbb.driver: IR = 4112 (probe) + 0 (saturate) + 7 (service) = 4119 reqs/sec
+<Wed May 20 16:02:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 420, saturates = 30
+<Wed May 20 16:02:17 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4112.0), NEW STATE: Running (IR=8223.5)
+<Wed May 20 16:02:17 PDT 2015> org.spec.jbb.driver: IR = 6443 (probe) + 1780 (saturate) + 7 (service) = 8230 reqs/sec
+<Wed May 20 16:02:17 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 48
+<Wed May 20 16:02:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8223.5), NEW STATE: Running (IR=12335.5)
+<Wed May 20 16:02:21 PDT 2015> org.spec.jbb.driver: IR = 6455 (probe) + 5880 (saturate) + 7 (service) = 12342 reqs/sec
+<Wed May 20 16:02:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 16:02:25 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=12335.5), NEW STATE: Running (IR=16447.5)
+<Wed May 20 16:02:25 PDT 2015> org.spec.jbb.driver: IR = 6447 (probe) + 10000 (saturate) + 7 (service) = 16454 reqs/sec
+<Wed May 20 16:02:25 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 62
+<Wed May 20 16:02:30 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16447.5), NEW STATE: Running (IR=20559.5)
+<Wed May 20 16:02:30 PDT 2015> org.spec.jbb.driver: IR = 6479 (probe) + 14080 (saturate) + 7 (service) = 20566 reqs/sec
+<Wed May 20 16:02:30 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 73
+<Wed May 20 16:02:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20559.5), NEW STATE: Running (IR=24671.0)
+<Wed May 20 16:02:34 PDT 2015> org.spec.jbb.driver: IR = 6471 (probe) + 18200 (saturate) + 7 (service) = 24678 reqs/sec
+<Wed May 20 16:02:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 82
+<Wed May 20 16:02:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=24671.0), NEW STATE: Running (IR=28783.0)
+<Wed May 20 16:02:38 PDT 2015> org.spec.jbb.driver: IR = 6483 (probe) + 22300 (saturate) + 7 (service) = 28790 reqs/sec
+<Wed May 20 16:02:38 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 87
+<Wed May 20 16:02:45 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28783.0), NEW STATE: Running (IR=32895.0)
+<Wed May 20 16:02:45 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 26420 (saturate) + 7 (service) = 32902 reqs/sec
+<Wed May 20 16:02:45 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 97
+<Wed May 20 16:02:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=32895.0), NEW STATE: Running (IR=37006.5)
+<Wed May 20 16:02:52 PDT 2015> org.spec.jbb.driver: IR = 6466 (probe) + 30540 (saturate) + 7 (service) = 37013 reqs/sec
+<Wed May 20 16:02:52 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 106
+<Wed May 20 16:02:57 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=37006.5), NEW STATE: Running (IR=41118.5)
+<Wed May 20 16:02:57 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 34640 (saturate) + 7 (service) = 41125 reqs/sec
+<Wed May 20 16:02:57 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 114
+<Wed May 20 16:03:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41118.5), NEW STATE: Running (IR=41118.5)
+<Wed May 20 16:03:06 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 34640 (saturate) + 7 (service) = 41125 reqs/sec
+<Wed May 20 16:03:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 116
+<Wed May 20 16:03:42 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41118.5), NEW STATE: Running (IR=0.0)
+<Wed May 20 16:03:42 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:03:42 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:03:47 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Stopped
+<Wed May 20 16:03:47 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:03:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Stopped, NEW STATE: Terminated
+<Wed May 20 16:03:51 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 16:03:51 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:03:52 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:03:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 16:03:55 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:03:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:03:58 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 16:03:58 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:03:58 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:04:01 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4112.0)
+<Wed May 20 16:04:01 PDT 2015> org.spec.jbb.driver: IR = 4112 (probe) + 0 (saturate) + 7 (service) = 4119 reqs/sec
+<Wed May 20 16:04:01 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 420, saturates = 30
+<Wed May 20 16:04:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4112.0), NEW STATE: Running (IR=8223.5)
+<Wed May 20 16:04:05 PDT 2015> org.spec.jbb.driver: IR = 6443 (probe) + 1780 (saturate) + 7 (service) = 8230 reqs/sec
+<Wed May 20 16:04:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 48
+<Wed May 20 16:04:09 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8223.5), NEW STATE: Running (IR=12335.5)
+<Wed May 20 16:04:09 PDT 2015> org.spec.jbb.driver: IR = 6455 (probe) + 5880 (saturate) + 7 (service) = 12342 reqs/sec
+<Wed May 20 16:04:09 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 16:04:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=12335.5), NEW STATE: Running (IR=16447.5)
+<Wed May 20 16:04:16 PDT 2015> org.spec.jbb.driver: IR = 6447 (probe) + 10000 (saturate) + 7 (service) = 16454 reqs/sec
+<Wed May 20 16:04:16 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 64
+<Wed May 20 16:04:20 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16447.5), NEW STATE: Running (IR=20559.5)
+<Wed May 20 16:04:20 PDT 2015> org.spec.jbb.driver: IR = 6479 (probe) + 14080 (saturate) + 7 (service) = 20566 reqs/sec
+<Wed May 20 16:04:20 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 73
+<Wed May 20 16:04:25 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20559.5), NEW STATE: Running (IR=24671.0)
+<Wed May 20 16:04:25 PDT 2015> org.spec.jbb.driver: IR = 6471 (probe) + 18200 (saturate) + 7 (service) = 24678 reqs/sec
+<Wed May 20 16:04:25 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 82
+<Wed May 20 16:04:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=24671.0), NEW STATE: Running (IR=28783.0)
+<Wed May 20 16:04:29 PDT 2015> org.spec.jbb.driver: IR = 6483 (probe) + 22300 (saturate) + 7 (service) = 28790 reqs/sec
+<Wed May 20 16:04:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 86
+<Wed May 20 16:04:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28783.0), NEW STATE: Running (IR=32895.0)
+<Wed May 20 16:04:34 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 26420 (saturate) + 7 (service) = 32902 reqs/sec
+<Wed May 20 16:04:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 96
+<Wed May 20 16:04:40 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=32895.0), NEW STATE: Running (IR=37006.5)
+<Wed May 20 16:04:40 PDT 2015> org.spec.jbb.driver: IR = 6466 (probe) + 30540 (saturate) + 7 (service) = 37013 reqs/sec
+<Wed May 20 16:04:40 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 105
+<Wed May 20 16:04:44 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=37006.5), NEW STATE: Running (IR=41118.5)
+<Wed May 20 16:04:44 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 34640 (saturate) + 7 (service) = 41125 reqs/sec
+<Wed May 20 16:04:44 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 16:04:59 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41118.5), NEW STATE: Running (IR=41218.5)
+<Wed May 20 16:04:59 PDT 2015> org.spec.jbb.driver: IR = 6458 (probe) + 34760 (saturate) + 7 (service) = 41225 reqs/sec
+<Wed May 20 16:04:59 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 116
+<Wed May 20 16:05:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41218.5), NEW STATE: Running (IR=41238.5)
+<Wed May 20 16:05:05 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 34760 (saturate) + 7 (service) = 41245 reqs/sec
+<Wed May 20 16:05:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 113
+<Wed May 20 16:05:12 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41238.5), NEW STATE: Running (IR=41262.5)
+<Wed May 20 16:05:12 PDT 2015> org.spec.jbb.driver: IR = 6462 (probe) + 34800 (saturate) + 7 (service) = 41269 reqs/sec
+<Wed May 20 16:05:12 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 116
+<Wed May 20 16:05:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41262.5), NEW STATE: Running (IR=41291.5)
+<Wed May 20 16:05:16 PDT 2015> org.spec.jbb.driver: IR = 6471 (probe) + 34820 (saturate) + 7 (service) = 41298 reqs/sec
+<Wed May 20 16:05:16 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 116
+<Wed May 20 16:05:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41291.5), NEW STATE: Running (IR=41326.0)
+<Wed May 20 16:05:21 PDT 2015> org.spec.jbb.driver: IR = 6466 (probe) + 34860 (saturate) + 7 (service) = 41333 reqs/sec
+<Wed May 20 16:05:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 115
+<Wed May 20 16:05:27 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41326.0), NEW STATE: Running (IR=41367.5)
+<Wed May 20 16:05:27 PDT 2015> org.spec.jbb.driver: IR = 6487 (probe) + 34880 (saturate) + 7 (service) = 41374 reqs/sec
+<Wed May 20 16:05:27 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 115
+<Wed May 20 16:05:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41367.5), NEW STATE: Running (IR=41417.0)
+<Wed May 20 16:05:33 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 34940 (saturate) + 7 (service) = 41424 reqs/sec
+<Wed May 20 16:05:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 115
+<Wed May 20 16:05:40 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41417.0), NEW STATE: Running (IR=41477.0)
+<Wed May 20 16:05:40 PDT 2015> org.spec.jbb.driver: IR = 6497 (probe) + 34980 (saturate) + 7 (service) = 41484 reqs/sec
+<Wed May 20 16:05:40 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 113
+<Wed May 20 16:05:44 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41477.0), NEW STATE: Running (IR=41548.5)
+<Wed May 20 16:05:44 PDT 2015> org.spec.jbb.driver: IR = 6468 (probe) + 35080 (saturate) + 7 (service) = 41555 reqs/sec
+<Wed May 20 16:05:44 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 16:05:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41548.5), NEW STATE: Running (IR=41634.5)
+<Wed May 20 16:05:49 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 35160 (saturate) + 7 (service) = 41641 reqs/sec
+<Wed May 20 16:05:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 116
+<Wed May 20 16:05:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41634.5), NEW STATE: Running (IR=41737.5)
+<Wed May 20 16:05:55 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 35260 (saturate) + 7 (service) = 41744 reqs/sec
+<Wed May 20 16:05:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 120
+<Wed May 20 16:06:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41737.5), NEW STATE: Running (IR=41861.5)
+<Wed May 20 16:06:02 PDT 2015> org.spec.jbb.driver: IR = 6481 (probe) + 35380 (saturate) + 7 (service) = 41868 reqs/sec
+<Wed May 20 16:06:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 117
+<Wed May 20 16:06:11 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41861.5), NEW STATE: Running (IR=42010.0)
+<Wed May 20 16:06:11 PDT 2015> org.spec.jbb.driver: IR = 6430 (probe) + 35580 (saturate) + 7 (service) = 42017 reqs/sec
+<Wed May 20 16:06:11 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 113
+<Wed May 20 16:06:17 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42010.0), NEW STATE: Running (IR=42188.5)
+<Wed May 20 16:06:17 PDT 2015> org.spec.jbb.driver: IR = 6468 (probe) + 35720 (saturate) + 7 (service) = 42195 reqs/sec
+<Wed May 20 16:06:17 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 114
+<Wed May 20 16:06:23 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42188.5), NEW STATE: Running (IR=42402.5)
+<Wed May 20 16:06:23 PDT 2015> org.spec.jbb.driver: IR = 6422 (probe) + 35980 (saturate) + 7 (service) = 42409 reqs/sec
+<Wed May 20 16:06:23 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 117
+<Wed May 20 16:06:32 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42402.5), NEW STATE: Running (IR=42659.0)
+<Wed May 20 16:06:32 PDT 2015> org.spec.jbb.driver: IR = 6459 (probe) + 36200 (saturate) + 7 (service) = 42666 reqs/sec
+<Wed May 20 16:06:32 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 16:06:41 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42659.0), NEW STATE: Running (IR=42967.5)
+<Wed May 20 16:06:41 PDT 2015> org.spec.jbb.driver: IR = 6488 (probe) + 36480 (saturate) + 7 (service) = 42974 reqs/sec
+<Wed May 20 16:06:41 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 120
+<Wed May 20 16:06:46 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42967.5), NEW STATE: Running (IR=43337.0)
+<Wed May 20 16:06:46 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 36860 (saturate) + 7 (service) = 43344 reqs/sec
+<Wed May 20 16:06:46 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 120
+<Wed May 20 16:06:52 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=43337.0), NEW STATE: Running (IR=43781.0)
+<Wed May 20 16:06:52 PDT 2015> org.spec.jbb.driver: IR = 6481 (probe) + 37300 (saturate) + 7 (service) = 43788 reqs/sec
+<Wed May 20 16:06:52 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 121
+<Wed May 20 16:07:23 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=43781.0), NEW STATE: Terminated
+<Wed May 20 16:07:23 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 16:07:23 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:07:26 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:07:28 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 16:07:28 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:07:28 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:07:31 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 16:07:31 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:07:31 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:07:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4333.5)
+<Wed May 20 16:07:34 PDT 2015> org.spec.jbb.driver: IR = 4333 (probe) + 0 (saturate) + 7 (service) = 4340 reqs/sec
+<Wed May 20 16:07:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 442, saturates = 30
+<Wed May 20 16:07:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4333.5), NEW STATE: Running (IR=8667.5)
+<Wed May 20 16:07:38 PDT 2015> org.spec.jbb.driver: IR = 6447 (probe) + 2220 (saturate) + 7 (service) = 8674 reqs/sec
+<Wed May 20 16:07:38 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 49
+<Wed May 20 16:07:43 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8667.5), NEW STATE: Running (IR=13001.0)
+<Wed May 20 16:07:43 PDT 2015> org.spec.jbb.driver: IR = 6441 (probe) + 6560 (saturate) + 7 (service) = 13008 reqs/sec
+<Wed May 20 16:07:43 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 56
+<Wed May 20 16:07:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=13001.0), NEW STATE: Running (IR=17335.0)
+<Wed May 20 16:07:49 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 10860 (saturate) + 7 (service) = 17342 reqs/sec
+<Wed May 20 16:07:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 65
+<Wed May 20 16:07:53 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=17335.0), NEW STATE: Running (IR=21668.5)
+<Wed May 20 16:07:53 PDT 2015> org.spec.jbb.driver: IR = 6489 (probe) + 15180 (saturate) + 7 (service) = 21675 reqs/sec
+<Wed May 20 16:07:53 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 74
+<Wed May 20 16:07:57 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=21668.5), NEW STATE: Running (IR=26002.0)
+<Wed May 20 16:07:57 PDT 2015> org.spec.jbb.driver: IR = 6422 (probe) + 19580 (saturate) + 7 (service) = 26009 reqs/sec
+<Wed May 20 16:07:57 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 85
+<Wed May 20 16:08:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=26002.0), NEW STATE: Running (IR=30336.0)
+<Wed May 20 16:08:02 PDT 2015> org.spec.jbb.driver: IR = 6476 (probe) + 23860 (saturate) + 7 (service) = 30343 reqs/sec
+<Wed May 20 16:08:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 96
+<Wed May 20 16:08:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=30336.0), NEW STATE: Running (IR=34669.5)
+<Wed May 20 16:08:06 PDT 2015> org.spec.jbb.driver: IR = 6490 (probe) + 28180 (saturate) + 7 (service) = 34676 reqs/sec
+<Wed May 20 16:08:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 100
+<Wed May 20 16:08:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=34669.5), NEW STATE: Running (IR=39003.5)
+<Wed May 20 16:08:10 PDT 2015> org.spec.jbb.driver: IR = 6483 (probe) + 32520 (saturate) + 7 (service) = 39010 reqs/sec
+<Wed May 20 16:08:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 111
+<Wed May 20 16:08:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=39003.5), NEW STATE: Running (IR=43337.0)
+<Wed May 20 16:08:16 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 36860 (saturate) + 7 (service) = 43344 reqs/sec
+<Wed May 20 16:08:16 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 16:08:47 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=43337.0), NEW STATE: Terminated
+<Wed May 20 16:08:47 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 16:08:47 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:49 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:08:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 16:08:51 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:08:51 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:08:54 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Wed May 20 16:08:54 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 16:08:54 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:08:55 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 16:08:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 16:08:56 PDT 2015> org.spec.jbb.ic: Resolved Controller-TransferLog-Tier0 @ localhost:48100
+<Wed May 20 16:08:58 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 16:08:58 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:08:58 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:09:01 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4932.5)
+<Wed May 20 16:09:01 PDT 2015> org.spec.jbb.driver: IR = 4932 (probe) + 0 (saturate) + 7 (service) = 4939 reqs/sec
+<Wed May 20 16:09:01 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 502, saturates = 33
+<Wed May 20 16:12:01 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4932.5), NEW STATE: Running (IR=0.0)
+<Wed May 20 16:12:01 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 16:12:01 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 16:13:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=493.0)
+<Wed May 20 16:13:05 PDT 2015> org.spec.jbb.driver: IR = 493 (probe) + 0 (saturate) + 7 (service) = 500 reqs/sec
+<Wed May 20 16:13:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 60, saturates = 22
+<Wed May 20 16:14:09 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=493.0), NEW STATE: Running (IR=986.5)
+<Wed May 20 16:14:09 PDT 2015> org.spec.jbb.driver: IR = 986 (probe) + 0 (saturate) + 7 (service) = 993 reqs/sec
+<Wed May 20 16:14:09 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 108, saturates = 24
+<Wed May 20 16:15:15 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=986.5), NEW STATE: Running (IR=1479.5)
+<Wed May 20 16:15:15 PDT 2015> org.spec.jbb.driver: IR = 1480 (probe) + 0 (saturate) + 7 (service) = 1486 reqs/sec
+<Wed May 20 16:15:15 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 154, saturates = 24
+<Wed May 20 16:16:20 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1479.5), NEW STATE: Running (IR=1973.0)
+<Wed May 20 16:16:20 PDT 2015> org.spec.jbb.driver: IR = 1973 (probe) + 0 (saturate) + 7 (service) = 1980 reqs/sec
+<Wed May 20 16:16:20 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 204, saturates = 24
+<Wed May 20 16:17:25 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=1973.0), NEW STATE: Running (IR=2466.0)
+<Wed May 20 16:17:25 PDT 2015> org.spec.jbb.driver: IR = 2466 (probe) + 0 (saturate) + 7 (service) = 2473 reqs/sec
+<Wed May 20 16:17:25 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 258, saturates = 28
+<Wed May 20 16:18:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=2466.0), NEW STATE: Running (IR=2959.5)
+<Wed May 20 16:18:29 PDT 2015> org.spec.jbb.driver: IR = 2959 (probe) + 0 (saturate) + 7 (service) = 2966 reqs/sec
+<Wed May 20 16:18:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 302, saturates = 28
+<Wed May 20 16:19:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=2959.5), NEW STATE: Running (IR=3452.5)
+<Wed May 20 16:19:34 PDT 2015> org.spec.jbb.driver: IR = 3452 (probe) + 0 (saturate) + 7 (service) = 3459 reqs/sec
+<Wed May 20 16:19:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 354, saturates = 30
+<Wed May 20 16:20:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=3452.5), NEW STATE: Running (IR=3946.0)
+<Wed May 20 16:20:38 PDT 2015> org.spec.jbb.driver: IR = 3946 (probe) + 0 (saturate) + 7 (service) = 3953 reqs/sec
+<Wed May 20 16:20:38 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 402, saturates = 30
+<Wed May 20 16:21:44 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=3946.0), NEW STATE: Running (IR=4439.0)
+<Wed May 20 16:21:44 PDT 2015> org.spec.jbb.driver: IR = 4439 (probe) + 0 (saturate) + 7 (service) = 4446 reqs/sec
+<Wed May 20 16:21:44 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 452, saturates = 30
+<Wed May 20 16:22:50 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4439.0), NEW STATE: Running (IR=4932.0)
+<Wed May 20 16:22:50 PDT 2015> org.spec.jbb.driver: IR = 4932 (probe) + 0 (saturate) + 7 (service) = 4939 reqs/sec
+<Wed May 20 16:22:50 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 502, saturates = 34
+<Wed May 20 16:23:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4932.0), NEW STATE: Running (IR=5425.5)
+<Wed May 20 16:23:55 PDT 2015> org.spec.jbb.driver: IR = 5425 (probe) + 0 (saturate) + 7 (service) = 5432 reqs/sec
+<Wed May 20 16:23:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 550, saturates = 33
+<Wed May 20 16:25:01 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=5425.5), NEW STATE: Running (IR=5918.5)
+<Wed May 20 16:25:01 PDT 2015> org.spec.jbb.driver: IR = 5918 (probe) + 0 (saturate) + 7 (service) = 5925 reqs/sec
+<Wed May 20 16:25:01 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 596, saturates = 34
+<Wed May 20 16:26:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=5918.5), NEW STATE: Running (IR=6412.0)
+<Wed May 20 16:26:06 PDT 2015> org.spec.jbb.driver: IR = 6412 (probe) + 0 (saturate) + 7 (service) = 6419 reqs/sec
+<Wed May 20 16:26:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 652, saturates = 35
+<Wed May 20 16:27:11 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=6412.0), NEW STATE: Running (IR=6905.0)
+<Wed May 20 16:27:11 PDT 2015> org.spec.jbb.driver: IR = 6445 (probe) + 460 (saturate) + 7 (service) = 6912 reqs/sec
+<Wed May 20 16:27:11 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 652, saturates = 42
+<Wed May 20 16:28:15 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=6905.0), NEW STATE: Running (IR=7398.5)
+<Wed May 20 16:28:15 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 920 (saturate) + 7 (service) = 7405 reqs/sec
+<Wed May 20 16:28:15 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 652, saturates = 43
+<Wed May 20 16:29:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=7398.5), NEW STATE: Running (IR=7891.5)
+<Wed May 20 16:29:21 PDT 2015> org.spec.jbb.driver: IR = 6451 (probe) + 1440 (saturate) + 7 (service) = 7898 reqs/sec
+<Wed May 20 16:29:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 652, saturates = 42
+<Wed May 20 16:30:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=7891.5), NEW STATE: Running (IR=8385.0)
+<Wed May 20 16:30:29 PDT 2015> org.spec.jbb.driver: IR = 6445 (probe) + 1940 (saturate) + 7 (service) = 8392 reqs/sec
+<Wed May 20 16:30:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 49
+<Wed May 20 16:31:39 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8385.0), NEW STATE: Running (IR=8878.0)
+<Wed May 20 16:31:39 PDT 2015> org.spec.jbb.driver: IR = 6458 (probe) + 2420 (saturate) + 7 (service) = 8885 reqs/sec
+<Wed May 20 16:31:39 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 48
+<Wed May 20 16:32:50 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8878.0), NEW STATE: Running (IR=9371.5)
+<Wed May 20 16:32:50 PDT 2015> org.spec.jbb.driver: IR = 6451 (probe) + 2920 (saturate) + 7 (service) = 9378 reqs/sec
+<Wed May 20 16:32:50 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 50
+<Wed May 20 16:33:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=9371.5), NEW STATE: Running (IR=9864.5)
+<Wed May 20 16:33:55 PDT 2015> org.spec.jbb.driver: IR = 6464 (probe) + 3400 (saturate) + 7 (service) = 9871 reqs/sec
+<Wed May 20 16:33:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 51
+<Wed May 20 16:35:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=9864.5), NEW STATE: Running (IR=10357.5)
+<Wed May 20 16:35:02 PDT 2015> org.spec.jbb.driver: IR = 6457 (probe) + 3900 (saturate) + 7 (service) = 10364 reqs/sec
+<Wed May 20 16:35:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 50
+<Wed May 20 16:36:07 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=10357.5), NEW STATE: Running (IR=10851.0)
+<Wed May 20 16:36:07 PDT 2015> org.spec.jbb.driver: IR = 6451 (probe) + 4400 (saturate) + 7 (service) = 10858 reqs/sec
+<Wed May 20 16:36:07 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 52
+<Wed May 20 16:37:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=10851.0), NEW STATE: Running (IR=11344.0)
+<Wed May 20 16:37:13 PDT 2015> org.spec.jbb.driver: IR = 6464 (probe) + 4880 (saturate) + 7 (service) = 11351 reqs/sec
+<Wed May 20 16:37:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 55
+<Wed May 20 16:38:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=11344.0), NEW STATE: Running (IR=11837.5)
+<Wed May 20 16:38:22 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 5360 (saturate) + 7 (service) = 11844 reqs/sec
+<Wed May 20 16:38:22 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 52
+<Wed May 20 16:39:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=11837.5), NEW STATE: Running (IR=12330.5)
+<Wed May 20 16:39:33 PDT 2015> org.spec.jbb.driver: IR = 6450 (probe) + 5880 (saturate) + 7 (service) = 12337 reqs/sec
+<Wed May 20 16:39:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 16:40:53 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=12330.5), NEW STATE: Running (IR=12824.0)
+<Wed May 20 16:40:53 PDT 2015> org.spec.jbb.driver: IR = 6464 (probe) + 6360 (saturate) + 7 (service) = 12831 reqs/sec
+<Wed May 20 16:40:53 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 16:42:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=12824.0), NEW STATE: Running (IR=13317.0)
+<Wed May 20 16:42:05 PDT 2015> org.spec.jbb.driver: IR = 6477 (probe) + 6840 (saturate) + 7 (service) = 13324 reqs/sec
+<Wed May 20 16:42:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 56
+<Wed May 20 16:43:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=13317.0), NEW STATE: Running (IR=13810.5)
+<Wed May 20 16:43:16 PDT 2015> org.spec.jbb.driver: IR = 6470 (probe) + 7340 (saturate) + 7 (service) = 13817 reqs/sec
+<Wed May 20 16:43:16 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 57
+<Wed May 20 16:44:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=13810.5), NEW STATE: Running (IR=14303.5)
+<Wed May 20 16:44:29 PDT 2015> org.spec.jbb.driver: IR = 6464 (probe) + 7840 (saturate) + 7 (service) = 14310 reqs/sec
+<Wed May 20 16:44:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 59
+<Wed May 20 16:45:43 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=14303.5), NEW STATE: Running (IR=14796.5)
+<Wed May 20 16:45:43 PDT 2015> org.spec.jbb.driver: IR = 6496 (probe) + 8300 (saturate) + 7 (service) = 14803 reqs/sec
+<Wed May 20 16:45:43 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 56
+<Wed May 20 16:46:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=14796.5), NEW STATE: Running (IR=15290.0)
+<Wed May 20 16:46:51 PDT 2015> org.spec.jbb.driver: IR = 6470 (probe) + 8820 (saturate) + 7 (service) = 15297 reqs/sec
+<Wed May 20 16:46:51 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 58
+<Wed May 20 16:47:59 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=15290.0), NEW STATE: Running (IR=15783.0)
+<Wed May 20 16:47:59 PDT 2015> org.spec.jbb.driver: IR = 6503 (probe) + 9280 (saturate) + 7 (service) = 15790 reqs/sec
+<Wed May 20 16:47:59 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 60
+<Wed May 20 16:49:06 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=15783.0), NEW STATE: Running (IR=16276.5)
+<Wed May 20 16:49:06 PDT 2015> org.spec.jbb.driver: IR = 6456 (probe) + 9820 (saturate) + 7 (service) = 16283 reqs/sec
+<Wed May 20 16:49:06 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 64
+<Wed May 20 16:50:19 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16276.5), NEW STATE: Running (IR=16769.5)
+<Wed May 20 16:50:19 PDT 2015> org.spec.jbb.driver: IR = 6449 (probe) + 10320 (saturate) + 7 (service) = 16776 reqs/sec
+<Wed May 20 16:50:19 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 64
+<Wed May 20 16:51:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16769.5), NEW STATE: Running (IR=17263.0)
+<Wed May 20 16:51:33 PDT 2015> org.spec.jbb.driver: IR = 6463 (probe) + 10800 (saturate) + 7 (service) = 17270 reqs/sec
+<Wed May 20 16:51:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 64
+<Wed May 20 16:52:40 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=17263.0), NEW STATE: Running (IR=17756.0)
+<Wed May 20 16:52:40 PDT 2015> org.spec.jbb.driver: IR = 6496 (probe) + 11260 (saturate) + 7 (service) = 17763 reqs/sec
+<Wed May 20 16:52:40 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 65
+<Wed May 20 16:54:07 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=17756.0), NEW STATE: Running (IR=18249.5)
+<Wed May 20 16:54:07 PDT 2015> org.spec.jbb.driver: IR = 6429 (probe) + 11820 (saturate) + 7 (service) = 18256 reqs/sec
+<Wed May 20 16:54:07 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 67
+<Wed May 20 16:55:15 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=18249.5), NEW STATE: Running (IR=18742.5)
+<Wed May 20 16:55:15 PDT 2015> org.spec.jbb.driver: IR = 6482 (probe) + 12260 (saturate) + 7 (service) = 18749 reqs/sec
+<Wed May 20 16:55:15 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 69
+<Wed May 20 16:56:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=18742.5), NEW STATE: Running (IR=19236.0)
+<Wed May 20 16:56:26 PDT 2015> org.spec.jbb.driver: IR = 6476 (probe) + 12760 (saturate) + 7 (service) = 19243 reqs/sec
+<Wed May 20 16:56:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 70
+<Wed May 20 16:56:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=19236.0), NEW STATE: Running (IR=19236.0)
+<Wed May 20 16:56:56 PDT 2015> org.spec.jbb.driver: IR = 6476 (probe) + 12760 (saturate) + 7 (service) = 19243 reqs/sec
+<Wed May 20 16:56:56 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 68
+<Wed May 20 16:58:03 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=19236.0), NEW STATE: Running (IR=19729.0)
+<Wed May 20 16:58:03 PDT 2015> org.spec.jbb.driver: IR = 6469 (probe) + 13260 (saturate) + 7 (service) = 19736 reqs/sec
+<Wed May 20 16:58:03 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 68
+<Wed May 20 16:59:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=19729.0), NEW STATE: Running (IR=20222.0)
+<Wed May 20 16:59:10 PDT 2015> org.spec.jbb.driver: IR = 6462 (probe) + 13760 (saturate) + 7 (service) = 20229 reqs/sec
+<Wed May 20 16:59:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 74
+<Wed May 20 17:00:21 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20222.0), NEW STATE: Running (IR=20715.5)
+<Wed May 20 17:00:21 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 14240 (saturate) + 7 (service) = 20722 reqs/sec
+<Wed May 20 17:00:21 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 73
+<Wed May 20 17:01:36 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20715.5), NEW STATE: Running (IR=21208.5)
+<Wed May 20 17:01:36 PDT 2015> org.spec.jbb.driver: IR = 6449 (probe) + 14760 (saturate) + 7 (service) = 21215 reqs/sec
+<Wed May 20 17:01:36 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 73
+<Wed May 20 17:02:41 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=21208.5), NEW STATE: Running (IR=21702.0)
+<Wed May 20 17:02:41 PDT 2015> org.spec.jbb.driver: IR = 6502 (probe) + 15200 (saturate) + 7 (service) = 21709 reqs/sec
+<Wed May 20 17:02:41 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 77
+<Wed May 20 17:03:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=21702.0), NEW STATE: Running (IR=22195.0)
+<Wed May 20 17:03:49 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 15720 (saturate) + 7 (service) = 22202 reqs/sec
+<Wed May 20 17:03:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 75
+<Wed May 20 17:04:55 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=22195.0), NEW STATE: Running (IR=22688.5)
+<Wed May 20 17:04:55 PDT 2015> org.spec.jbb.driver: IR = 6449 (probe) + 16240 (saturate) + 7 (service) = 22695 reqs/sec
+<Wed May 20 17:04:55 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 78
+<Wed May 20 17:06:15 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=22688.5), NEW STATE: Running (IR=23181.5)
+<Wed May 20 17:06:15 PDT 2015> org.spec.jbb.driver: IR = 6502 (probe) + 16680 (saturate) + 7 (service) = 23188 reqs/sec
+<Wed May 20 17:06:15 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 78
+<Wed May 20 17:07:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=23181.5), NEW STATE: Running (IR=23675.0)
+<Wed May 20 17:07:26 PDT 2015> org.spec.jbb.driver: IR = 6495 (probe) + 17180 (saturate) + 7 (service) = 23682 reqs/sec
+<Wed May 20 17:07:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 80
+<Wed May 20 17:08:54 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=23675.0), NEW STATE: Running (IR=24168.0)
+<Wed May 20 17:08:54 PDT 2015> org.spec.jbb.driver: IR = 6448 (probe) + 17720 (saturate) + 7 (service) = 24175 reqs/sec
+<Wed May 20 17:08:54 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 81
+<Wed May 20 17:10:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=24168.0), NEW STATE: Running (IR=24661.0)
+<Wed May 20 17:10:02 PDT 2015> org.spec.jbb.driver: IR = 6461 (probe) + 18200 (saturate) + 7 (service) = 24668 reqs/sec
+<Wed May 20 17:10:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 82
+<Wed May 20 17:11:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=24661.0), NEW STATE: Running (IR=25154.5)
+<Wed May 20 17:11:13 PDT 2015> org.spec.jbb.driver: IR = 6475 (probe) + 18680 (saturate) + 7 (service) = 25161 reqs/sec
+<Wed May 20 17:11:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 84
+<Wed May 20 17:12:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=25154.5), NEW STATE: Running (IR=25647.5)
+<Wed May 20 17:12:22 PDT 2015> org.spec.jbb.driver: IR = 6488 (probe) + 19160 (saturate) + 7 (service) = 25654 reqs/sec
+<Wed May 20 17:12:22 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 84
+<Wed May 20 17:13:30 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=25647.5), NEW STATE: Running (IR=26141.0)
+<Wed May 20 17:13:30 PDT 2015> org.spec.jbb.driver: IR = 6461 (probe) + 19680 (saturate) + 7 (service) = 26148 reqs/sec
+<Wed May 20 17:13:30 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 82
+<Wed May 20 17:14:45 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=26141.0), NEW STATE: Running (IR=26634.0)
+<Wed May 20 17:14:45 PDT 2015> org.spec.jbb.driver: IR = 6454 (probe) + 20180 (saturate) + 7 (service) = 26641 reqs/sec
+<Wed May 20 17:14:45 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 83
+<Wed May 20 17:15:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=26634.0), NEW STATE: Running (IR=27127.5)
+<Wed May 20 17:15:56 PDT 2015> org.spec.jbb.driver: IR = 6487 (probe) + 20640 (saturate) + 7 (service) = 27134 reqs/sec
+<Wed May 20 17:15:56 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 87
+<Wed May 20 17:17:01 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=27127.5), NEW STATE: Running (IR=27620.5)
+<Wed May 20 17:17:01 PDT 2015> org.spec.jbb.driver: IR = 6480 (probe) + 21140 (saturate) + 7 (service) = 27627 reqs/sec
+<Wed May 20 17:17:01 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 85
+<Wed May 20 17:18:10 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=27620.5), NEW STATE: Running (IR=28114.0)
+<Wed May 20 17:18:10 PDT 2015> org.spec.jbb.driver: IR = 6474 (probe) + 21640 (saturate) + 7 (service) = 28121 reqs/sec
+<Wed May 20 17:18:10 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 90
+<Wed May 20 17:19:19 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28114.0), NEW STATE: Running (IR=28607.0)
+<Wed May 20 17:19:19 PDT 2015> org.spec.jbb.driver: IR = 6467 (probe) + 22140 (saturate) + 7 (service) = 28614 reqs/sec
+<Wed May 20 17:19:19 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 88
+<Wed May 20 17:20:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28607.0), NEW STATE: Running (IR=29100.5)
+<Wed May 20 17:20:33 PDT 2015> org.spec.jbb.driver: IR = 6480 (probe) + 22620 (saturate) + 7 (service) = 29107 reqs/sec
+<Wed May 20 17:20:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 87
+<Wed May 20 17:21:39 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=29100.5), NEW STATE: Running (IR=29593.5)
+<Wed May 20 17:21:39 PDT 2015> org.spec.jbb.driver: IR = 6513 (probe) + 23080 (saturate) + 7 (service) = 29600 reqs/sec
+<Wed May 20 17:21:39 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 90
+<Wed May 20 17:22:50 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=29593.5), NEW STATE: Running (IR=30086.5)
+<Wed May 20 17:22:50 PDT 2015> org.spec.jbb.driver: IR = 6466 (probe) + 23620 (saturate) + 7 (service) = 30093 reqs/sec
+<Wed May 20 17:22:50 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 89
+<Wed May 20 17:24:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=30086.5), NEW STATE: Running (IR=30580.0)
+<Wed May 20 17:24:02 PDT 2015> org.spec.jbb.driver: IR = 6480 (probe) + 24100 (saturate) + 7 (service) = 30587 reqs/sec
+<Wed May 20 17:24:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 94
+<Wed May 20 17:25:07 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=30580.0), NEW STATE: Running (IR=31073.0)
+<Wed May 20 17:25:07 PDT 2015> org.spec.jbb.driver: IR = 6493 (probe) + 24580 (saturate) + 7 (service) = 31080 reqs/sec
+<Wed May 20 17:25:07 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 94
+<Wed May 20 17:26:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=31073.0), NEW STATE: Running (IR=31566.5)
+<Wed May 20 17:26:29 PDT 2015> org.spec.jbb.driver: IR = 6506 (probe) + 25060 (saturate) + 7 (service) = 31573 reqs/sec
+<Wed May 20 17:26:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 93
+<Wed May 20 17:27:42 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=31566.5), NEW STATE: Running (IR=32059.5)
+<Wed May 20 17:27:42 PDT 2015> org.spec.jbb.driver: IR = 6440 (probe) + 25620 (saturate) + 7 (service) = 32066 reqs/sec
+<Wed May 20 17:27:42 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 96
+<Wed May 20 17:28:56 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=32059.5), NEW STATE: Running (IR=32553.0)
+<Wed May 20 17:28:57 PDT 2015> org.spec.jbb.driver: IR = 6473 (probe) + 26080 (saturate) + 7 (service) = 32560 reqs/sec
+<Wed May 20 17:28:57 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 96
+<Wed May 20 17:30:07 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=32553.0), NEW STATE: Running (IR=33046.0)
+<Wed May 20 17:30:07 PDT 2015> org.spec.jbb.driver: IR = 6466 (probe) + 26580 (saturate) + 7 (service) = 33053 reqs/sec
+<Wed May 20 17:30:07 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 96
+<Wed May 20 17:31:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=33046.0), NEW STATE: Running (IR=33539.5)
+<Wed May 20 17:31:18 PDT 2015> org.spec.jbb.driver: IR = 6500 (probe) + 27040 (saturate) + 7 (service) = 33546 reqs/sec
+<Wed May 20 17:31:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 99
+<Wed May 20 17:32:25 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=33539.5), NEW STATE: Running (IR=34032.5)
+<Wed May 20 17:32:25 PDT 2015> org.spec.jbb.driver: IR = 6452 (probe) + 27580 (saturate) + 7 (service) = 34039 reqs/sec
+<Wed May 20 17:32:25 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 98
+<Wed May 20 17:33:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=34032.5), NEW STATE: Running (IR=34525.5)
+<Wed May 20 17:33:34 PDT 2015> org.spec.jbb.driver: IR = 6465 (probe) + 28060 (saturate) + 7 (service) = 34532 reqs/sec
+<Wed May 20 17:33:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 98
+<Wed May 20 17:34:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=34525.5), NEW STATE: Running (IR=35019.0)
+<Wed May 20 17:34:49 PDT 2015> org.spec.jbb.driver: IR = 6479 (probe) + 28540 (saturate) + 7 (service) = 35026 reqs/sec
+<Wed May 20 17:34:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 102
+<Wed May 20 17:36:03 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=35019.0), NEW STATE: Running (IR=35512.0)
+<Wed May 20 17:36:03 PDT 2015> org.spec.jbb.driver: IR = 6492 (probe) + 29020 (saturate) + 7 (service) = 35519 reqs/sec
+<Wed May 20 17:36:03 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 106
+<Wed May 20 17:37:13 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=35512.0), NEW STATE: Running (IR=36005.5)
+<Wed May 20 17:37:13 PDT 2015> org.spec.jbb.driver: IR = 6445 (probe) + 29560 (saturate) + 7 (service) = 36012 reqs/sec
+<Wed May 20 17:37:13 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 102
+<Wed May 20 17:38:25 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=36005.5), NEW STATE: Running (IR=36498.5)
+<Wed May 20 17:38:25 PDT 2015> org.spec.jbb.driver: IR = 6478 (probe) + 30020 (saturate) + 7 (service) = 36505 reqs/sec
+<Wed May 20 17:38:25 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 105
+<Wed May 20 17:39:32 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=36498.5), NEW STATE: Running (IR=36992.0)
+<Wed May 20 17:39:32 PDT 2015> org.spec.jbb.driver: IR = 6492 (probe) + 30500 (saturate) + 7 (service) = 36999 reqs/sec
+<Wed May 20 17:39:32 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 104
+<Wed May 20 17:40:42 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=36992.0), NEW STATE: Running (IR=37485.0)
+<Wed May 20 17:40:42 PDT 2015> org.spec.jbb.driver: IR = 6505 (probe) + 30980 (saturate) + 7 (service) = 37492 reqs/sec
+<Wed May 20 17:40:42 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 104
+<Wed May 20 17:42:04 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=37485.0), NEW STATE: Running (IR=37978.5)
+<Wed May 20 17:42:04 PDT 2015> org.spec.jbb.driver: IR = 6518 (probe) + 31460 (saturate) + 7 (service) = 37985 reqs/sec
+<Wed May 20 17:42:04 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 104
+<Wed May 20 17:43:16 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=37978.5), NEW STATE: Running (IR=38471.5)
+<Wed May 20 17:43:16 PDT 2015> org.spec.jbb.driver: IR = 6491 (probe) + 31980 (saturate) + 7 (service) = 38478 reqs/sec
+<Wed May 20 17:43:16 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 104
+<Wed May 20 17:44:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=38471.5), NEW STATE: Running (IR=38965.0)
+<Wed May 20 17:44:26 PDT 2015> org.spec.jbb.driver: IR = 6505 (probe) + 32460 (saturate) + 7 (service) = 38972 reqs/sec
+<Wed May 20 17:44:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 108
+<Wed May 20 17:45:57 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=38965.0), NEW STATE: Running (IR=39458.0)
+<Wed May 20 17:45:57 PDT 2015> org.spec.jbb.driver: IR = 6498 (probe) + 32960 (saturate) + 7 (service) = 39465 reqs/sec
+<Wed May 20 17:45:57 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 110
+<Wed May 20 17:47:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=39458.0), NEW STATE: Running (IR=39951.0)
+<Wed May 20 17:47:18 PDT 2015> org.spec.jbb.driver: IR = 6531 (probe) + 33420 (saturate) + 7 (service) = 39958 reqs/sec
+<Wed May 20 17:47:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 111
+<Wed May 20 17:48:43 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=39951.0), NEW STATE: Running (IR=40444.5)
+<Wed May 20 17:48:43 PDT 2015> org.spec.jbb.driver: IR = 6445 (probe) + 34000 (saturate) + 7 (service) = 40451 reqs/sec
+<Wed May 20 17:48:43 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 112
+<Wed May 20 17:50:11 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=40444.5), NEW STATE: Running (IR=40937.5)
+<Wed May 20 17:50:11 PDT 2015> org.spec.jbb.driver: IR = 6458 (probe) + 34480 (saturate) + 7 (service) = 40944 reqs/sec
+<Wed May 20 17:50:11 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 17:51:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=40937.5), NEW STATE: Running (IR=41431.0)
+<Wed May 20 17:51:26 PDT 2015> org.spec.jbb.driver: IR = 6471 (probe) + 34960 (saturate) + 7 (service) = 41438 reqs/sec
+<Wed May 20 17:51:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 115
+<Wed May 20 17:53:26 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41431.0), NEW STATE: Running (IR=41431.0)
+<Wed May 20 17:53:26 PDT 2015> org.spec.jbb.driver: IR = 6471 (probe) + 34960 (saturate) + 7 (service) = 41438 reqs/sec
+<Wed May 20 17:53:26 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 117
+<Wed May 20 17:55:58 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41431.0), NEW STATE: Running (IR=41924.0)
+<Wed May 20 17:55:58 PDT 2015> org.spec.jbb.driver: IR = 6484 (probe) + 35440 (saturate) + 7 (service) = 41931 reqs/sec
+<Wed May 20 17:55:58 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 118
+<Wed May 20 17:56:29 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=41924.0), NEW STATE: Running (IR=42417.5)
+<Wed May 20 17:56:29 PDT 2015> org.spec.jbb.driver: IR = 6437 (probe) + 35980 (saturate) + 7 (service) = 42424 reqs/sec
+<Wed May 20 17:56:29 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 113
+<Wed May 20 17:56:59 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42417.5), NEW STATE: Running (IR=42910.5)
+<Wed May 20 17:56:59 PDT 2015> org.spec.jbb.driver: IR = 6491 (probe) + 36420 (saturate) + 7 (service) = 42917 reqs/sec
+<Wed May 20 17:56:59 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 123
+<Wed May 20 17:57:30 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=42910.5), NEW STATE: Terminated
+<Wed May 20 17:57:30 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 17:57:30 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 17:57:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 17:57:35 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 17:57:35 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 17:57:35 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 17:57:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Wed May 20 17:57:38 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 17:57:38 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 17:57:51 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4094.0)
+<Wed May 20 17:57:51 PDT 2015> org.spec.jbb.driver: IR = 4094 (probe) + 0 (saturate) + 7 (service) = 4101 reqs/sec
+<Wed May 20 17:57:51 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 420, saturates = 30
+<Wed May 20 17:58:05 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4094.0), NEW STATE: Running (IR=8187.5)
+<Wed May 20 17:58:05 PDT 2015> org.spec.jbb.driver: IR = 6447 (probe) + 1740 (saturate) + 7 (service) = 8194 reqs/sec
+<Wed May 20 17:58:05 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 48
+<Wed May 20 17:58:20 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=8187.5), NEW STATE: Running (IR=12281.5)
+<Wed May 20 17:58:20 PDT 2015> org.spec.jbb.driver: IR = 6441 (probe) + 5840 (saturate) + 7 (service) = 12288 reqs/sec
+<Wed May 20 17:58:20 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 54
+<Wed May 20 17:58:34 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=12281.5), NEW STATE: Running (IR=16375.0)
+<Wed May 20 17:58:34 PDT 2015> org.spec.jbb.driver: IR = 6455 (probe) + 9920 (saturate) + 7 (service) = 16382 reqs/sec
+<Wed May 20 17:58:34 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 654, saturates = 63
+<Wed May 20 17:58:49 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=16375.0), NEW STATE: Running (IR=20469.0)
+<Wed May 20 17:58:49 PDT 2015> org.spec.jbb.driver: IR = 6449 (probe) + 14020 (saturate) + 7 (service) = 20476 reqs/sec
+<Wed May 20 17:58:49 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 73
+<Wed May 20 17:59:03 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=20469.0), NEW STATE: Running (IR=24562.5)
+<Wed May 20 17:59:03 PDT 2015> org.spec.jbb.driver: IR = 6463 (probe) + 18100 (saturate) + 7 (service) = 24569 reqs/sec
+<Wed May 20 17:59:03 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 82
+<Wed May 20 17:59:18 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=24562.5), NEW STATE: Running (IR=28656.5)
+<Wed May 20 17:59:18 PDT 2015> org.spec.jbb.driver: IR = 6476 (probe) + 22180 (saturate) + 7 (service) = 28663 reqs/sec
+<Wed May 20 17:59:18 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 89
+<Wed May 20 17:59:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=28656.5), NEW STATE: Running (IR=32750.0)
+<Wed May 20 17:59:33 PDT 2015> org.spec.jbb.driver: IR = 6470 (probe) + 26280 (saturate) + 7 (service) = 32757 reqs/sec
+<Wed May 20 17:59:33 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 97
+<Wed May 20 17:59:47 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=32750.0), NEW STATE: Running (IR=36844.0)
+<Wed May 20 17:59:47 PDT 2015> org.spec.jbb.driver: IR = 6484 (probe) + 30360 (saturate) + 7 (service) = 36851 reqs/sec
+<Wed May 20 17:59:47 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 103
+<Wed May 20 18:00:02 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=36844.0), NEW STATE: Running (IR=40937.5)
+<Wed May 20 18:00:02 PDT 2015> org.spec.jbb.driver: IR = 6458 (probe) + 34480 (saturate) + 7 (service) = 40944 reqs/sec
+<Wed May 20 18:00:02 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 656, saturates = 115
+<Wed May 20 18:00:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=40937.5), NEW STATE: Running (IR=0.0)
+<Wed May 20 18:00:22 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 18:00:22 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 18:00:27 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Stopped
+<Wed May 20 18:00:27 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:00:31 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Stopped, NEW STATE: Terminated
+<Wed May 20 18:00:31 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 18:00:31 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:33 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:00:35 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 18:00:35 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 18:00:35 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 18:00:38 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Wed May 20 18:00:38 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 18:00:38 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Parameters accepted: [specjbb.forkjoin.workers=[=72, Tier3=10], specjbb.controller.rtcurve.start=0.0, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.group.count=2, specjbb.controller.rtcurve.maxRetriesOverall=5, specjbb.time.server=false]
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Terminated, NEW STATE: Initialization
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.heartbeat-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.heartbeat
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier0 @ 127.0.0.1:55216 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier1 @ 127.0.0.1:52893 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier2 @ 127.0.0.1:59962 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Pushed Group2.TxInjector.JVM1.I.driver.Driver-Tier3 @ 127.0.0.1:54020 to announce list
+<Wed May 20 18:00:39 PDT 2015> org.spec.jbb.ic: Registered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:00:41 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Wed May 20 18:00:41 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 18:00:41 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 18:00:44 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4093.5)
+<Wed May 20 18:00:44 PDT 2015> org.spec.jbb.driver: IR = 4093 (probe) + 0 (saturate) + 7 (service) = 4100 reqs/sec
+<Wed May 20 18:00:44 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 420, saturates = 30
+<Wed May 20 18:01:19 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=4093.5), NEW STATE: Running (IR=0.0)
+<Wed May 20 18:01:19 PDT 2015> org.spec.jbb.driver: IR = 0 (probe) + 0 (saturate) + 7 (service) = 7 reqs/sec
+<Wed May 20 18:01:19 PDT 2015> org.spec.jbb.driver: targets = 16, probes = 0, saturates = 0
+<Wed May 20 18:01:22 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Wed May 20 18:01:22 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I
+<Wed May 20 18:01:22 PDT 2015> org.spec.jbb.ic: Deregistered Group2.TxInjector.JVM1.I.driver.Driver
+<Wed May 20 18:01:23 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Exiting
+<Wed May 20 18:01:23 PDT 2015> org.spec.jbb.group2.txinjector.jvm1: Exiting
+Tests are skipped.
+  7488s: 
+  7488s: 

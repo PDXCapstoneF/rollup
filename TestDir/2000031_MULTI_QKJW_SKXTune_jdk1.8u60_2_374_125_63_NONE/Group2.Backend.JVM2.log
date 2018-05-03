@@ -1,0 +1,837 @@
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 12).
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 12).
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 12).
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 12).
+java version "1.8.0_60-ea"
+Java(TM) SE Runtime Environment (build 1.8.0_60-ea-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.60-b12, mixed mode)
+
+
+SPECjbb2015 Java Business Benchmark
+ (c) Standard Performance Evaluation Corporation, 2015
+
+Preparing to launch Standalone SPECjbb2015 Backend.
+
+Reading property file: /workloads/SPECjbb2015/GOLD/2000031_MULTI_QKJW_SKXTune_jdk1.8u60_2_374_125_63_NONE/./config/specjbb2015.props
+
+     0s: Enumerating plugins...
+     0s:    Connectivity:
+     0s:             HTTP_Grizzly: Grizzly HTTP server, JDK HTTP client
+     0s:              NIO_Grizzly: Grizzly NIO server, Grizzly NIO client
+     0s:               HTTP_Jetty: Jetty HTTP server, JDK HTTP client
+     0s:    Snapshot:
+     0s:                 InMemory: Stores snapshots in heap memory
+     0s:    Data Writers:
+     0s:                     Demo: Send all frame to listener
+     0s:                   InFile: Writing Data into file
+     0s:                   Silent: Drop all frames
+     0s: 
+     0s: Validating kit integrity...
+     0s: Kit validation had passed.
+     0s: 
+     0s: Tests are skipped.
+     0s: 
+     0s: Initializing...
+     0s: <Sat Jan 23 19:22:40 PST 2016> org.spec.jbb.ic: Init IC
+<Sat Jan 23 19:22:40 PST 2016> org.spec.jbb.ic: Resolving the hostname from IC-Master...
+2016-01-23 19:22:40.168:INFO::main: Logging initialized @8090ms
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: IC-Master is alive
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Hostname is resolved back as 127.0.0.1
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed IC-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed IC-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed IC-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed IC-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Registered IC
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: IC init finished
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.group2.backend.jvm2: Opening
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.group2.backend.jvm2: Binding to Controller...
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Resolved Controller-Tier0 @ localhost:55070
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.group2.backend.jvm2: Binding is OK
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-TransferLog-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-TransferLog-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-TransferLog-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-TransferLog-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2-TransferLog
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-validation-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-validation-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-validation-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2-validation-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2-validation
+
+     1s: Initialization completed
+     1s: <Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: PreInit, NEW STATE: Initialization
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.ic: Resolved Leader.heartbeat-Tier0 @ localhost:55070
+<Sat Jan 23 19:22:41 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.infra.validation.task.ValidationPropertiesTask.Group2.Backend.JVM2-validation: Checking properties compliance...
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.infra.validation.task.ValidationPropertiesTask.Group2.Backend.JVM2-validation: Properties validation completed
+<Sat Jan 23 19:22:43 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:22:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:22:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:22:46 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:22:49 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=10.0)
+<Sat Jan 23 19:22:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=10.0), NEW STATE: Running (IR=20.0)
+<Sat Jan 23 19:22:56 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=20.0), NEW STATE: Running (IR=30.0)
+<Sat Jan 23 19:22:57 PST 2016> org.spec.jbb.ic: Resolved Group1.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:38518
+<Sat Jan 23 19:23:01 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=30.0), NEW STATE: Running (IR=40.0)
+<Sat Jan 23 19:23:05 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=40.0), NEW STATE: Running (IR=50.0)
+<Sat Jan 23 19:23:09 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=50.0), NEW STATE: Running (IR=60.0)
+<Sat Jan 23 19:23:13 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=60.0), NEW STATE: Running (IR=70.0)
+<Sat Jan 23 19:23:17 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=70.0), NEW STATE: Running (IR=80.0)
+<Sat Jan 23 19:23:21 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=80.0), NEW STATE: Running (IR=90.0)
+<Sat Jan 23 19:23:25 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=90.0), NEW STATE: Running (IR=100.0)
+<Sat Jan 23 19:23:29 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=100.0)
+<Sat Jan 23 19:24:03 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:24:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Stopped
+<Sat Jan 23 19:24:08 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:24:08 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:24:09 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:24:09 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:24:10 PST 2016> org.spec.jbb.snapshots: 5 snapshots committed, 89330 Kb total
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Stopped, NEW STATE: Terminated
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:24:11 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:24:12 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:24:13 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:24:16 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:24:19 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=10.0)
+<Sat Jan 23 19:24:22 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=10.0), NEW STATE: Running (IR=20.0)
+<Sat Jan 23 19:24:26 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=20.0), NEW STATE: Running (IR=30.0)
+<Sat Jan 23 19:24:30 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=30.0), NEW STATE: Running (IR=40.0)
+<Sat Jan 23 19:24:34 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=40.0), NEW STATE: Running (IR=50.0)
+<Sat Jan 23 19:24:38 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=50.0), NEW STATE: Running (IR=60.0)
+<Sat Jan 23 19:24:42 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=60.0), NEW STATE: Running (IR=70.0)
+<Sat Jan 23 19:24:46 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=70.0), NEW STATE: Running (IR=80.0)
+<Sat Jan 23 19:24:50 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=80.0), NEW STATE: Running (IR=90.0)
+<Sat Jan 23 19:24:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=90.0), NEW STATE: Running (IR=100.0)
+<Sat Jan 23 19:24:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=100.0), NEW STATE: Running (IR=200.0)
+<Sat Jan 23 19:25:03 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=200.0), NEW STATE: Running (IR=220.0)
+<Sat Jan 23 19:25:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=220.0), NEW STATE: Running (IR=244.0)
+<Sat Jan 23 19:25:13 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=244.0), NEW STATE: Running (IR=273.0)
+<Sat Jan 23 19:25:18 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=273.0), NEW STATE: Running (IR=307.5)
+<Sat Jan 23 19:25:23 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=307.5), NEW STATE: Running (IR=349.0)
+<Sat Jan 23 19:25:27 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=349.0), NEW STATE: Running (IR=398.5)
+<Sat Jan 23 19:25:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=398.5), NEW STATE: Running (IR=458.5)
+<Sat Jan 23 19:25:35 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=458.5), NEW STATE: Running (IR=530.0)
+<Sat Jan 23 19:25:39 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=530.0), NEW STATE: Running (IR=616.0)
+<Sat Jan 23 19:25:43 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=616.0), NEW STATE: Running (IR=719.0)
+<Sat Jan 23 19:25:48 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=719.0), NEW STATE: Running (IR=843.0)
+<Sat Jan 23 19:25:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=843.0), NEW STATE: Running (IR=991.5)
+<Sat Jan 23 19:25:56 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=991.5), NEW STATE: Running (IR=1170.0)
+<Sat Jan 23 19:26:00 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1170.0), NEW STATE: Running (IR=1384.0)
+<Sat Jan 23 19:26:04 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1384.0), NEW STATE: Running (IR=1640.5)
+<Sat Jan 23 19:26:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1640.5), NEW STATE: Running (IR=1949.0)
+<Sat Jan 23 19:26:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1949.0), NEW STATE: Running (IR=2318.5)
+<Sat Jan 23 19:26:16 PST 2016> org.spec.jbb.ic: Resolved Group1.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:39124
+<Sat Jan 23 19:26:16 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=2318.5), NEW STATE: Running (IR=2762.5)
+<Sat Jan 23 19:26:17 PST 2016> org.spec.jbb.ic: Resolved Group1.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:39124
+<Sat Jan 23 19:26:19 PST 2016> org.spec.jbb.ic: Resolved Group1.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:38518
+<Sat Jan 23 19:26:20 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=2762.5), NEW STATE: Running (IR=3295.0)
+<Sat Jan 23 19:26:22 PST 2016> org.spec.jbb.ic: Resolved Group1.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:38518
+<Sat Jan 23 19:26:24 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=3295.0), NEW STATE: Running (IR=3934.0)
+<Sat Jan 23 19:26:28 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=3934.0), NEW STATE: Running (IR=4700.5)
+<Sat Jan 23 19:26:32 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4700.5), NEW STATE: Running (IR=5620.5)
+<Sat Jan 23 19:26:36 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=5620.5), NEW STATE: Running (IR=6724.5)
+<Sat Jan 23 19:26:40 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=6724.5), NEW STATE: Running (IR=8049.5)
+<Sat Jan 23 19:26:44 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=8049.5), NEW STATE: Running (IR=9639.5)
+<Sat Jan 23 19:26:48 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=9639.5), NEW STATE: Running (IR=11547.5)
+<Sat Jan 23 19:26:53 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=11547.5), NEW STATE: Running (IR=13837.0)
+<Sat Jan 23 19:26:57 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=13837.0), NEW STATE: Running (IR=16584.5)
+<Sat Jan 23 19:27:02 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=16584.5), NEW STATE: Running (IR=19881.5)
+<Sat Jan 23 19:27:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=19881.5), NEW STATE: Running (IR=23837.5)
+<Sat Jan 23 19:27:27 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=23837.5), NEW STATE: Running (IR=28585.0)
+<Sat Jan 23 19:27:34 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=28585.0), NEW STATE: Running (IR=34282.0)
+<Sat Jan 23 19:27:55 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=34282.0), NEW STATE: Running (IR=41118.5)
+<Sat Jan 23 19:28:01 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=41118.5), NEW STATE: Running (IR=49322.5)
+<Sat Jan 23 19:28:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=49322.5), NEW STATE: Running (IR=59167.0)
+<Sat Jan 23 19:28:43 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=59167.0), NEW STATE: Terminated
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:28:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:28:47 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:28:48 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:28:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:28:55 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4932.5)
+<Sat Jan 23 19:28:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4932.5), NEW STATE: Running (IR=9864.5)
+<Sat Jan 23 19:29:03 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=9864.5), NEW STATE: Running (IR=14797.0)
+<Sat Jan 23 19:29:07 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=14797.0), NEW STATE: Running (IR=19729.0)
+<Sat Jan 23 19:29:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=19729.0), NEW STATE: Running (IR=24661.5)
+<Sat Jan 23 19:29:20 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=24661.5), NEW STATE: Running (IR=29593.5)
+<Sat Jan 23 19:29:24 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=29593.5), NEW STATE: Running (IR=34526.0)
+<Sat Jan 23 19:29:33 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=34526.0), NEW STATE: Running (IR=39458.0)
+<Sat Jan 23 19:29:46 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=39458.0), NEW STATE: Running (IR=44390.0)
+<Sat Jan 23 19:30:07 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=44390.0), NEW STATE: Running (IR=49322.5)
+<Sat Jan 23 19:30:14 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=49322.5), NEW STATE: Running (IR=49322.5)
+<Sat Jan 23 19:30:47 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=49322.5), NEW STATE: Terminated
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:48 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:50 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:54 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 19:30:56 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:30:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=5916.5)
+<Sat Jan 23 19:33:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=5916.5), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 19:35:03 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=591.5)
+<Sat Jan 23 19:36:09 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=591.5), NEW STATE: Running (IR=1183.5)
+<Sat Jan 23 19:37:16 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1183.5), NEW STATE: Running (IR=1775.0)
+<Sat Jan 23 19:38:22 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=1775.0), NEW STATE: Running (IR=2366.5)
+<Sat Jan 23 19:39:27 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=2366.5), NEW STATE: Running (IR=2958.5)
+<Sat Jan 23 19:40:32 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=2958.5), NEW STATE: Running (IR=3550.0)
+<Sat Jan 23 19:41:37 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=3550.0), NEW STATE: Running (IR=4141.5)
+<Sat Jan 23 19:42:42 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4141.5), NEW STATE: Running (IR=4733.5)
+<Sat Jan 23 19:43:47 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4733.5), NEW STATE: Running (IR=5325.0)
+<Sat Jan 23 19:44:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=5325.0), NEW STATE: Running (IR=5916.5)
+<Sat Jan 23 19:45:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=5916.5), NEW STATE: Running (IR=6508.5)
+<Sat Jan 23 19:47:04 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=6508.5), NEW STATE: Running (IR=7100.0)
+<Sat Jan 23 19:48:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=7100.0), NEW STATE: Running (IR=7691.5)
+<Sat Jan 23 19:49:15 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=7691.5), NEW STATE: Running (IR=8283.5)
+<Sat Jan 23 19:50:20 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=8283.5), NEW STATE: Running (IR=8875.0)
+<Sat Jan 23 19:51:26 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=8875.0), NEW STATE: Running (IR=9466.5)
+<Sat Jan 23 19:52:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=9466.5), NEW STATE: Running (IR=10058.5)
+<Sat Jan 23 19:53:36 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=10058.5), NEW STATE: Running (IR=10650.0)
+<Sat Jan 23 19:54:41 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=10650.0), NEW STATE: Running (IR=11241.5)
+<Sat Jan 23 19:55:45 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=11241.5), NEW STATE: Running (IR=11833.5)
+<Sat Jan 23 19:56:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=11833.5), NEW STATE: Running (IR=12425.0)
+<Sat Jan 23 19:58:00 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=12425.0), NEW STATE: Running (IR=13016.5)
+<Sat Jan 23 19:59:04 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=13016.5), NEW STATE: Running (IR=13608.5)
+<Sat Jan 23 20:00:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=13608.5), NEW STATE: Running (IR=14200.0)
+<Sat Jan 23 20:01:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=14200.0), NEW STATE: Running (IR=14791.5)
+<Sat Jan 23 20:02:40 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=14791.5), NEW STATE: Running (IR=15383.5)
+<Sat Jan 23 20:03:58 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=15383.5), NEW STATE: Running (IR=15975.0)
+<Sat Jan 23 20:05:05 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=15975.0), NEW STATE: Running (IR=16567.0)
+<Sat Jan 23 20:06:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=16567.0), NEW STATE: Running (IR=17158.5)
+<Sat Jan 23 20:07:16 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=17158.5), NEW STATE: Running (IR=17750.0)
+<Sat Jan 23 20:08:38 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=17750.0), NEW STATE: Running (IR=18342.0)
+<Sat Jan 23 20:09:44 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=18342.0), NEW STATE: Running (IR=18933.5)
+<Sat Jan 23 20:09:44 PST 2016> org.spec.jbb.ic: Resolved Controller-TransferLog-Tier0 @ localhost:55070
+<Sat Jan 23 20:10:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=18933.5), NEW STATE: Running (IR=19525.0)
+<Sat Jan 23 20:12:01 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=19525.0), NEW STATE: Running (IR=20117.0)
+<Sat Jan 23 20:13:09 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=20117.0), NEW STATE: Running (IR=20708.5)
+<Sat Jan 23 20:14:17 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=20708.5), NEW STATE: Running (IR=21300.0)
+<Sat Jan 23 20:15:27 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=21300.0), NEW STATE: Running (IR=21892.0)
+<Sat Jan 23 20:16:43 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=21892.0), NEW STATE: Running (IR=22483.5)
+<Sat Jan 23 20:17:58 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=22483.5), NEW STATE: Running (IR=23075.0)
+<Sat Jan 23 20:19:08 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=23075.0), NEW STATE: Running (IR=23667.0)
+<Sat Jan 23 20:20:17 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=23667.0), NEW STATE: Running (IR=24258.5)
+<Sat Jan 23 20:21:45 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=24258.5), NEW STATE: Running (IR=24850.0)
+<Sat Jan 23 20:23:16 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=24850.0), NEW STATE: Running (IR=25442.0)
+<Sat Jan 23 20:24:34 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=25442.0), NEW STATE: Running (IR=26033.5)
+<Sat Jan 23 20:26:05 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=26033.5), NEW STATE: Running (IR=26625.0)
+<Sat Jan 23 20:27:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=26625.0), NEW STATE: Running (IR=27217.0)
+<Sat Jan 23 20:28:46 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=27217.0), NEW STATE: Running (IR=27808.5)
+<Sat Jan 23 20:30:01 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=27808.5), NEW STATE: Running (IR=28400.0)
+<Sat Jan 23 20:31:10 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=28400.0), NEW STATE: Running (IR=28992.0)
+<Sat Jan 23 20:32:30 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=28992.0), NEW STATE: Running (IR=29583.5)
+<Sat Jan 23 20:33:42 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=29583.5), NEW STATE: Running (IR=30175.0)
+<Sat Jan 23 20:34:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=30175.0), NEW STATE: Running (IR=30767.0)
+<Sat Jan 23 20:36:13 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=30767.0), NEW STATE: Running (IR=31358.5)
+<Sat Jan 23 20:37:36 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=31358.5), NEW STATE: Running (IR=31950.0)
+<Sat Jan 23 20:38:49 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=31950.0), NEW STATE: Running (IR=32542.0)
+<Sat Jan 23 20:39:57 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=32542.0), NEW STATE: Running (IR=33133.5)
+<Sat Jan 23 20:41:09 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=33133.5), NEW STATE: Running (IR=33725.0)
+<Sat Jan 23 20:42:24 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=33725.0), NEW STATE: Running (IR=34317.0)
+<Sat Jan 23 20:43:34 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=34317.0), NEW STATE: Running (IR=34908.5)
+<Sat Jan 23 20:45:05 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=34908.5), NEW STATE: Running (IR=35500.0)
+<Sat Jan 23 20:46:18 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=35500.0), NEW STATE: Running (IR=36092.0)
+<Sat Jan 23 20:47:35 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=36092.0), NEW STATE: Running (IR=36683.5)
+<Sat Jan 23 20:48:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=36683.5), NEW STATE: Running (IR=37275.0)
+<Sat Jan 23 20:50:14 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=37275.0), NEW STATE: Running (IR=37867.0)
+<Sat Jan 23 20:51:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=37867.0), NEW STATE: Running (IR=38458.5)
+<Sat Jan 23 20:52:49 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=38458.5), NEW STATE: Running (IR=39050.0)
+<Sat Jan 23 20:54:14 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=39050.0), NEW STATE: Running (IR=39642.0)
+<Sat Jan 23 20:55:26 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=39642.0), NEW STATE: Running (IR=40233.5)
+<Sat Jan 23 20:56:40 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=40233.5), NEW STATE: Running (IR=40825.0)
+<Sat Jan 23 20:57:54 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=40825.0), NEW STATE: Running (IR=41417.0)
+<Sat Jan 23 20:59:04 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=41417.0), NEW STATE: Running (IR=42008.5)
+<Sat Jan 23 21:00:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=42008.5), NEW STATE: Running (IR=42600.0)
+<Sat Jan 23 21:01:03 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=42600.0), NEW STATE: Running (IR=42600.0)
+<Sat Jan 23 21:02:12 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=42600.0), NEW STATE: Running (IR=43192.0)
+<Sat Jan 23 21:02:43 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=43192.0), NEW STATE: Running (IR=43192.0)
+<Sat Jan 23 21:04:42 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=43192.0), NEW STATE: Running (IR=43783.5)
+<Sat Jan 23 21:05:13 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=43783.5), NEW STATE: Running (IR=44375.0)
+<Sat Jan 23 21:05:45 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=44375.0), NEW STATE: Running (IR=44967.0)
+<Sat Jan 23 21:06:18 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=44967.0), NEW STATE: Terminated
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:06:19 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 b10aedfc-3c55-4ee7-a7c4-0a1dd5418f4f, 1 Kb
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 57ec1a0b-cc1d-4a8e-8666-be171d30f38a, 18873 Kb
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 f59ec7a0-38a6-49d3-85a0-10502dc9cbf3, 18858 Kb
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 6cdb831d-9165-443b-878a-648efcbf570b, 1 Kb
+<Sat Jan 23 21:06:21 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ 36451367-cdba-412e-ad38-d6a124386699, 51595 Kb
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:06:23 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:06:26 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:06:39 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4260.0)
+<Sat Jan 23 21:06:53 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4260.0), NEW STATE: Running (IR=8520.0)
+<Sat Jan 23 21:07:07 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=8520.0), NEW STATE: Running (IR=12780.0)
+<Sat Jan 23 21:07:22 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=12780.0), NEW STATE: Running (IR=17040.0)
+<Sat Jan 23 21:07:36 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=17040.0), NEW STATE: Running (IR=21300.0)
+<Sat Jan 23 21:07:50 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=21300.0), NEW STATE: Running (IR=25560.0)
+<Sat Jan 23 21:08:06 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=25560.0), NEW STATE: Running (IR=29820.0)
+<Sat Jan 23 21:08:24 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=29820.0), NEW STATE: Running (IR=34080.0)
+<Sat Jan 23 21:08:41 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=34080.0), NEW STATE: Running (IR=38340.0)
+<Sat Jan 23 21:09:11 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=38340.0), NEW STATE: Running (IR=42600.0)
+<Sat Jan 23 21:09:31 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=42600.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:09:38 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Stopped
+<Sat Jan 23 21:09:38 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SP1 10d00907-fa18-41c6-89cd-c94f98385472, 1 Kb
+<Sat Jan 23 21:09:38 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SP0 df0b72bd-2ba4-4337-b504-a8784e9dd066, 1 Kb
+<Sat Jan 23 21:09:41 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SM1 ad792474-7ae9-4888-b27c-b5ad282a662a, 49313 Kb
+<Sat Jan 23 21:09:41 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.SM0 22a8249d-c663-4874-9aed-26277cf9b0f9, 49302 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: add Group2.Backend.JVM2.HQ d08cd030-3b6f-4d75-b201-0692f9a41235, 98364 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SM1 ad792474-7ae9-4888-b27c-b5ad282a662a, 49313 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SM0 22a8249d-c663-4874-9aed-26277cf9b0f9, 49302 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SP1 10d00907-fa18-41c6-89cd-c94f98385472, 1 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.SP0 df0b72bd-2ba4-4337-b504-a8784e9dd066, 1 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: commit Group2.Backend.JVM2.HQ d08cd030-3b6f-4d75-b201-0692f9a41235, 98364 Kb
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.snapshots: 5 snapshots committed, 196983 Kb total
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.infra.validation.task.ValidationInventoryTask.Group2.Backend.JVM2-validation: Compare HQ=Group2.Backend.JVM2.HQ and SM=Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.infra.validation.task.ValidationInventoryTask.Group2.Backend.JVM2-validation: Compare HQ=Group2.Backend.JVM2.HQ and SM=Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:09:43 PST 2016> org.spec.jbb.infra.validation.task.ValidationInventoryTask.Group2.Backend.JVM2-validation: Validation completed
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Stopped, NEW STATE: Terminated
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:44 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 22a8249d-c663-4874-9aed-26277cf9b0f9, 49302 Kb
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 ad792474-7ae9-4888-b27c-b5ad282a662a, 49313 Kb
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 df0b72bd-2ba4-4337-b504-a8784e9dd066, 1 Kb
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 10d00907-fa18-41c6-89cd-c94f98385472, 1 Kb
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:45 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ d08cd030-3b6f-4d75-b201-0692f9a41235, 98364 Kb
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:48 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.max property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.skipValidationKit property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.selector.runner.count property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.write property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.connect property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.worker.pool.min property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.client.pool.size property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.util: Controller cannot update specjbb.comm.connect.timeouts.read property value, it is only set on agent side
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.group2.backend.jvm2: Parameters accepted: [specjbb.forkjoin.workers=[=112, Tier1=374, Tier2=125, Tier3=63], specjbb.comm.connect.worker.pool.max=320, specjbb.runCategory=MULTI, specjbb.skipValidationKit=false, specjbb.group.info=[Group1: <JVM1> -> <JVM2[SM(2),SP(2)]>, Group2: <JVM1> -> <JVM2[SM(2),SP(2)]>], specjbb.comm.connect.selector.runner.count=4, specjbb.comm.connect.timeouts.write=650000, specjbb.group.count=2, specjbb.mapreducer.pool.size=27, specjbb.comm.connect.timeouts.connect=650000, specjbb.comm.connect.worker.pool.min=32, specjbb.comm.connect.client.pool.size=192, specjbb.comm.connect.timeouts.read=650000, specjbb.customerDriver.threads=[=64, probe=96, saturate=144], specjbb.time.server=false]
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Terminated, NEW STATE: Initialization
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.heartbeat-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.heartbeat
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: OrderFulfilment init: Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM0(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SM init: Group2.Backend.JVM2.SM1(target Group2.Backend.JVM2.HQ)
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM0 22a8249d-c663-4874-9aed-26277cf9b0f9, 49302 Kb
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: SP init: Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP0 df0b72bd-2ba4-4337-b504-a8784e9dd066, 1 Kb
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.Group2.Backend.JVM2: HQ init: Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SM1 ad792474-7ae9-4888-b27c-b5ad282a662a, 49313 Kb
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.SP1 10d00907-fa18-41c6-89cd-c94f98385472, 1 Kb
+<Sat Jan 23 21:09:52 PST 2016> org.spec.jbb.snapshots: reading Group2.Backend.JVM2.HQ d08cd030-3b6f-4d75-b201-0692f9a41235, 98364 Kb
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.HQ.OF-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SM1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP0-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier0 @ 127.0.0.1:43251 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier1 @ 127.0.0.1:54117 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier2 @ 127.0.0.1:49835 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Pushed Group2.Backend.JVM2.SP1-Tier3 @ 127.0.0.1:43361 to announce list
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.ic: Registered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:09:56 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Initialization, NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:09:59 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Running (IR=4260.0)
+<Sat Jan 23 21:10:33 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=4260.0), NEW STATE: Running (IR=0.0)
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.group2.backend.jvm2: IN STATE: Running (IR=0.0), NEW STATE: Terminated
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM0
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SM1
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.HQ.OF
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP0
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.ic: Deregistered Group2.Backend.JVM2.SP1
+<Sat Jan 23 21:10:37 PST 2016> org.spec.jbb.group2.backend.jvm2: Exiting
+<Sat Jan 23 21:10:38 PST 2016> org.spec.jbb.group2.backend.jvm2: Exiting
+Tests are skipped.
+  6479s: 
+  6479s: 
